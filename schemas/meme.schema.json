@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hongkong-book.local/schemas/meme.schema.json",
+  "title": "Meme Frontmatter",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["title", "title_en", "first_documented", "themes"],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "title_en": {
+      "type": "string"
+    },
+    "first_documented": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "themes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "books": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

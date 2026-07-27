@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hongkong-book.local/schemas/book.schema.json",
+  "title": "Book Frontmatter",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "title",
+    "title_en",
+    "author",
+    "year",
+    "publisher",
+    "isbn",
+    "type",
+    "era",
+    "places",
+    "themes",
+    "memes",
+    "contributors",
+    "status"
+  ],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "title_en": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "year": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "publisher": {
+      "type": "string"
+    },
+    "isbn": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["fiction", "non-fiction"]
+    },
+    "era": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "places": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "themes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "memes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "editions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["lang", "title", "year", "publisher", "notes"],
+        "properties": {
+          "lang": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "year": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "publisher": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "contributors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "reviewed", "published", "ready"]
+    }
+  }
+}

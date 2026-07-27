@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hongkong-book.local/schemas/context.schema.json",
+  "title": "Context Frontmatter",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["title", "type"],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["era", "place", "theme"]
+    },
+    "perspectives": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

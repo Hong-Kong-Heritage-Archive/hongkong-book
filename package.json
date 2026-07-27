@@ -1,0 +1,22 @@
+{
+  "name": "hongkong-book",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "quartz:setup": "node tools/setup-quartz.js",
+    "postinstall": "npm run quartz:setup",
+    "validate": "node tools/validate.js",
+    "sync": "node tools/sync.js",
+    "build": "npm run quartz:setup && npm run sync && quartz build --directory .generated/content --output site",
+    "dev": "npm run quartz:setup && npm run sync && quartz build --serve --directory .generated/content --output site"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "fast-glob": "^3.3.3",
+    "gray-matter": "^4.0.3"
+  },
+  "devDependencies": {
+    "quartz": "github:jackyzha0/quartz"
+  }
+}

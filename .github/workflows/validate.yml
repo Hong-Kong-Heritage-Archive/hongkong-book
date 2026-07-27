@@ -1,0 +1,29 @@
+name: Validate Knowledge
+
+on:
+  pull_request:
+    paths:
+      - "knowledge/**"
+      - "schemas/**"
+      - "tools/**"
+      - "package.json"
+      - "package-lock.json"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate knowledge entries
+        run: npm run validate

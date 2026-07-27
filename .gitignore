@@ -1,0 +1,32 @@
+# macOS
+.DS_Store
+
+# Node.js dependencies and logs
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Build and generated outputs
+.generated/
+site/
+content/
+quartz/
+export/rag.jsonl
+llms.txt
+
+# Common test and coverage outputs
+coverage/
+.nyc_output/
+
+# IDE/editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
