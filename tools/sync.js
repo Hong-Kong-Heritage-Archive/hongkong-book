@@ -142,8 +142,8 @@ function withEditLink(body, relPath) {
 }
 
 function generateLandingPageMarkdown({ counts, generatedAt, repoBaseUrl, branch }) {
-  const exploreUrl = "/knowledge/books/"
-  const graphViewUrl = "/graph/"
+  const exploreUrl = "./knowledge/books/"
+  const graphViewUrl = "./graph/"
   const knowledgeTreeUrl = `${repoBaseUrl}/tree/${branch}/knowledge`
   const issueUrl = `${repoBaseUrl}/issues/new`
   const pullsUrl = `${repoBaseUrl}/pulls`
@@ -233,7 +233,7 @@ description: 由 frontmatter 明確連結生成的圖譜視圖與資料檔
 - 連線數：${edgeCount}
 - 產生時間：${generatedDate}
 
-[下載圖譜資料（graph.json）](/graph.json)
+[下載圖譜資料（graph.json）](../graph.json)
 `
 }
 
