@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: zh-TW
-  baseUrl: example.com
+  baseUrl: ""
   ignorePatterns:
     - private
     - templates

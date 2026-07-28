@@ -8,8 +8,8 @@
     "postinstall": "npm run quartz:setup",
     "validate": "node tools/validate.js",
     "sync": "node tools/sync.js",
-    "build": "npm run quartz:setup && npm run sync && quartz build --directory generated/quartz-content --output site",
-    "dev": "npm run quartz:setup && npm run sync && quartz build --serve --directory generated/quartz-content --output site",
+    "build": "npm run quartz:setup && npm run sync && node tools/quartz-with-env-config.js build --directory generated/quartz-content --output site && node tools/postprocess-site.js",
+    "dev": "npm run quartz:setup && npm run sync && node tools/quartz-with-env-config.js build --serve --directory generated/quartz-content --output site",
     "build:local": "bash scripts/local-build.sh",
     "dev:local": "bash scripts/local-dev.sh"
   },
