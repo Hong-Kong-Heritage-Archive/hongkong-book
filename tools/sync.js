@@ -19,8 +19,8 @@ import {
 } from "./lib/content.js"
 import { runValidation } from "./lib/validation.js"
 
-const GENERATED_ROOT = path.join(ROOT_DIR, ".generated")
-const GENERATED_CONTENT_DIR = path.join(GENERATED_ROOT, "content")
+const GENERATED_ROOT = path.join(ROOT_DIR, "generated")
+const GENERATED_CONTENT_DIR = path.join(GENERATED_ROOT, "quartz-content")
 const GENERATED_GRAPH_PATH = path.join(GENERATED_ROOT, "graph.json")
 const RAG_EXPORT_PATH = path.join(ROOT_DIR, "export", "rag.jsonl")
 const LLMS_PATH = path.join(ROOT_DIR, "llms.txt")
