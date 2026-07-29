@@ -29,13 +29,16 @@ A single source of truth for books about Hong Kong (fiction and non-fiction), ma
 
 ---
 
-## 2. Content model — three entity types
+## 2. Content model — four entity types
 
 1. **Books** (primary, first-class) — the catalog: bibliographic fact + original curated analysis. Never the book's own text.
-2. **Memes** (cross-cutting concepts) — recurring motifs, idioms, or cultural phenomena that appear across multiple books (e.g. 獅子山精神 Lion Rock Spirit). Many-to-many by nature — a graph problem, not a narrative one.
-3. **Context essays** (secondary, optional) — long-form pieces on eras, places, or themes, taiwan.md-style, which cite and link out to relevant books as further reading.
+2. **People** (real people — authors, critics, historical subjects) — one canonical biography per person, linked from every book that involves them, whether as author or as subject. Added in response to a real pain point: without it, a person's biography gets copy-pasted into every book file that mentions them and drifts out of sync. See §4 for the `authors:` vs `people:` distinction on book entries.
+3. **Memes** (cross-cutting concepts) — recurring motifs, idioms, or cultural phenomena that appear across multiple books (e.g. 獅子山精神 Lion Rock Spirit). Many-to-many by nature — a graph problem, not a narrative one.
+4. **Context essays** (secondary, optional) — long-form pieces on eras, places, or themes, taiwan.md-style, which cite and link out to relevant books as further reading.
 
-Books stay the entry point. Memes and context essays exist to connect books to each other, not to compete with them as the primary object.
+Books stay the entry point. People, memes, and context essays exist to connect books to each other and to their real-world authors/subjects, not to compete with books as the primary object.
+
+**Fictional characters are a deliberately deferred entity type**, not part of `knowledge/people/`. The cases seen so far (a novel's recurring detective, a wuxia protagonist) only recur *within* a single book or series, which is a weaker case for a standalone cross-book entity than a real person already demonstrably shows up as both an author and a subject across genuinely separate books. Revisit once a fictional character shows up across two unrelated books, the same bar `memes` cleared before it was built.
 
 ---
 
@@ -192,6 +195,7 @@ A PR is public the instant it's opened, merged or not — so the check that matt
 - Summary/overview sections against their depth-tier length caps
 - Title+author+ISBN fuzzy-matched against existing entries to catch duplicates pre-submission
 - If `editions:` has more than one entry, the `## Edition Differences` section must be non-empty — flagged, not silently allowed to stay blank
+- **No isolated books.** Every new book must connect to at least one existing entity via `memes:`, `people:`, or an `authors:` slug matching an existing person page. This came up directly during the pilot (see `docs/seed-list.md`'s meme table) — the graph's value comes specifically from books connecting to each other, and a policy that silently allowed disconnected entries would let the catalog degrade into a flat list with extra frontmatter, no different from a plain bibliography. A `.github/prompts/contribution-prompt-builder.prompt.md`-generated tool exists specifically to make finding that connection easy for non-technical contributors, rather than making the rule a pure blocker.
 
 ---
 

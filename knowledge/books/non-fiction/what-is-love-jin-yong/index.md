@@ -4,7 +4,8 @@
 ---
 title: 情為何物：金庸小說的情與人生
 title_en: "What Is Love? Emotion and Life in Jin Yong's Fiction"
-author: 吳靄儀
+authors: [wu-oi-yee]
+people: [jin-yong]
 year: 2025
 publisher: 壹壹陸工作室有限公司
 isbn: ""   # verify: ISBN not confirmed in available sources
@@ -28,7 +29,7 @@ status: draft
 
 ## Why It Matters
 
-本書與《誰是大英雄》同屬吳靄儀四十年金庸評論工程的重新編訂成果，同樣呼應她的核心論斷：金庸的成就，是唯獨那個年代的香港才能孕育出來的現象（詳見 meme：[只有香港](/knowledge/memes/only-hong-kong-jin-yong)）——完整的歷史脈絡及作者背景，見姊妹條目《誰是大英雄》。
+本書與《誰是大英雄》同屬吳靄儀四十年金庸評論工程的重新編訂成果，同樣呼應她的核心論斷：金庸的成就，是唯獨那個年代的香港才能孕育出來的現象（詳見 meme：[只有香港](/knowledge/memes/only-hong-kong-jin-yong)）——作者背景見人物條目：[吳靄儀](/knowledge/people/wu-oi-yee)。
 
 值得一提的是，據2025年《明報》報道，本書與《誰是大英雄》一同被部分連鎖書店以作者身分為由拒絕上架，儘管出版社明確表示兩書內容均未觸及時政。這一情況與本計劃希望以獨立於商業發行體系的方式、確保香港書籍知識合法留存並可供人類與AI存取的初衷，直接相關。
 

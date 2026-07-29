@@ -1,7 +1,8 @@
 ---
 title: ""
 title_en: ""
-author: ""
+authors: []
+people: []
 year: 0
 publisher: ""
 isbn: ""

@@ -9,11 +9,17 @@
 
 ## 新增一本書
 
-1. 先檢查是否已存在——以書名／作者／ISBN搜尋 `knowledge/books/`。
+**新書必須連結至知識庫中至少一個現有條目**——透過 `memes:`、`people:`，或指向現有人物頁面的 `authors:` slug 皆可。完全孤立、與現有內容毫無連結的新書條目不會被接受，因為這正正違背了meme／people層存在的意義。若想不到新書該如何連結，可以使用〈生成貢獻提示工具〉（見下）幫忙尋找合適的連結點。
+
+1. 檢查是否已存在——以書名／作者／ISBN搜尋 `knowledge/books/`。
 2. 複製 `knowledge/books/_template.md` 至 `knowledge/books/fiction/{slug}/index.md` 或 `knowledge/books/non-fiction/{slug}/index.md`。
 3. 依 `.github/instructions/books.instructions.md` 填寫frontmatter及內文。
 4. 若對某項事實（年份、ISBN、出版社）沒有把握，留空並加上 `<!-- verify -->` 註解，不要憑猜測填寫——審核者會跟進查證。
 5. 開PR。若引用了尚未存在的 `memes:` 標籤，請在PR描述中註明。
+
+### 不熟悉格式？使用貢獻提示產生工具
+
+網站上的〈生成貢獻提示〉工具（見首頁或 [contribution-prompt-builder](.github/prompts/contribution-prompt-builder.prompt.md)）可協助你：選定一本你想連結的現有書籍，選定連結用的meme或人物，工具會自動組合出一段完整提示文字，供你複製並貼到任何AI聊天工具（如ChatGPT、Claude等），請AI代為生成符合本站格式的Markdown檔案初稿。生成後，你仍需按上述步驟檢查、開PR——這個工具只是幫你寫出格式正確的初稿，不代替人手審核流程。
 
 ## 新增一個meme／概念
 

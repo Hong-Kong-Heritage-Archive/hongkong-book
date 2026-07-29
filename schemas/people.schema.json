@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hongkong-book.md/schemas/people.schema.json",
+  "title": "Person entry frontmatter",
+  "type": "object",
+  "required": ["name", "roles", "status"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "zh-HK canonical name. Deliberately 'name' rather than 'title' (unlike books/memes/context) — a person has a name, not a title."
+    },
+    "name_en": {
+      "type": "string",
+      "description": "English name, reference only — not a full translation."
+    },
+    "born": {
+      "type": "integer",
+      "description": "Birth year. 0 if unknown — don't guess."
+    },
+    "died": {
+      "type": "integer",
+      "description": "Death year. OMIT THIS FIELD ENTIRELY if the person is living — presence of this field is how the site distinguishes living from deceased. Do not use 0 as a 'living' placeholder (0 is reserved for 'unknown' on `born`, not reused here)."
+    },
+    "roles": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "description": "Open-ended, like themes/places — e.g. author, critic, barrister, legislator. Not a canonical enum; describe what they actually did."
+    },
+    "themes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "books": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "GENERATED FIELD. Populated by tools/sync.js from every book's `authors:` and `people:` arrays via reverse lookup. Must not be present in committed source files — if a contributor adds it by hand, validate.js should flag this as an error, not silently accept it."
+    },
+    "contributors": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "reviewed", "published"]
+    }
+  },
+  "additionalProperties": false
+}

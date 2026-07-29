@@ -17,6 +17,7 @@
 - [ ] 若 `editions:` 有多於一項，`## Edition Differences` 存在**且內容充實**——並非流於形式的一句話。
 - [ ] `era:` 標籤符合 `TERMINOLOGY.md` 中的標準清單——未經查核不擅自新增年代標籤。
 - [ ] 每個 `memes:` 引用均能對應至 `knowledge/memes/` 中實際存在的檔案，或PR描述中已註明為建議新增的meme。
+- [ ] **並非孤立條目**：`memes:`、`people:`、或指向現有人物頁面的 `authors:` slug，至少一項非空——新書必須連結至知識庫中至少一個現有條目。
 
 ## Meme條目專項
 

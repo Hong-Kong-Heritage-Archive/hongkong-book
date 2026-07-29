@@ -2,7 +2,8 @@
 ---
 title: 黑暗之城：九龍城寨的日與夜
 title_en: "City of Darkness: Life in Kowloon Walled City"
-author: Greg Girard, Ian Lambot
+authors: [Greg Girard, Ian Lambot]   # verify: no person pages yet — plain-name placeholders per people.instructions.md
+people: []
 year: 1993
 publisher: Ernst & Sohn (Berlin)
 isbn: "9783433023556"

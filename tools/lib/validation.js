@@ -65,6 +65,61 @@ function asArray(value) {
   return Array.isArray(value) ? value : []
 }
 
+function getBookAuthors(entry) {
+  const authors = asArray(entry.data.authors)
+  if (authors.length > 0) {
+    return authors
+  }
+
+  const legacyAuthor = String(entry.data.author ?? "").trim()
+  return legacyAuthor ? [legacyAuthor] : []
+}
+
+function getBookPeople(entry) {
+  return asArray(entry.data.people)
+}
+
+function normalizeNameKey(value) {
+  return normalizeComparable(value)
+}
+
+function buildPersonLookup(entries) {
+  const personEntries = entries.filter((entry) => entry.kind === "person")
+  const bySlug = new Map(personEntries.map((entry) => [entry.slug, entry]))
+  const byName = new Map()
+
+  for (const person of personEntries) {
+    for (const candidate of [person.data.name, person.data.name_en]) {
+      const key = normalizeNameKey(candidate)
+      if (!key) {
+        continue
+      }
+      if (!byName.has(key)) {
+        byName.set(key, person)
+      }
+    }
+  }
+
+  return { bySlug, byName }
+}
+
+function resolvePersonReference(reference, lookup) {
+  if (!reference) {
+    return { kind: "empty" }
+  }
+
+  if (lookup.bySlug.has(reference)) {
+    return { kind: "slug", person: lookup.bySlug.get(reference) }
+  }
+
+  const normalized = normalizeNameKey(reference)
+  if (lookup.byName.has(normalized)) {
+    return { kind: "name", person: lookup.byName.get(normalized) }
+  }
+
+  return { kind: "unknown" }
+}
+
 export async function runValidation(options = {}) {
   const quoteLimit = Number.isFinite(options.quoteLimit) ? Number(options.quoteLimit) : 120
   const entries = await loadEntries()
@@ -74,15 +129,18 @@ export async function runValidation(options = {}) {
   const bookSchema = await loadSchema("schemas/book.schema.json")
   const memeSchema = await loadSchema("schemas/meme.schema.json")
   const contextSchema = await loadSchema("schemas/context.schema.json")
+  const peopleSchema = await loadSchema("schemas/people.schema.json")
 
   const ajv = new Ajv2020({ allErrors: true, strict: false, coerceTypes: true })
   const validators = {
     book: ajv.compile(bookSchema),
     meme: ajv.compile(memeSchema),
-    context: ajv.compile(contextSchema)
+    context: ajv.compile(contextSchema),
+    person: ajv.compile(peopleSchema)
   }
 
   const memeSlugs = new Set(entries.filter((e) => e.kind === "meme").map((e) => e.slug))
+  const personLookup = buildPersonLookup(entries)
 
   for (const entry of entries) {
     if (!validators[entry.kind]) {
@@ -127,6 +185,37 @@ export async function runValidation(options = {}) {
           })
         }
       }
+
+      const authors = getBookAuthors(entry)
+      const people = getBookPeople(entry)
+      let hasResolvedPersonLink = false
+
+      for (const [fieldName, values] of [
+        ["authors", authors],
+        ["people", people]
+      ]) {
+        for (const reference of values) {
+          const resolution = resolvePersonReference(reference, personLookup)
+          if (resolution.kind === "slug") {
+            hasResolvedPersonLink = true
+            continue
+          }
+
+          if (resolution.kind === "name") {
+            failures.push({
+              relPath: entry.relPath,
+              reason: `${fieldName} 使用了可對應現有人物頁的名稱「${reference}」，請改用 slug「${resolution.person.slug}」`
+            })
+          }
+        }
+      }
+
+      if (memes.length === 0 && !hasResolvedPersonLink) {
+        failures.push({
+          relPath: entry.relPath,
+          reason: "book 必須透過 memes: 或 authors:/people: slug 連結至至少一個現有條目"
+        })
+      }
     }
   }
 
@@ -143,7 +232,7 @@ export async function runValidation(options = {}) {
       isbnMap.get(isbn).push(book)
     }
 
-    const key = `${normalizeComparable(book.data.title)}::${normalizeComparable(book.data.author)}`
+    const key = `${normalizeComparable(book.data.title)}::${normalizeComparable(getBookAuthors(book).join(" / "))}`
     if (!exactMap.has(key)) {
       exactMap.set(key, [])
     }
@@ -174,8 +263,8 @@ export async function runValidation(options = {}) {
     for (let j = i + 1; j < books.length; j += 1) {
       const a = books[i]
       const b = books[j]
-      const authorA = normalizeComparable(a.data.author)
-      const authorB = normalizeComparable(b.data.author)
+      const authorA = normalizeComparable(getBookAuthors(a).join(" / "))
+      const authorB = normalizeComparable(getBookAuthors(b).join(" / "))
       if (!authorA || !authorB || authorA !== authorB) {
         continue
       }

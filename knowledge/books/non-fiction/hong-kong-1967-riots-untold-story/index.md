@@ -2,7 +2,8 @@
 ---
 title: 香港六七暴動始末
 title_en: "The Full Story of the 1967 Hong Kong Riots (working translation, no official English edition)"
-author: 程翔
+authors: [程翔]   # verify: no person page yet — plain-name placeholder per people.instructions.md
+people: [吳荻舟]   # verify: no person page yet — the book's central primary-source subject
 year: 2018
 publisher: 牛津大學出版社（中國）
 isbn: "9780190974732"

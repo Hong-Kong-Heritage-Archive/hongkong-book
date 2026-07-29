@@ -2,7 +2,8 @@
 ---
 title: 13.67
 title_en: "13.67 (English translation titled The Borrowed)"
-author: 陳浩基
+authors: [陳浩基]   # verify: no person page yet — plain-name placeholder per people.instructions.md
+people: []
 year: 2014
 publisher: 皇冠文化出版有限公司
 isbn: "9789573330806"

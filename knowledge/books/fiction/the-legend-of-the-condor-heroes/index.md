@@ -4,7 +4,8 @@
 ---
 title: 射鵰英雄傳
 title_en: The Legend of the Condor Heroes
-author: 金庸（查良鏞）
+authors: [jin-yong]
+people: []
 year: 1957
 publisher: 香港商報
 isbn: ""

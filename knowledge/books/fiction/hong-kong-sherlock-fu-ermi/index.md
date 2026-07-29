@@ -2,7 +2,8 @@
 ---
 title: 香江神探福邇，字摩斯
 title_en: "The Hong Kong Sleuth, Fu Ermi (styled Mosi) — no official English edition yet, working translation only"
-author: 莫理斯
+authors: [莫理斯]   # verify: no person page yet — plain-name placeholder per people.instructions.md
+people: []
 year: 2017
 publisher: 萬里機構．知出版社
 isbn: "9789621465092"

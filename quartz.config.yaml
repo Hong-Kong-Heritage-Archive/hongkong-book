@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: zh-TW
-  baseUrl: ""
+  baseUrl: hong-kong-heritage-archive.github.io/hongkong-book
   ignorePatterns:
     - private
     - templates

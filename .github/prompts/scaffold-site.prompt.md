@@ -11,7 +11,7 @@ This is greenfield tooling — `knowledge/` already contains real pilot content 
 
 ## 1. JSON Schemas (`schemas/`)
 
-Create `schemas/book.schema.json`, `schemas/meme.schema.json`, `schemas/context.schema.json`, matching the frontmatter fields documented in the corresponding `.github/instructions/*.instructions.md` file exactly — field names, required vs. optional, enums (e.g. `type: fiction | non-fiction`, `status: draft | reviewed | published`). These schemas are the actual enforcement mechanism referenced throughout `docs/spec.md` §6.
+`schemas/people.schema.json` already exists — use it as the reference pattern (field style, description conventions, the `additionalProperties: false` discipline) rather than inventing a different style for the rest. Create `schemas/book.schema.json`, `schemas/meme.schema.json`, `schemas/context.schema.json`, matching the frontmatter fields documented in the corresponding `.github/instructions/*.instructions.md` file exactly — field names, required vs. optional, enums (e.g. `type: fiction | non-fiction`, `status: draft | reviewed | published`). Note that `book.schema.json` must include `authors: []` and `people: []` (arrays that accept either a `knowledge/people/` slug or a plain-name-string placeholder — see `.github/instructions/books.instructions.md` for why both are valid) — this isn't legacy, it's the current real schema, don't design around an older single `author:` string field. These schemas are the actual enforcement mechanism referenced throughout `docs/spec.md` §6.
 
 ## 2. `tools/validate.js`
 
@@ -21,6 +21,8 @@ Node script, run both locally (pre-commit) and in CI. For every file under `know
 - Flag any quoted excerpt over a conservative word-count ceiling for manual review — don't auto-reject, this needs human judgment.
 - For books: if `editions` has more than one entry, confirm a non-empty `## Edition Differences` section exists in the body.
 - For books: confirm every slug in `memes: [...]` resolves to an existing file in `knowledge/memes/`, or is flagged in the diff as new.
+- For books: for each entry in `authors: [...]` and `people: [...]`, check whether it matches an existing `knowledge/people/{slug}.md` file. If it doesn't, that's fine (plain-name placeholders are allowed — see `.github/instructions/people.instructions.md`), but if it's a plain name that *does* match an existing person page's `name:` field under a different string form, flag it — that's a book that should have been updated to use the slug instead of staying on the placeholder.
+- **No isolated books.** For every book, confirm at least one of `memes: [...]`, or `authors:`/`people:` slugs resolving to an existing person page, is non-empty. A book with none of these populated fails validation — see the "No isolated entries" rule in `.github/instructions/books.instructions.md`.
 - Fuzzy-match title/author/ISBN against existing entries to catch likely duplicates.
 - Exit non-zero on any failure, with file path + specific reason in the output — this drives both the pre-commit hook and the CI check.
 
@@ -33,6 +35,7 @@ The single build script everything else depends on. Responsibilities, in order:
 3. Prepare a build-time content directory for the site generator: copy `knowledge/` into it, excluding every `_template.md`, and inject each meme's generated backlink list where the template expects it.
 4. Generate `export/rag.jsonl` — one record per depth-tier (overview/summary/analysis) per entity, each with full metadata (`era`, `type`, `themes`, etc.) for pre-filtering before semantic search.
 5. Generate `llms.txt` at the site root, indexing every published entry.
+6. Generate a lightweight entity index (e.g. `knowledge/.generated/entity-index.json`) listing every published book/meme/person with its slug, title, type, and file path — this is separate from the RAG export (which is chunked prose for embedding); this one is a plain flat list a client-side tool can search over. It's a build-time dependency of `.github/prompts/contribution-prompt-builder.prompt.md` — that tool's picker UI reads this file rather than hardcoding or re-deriving the list itself.
 
 ## 4. Site generator: Quartz
 

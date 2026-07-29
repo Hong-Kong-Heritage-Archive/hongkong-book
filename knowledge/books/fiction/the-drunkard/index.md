@@ -2,7 +2,8 @@
 ---
 title: 酒徒
 title_en: The Drunkard
-author: 劉以鬯
+authors: [liu-yi-chang]
+people: []
 year: 1963
 publisher: ""  # verify: first book-edition publisher/year details
 isbn: ""       # verify: ISBN (if later edition carries one)

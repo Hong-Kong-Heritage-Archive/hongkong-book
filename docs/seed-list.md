@@ -11,6 +11,8 @@ The candidate list below was a starting proposal. Actual picks for the pilot don
 | 香江神探福邇，字摩斯 — 莫理斯 | fiction | ✅ drafted — `knowledge/books/fiction/hong-kong-sherlock-fu-ermi/index.md` |
 | 黑暗之城：九龍城寨的日與夜 *City of Darkness* — Greg Girard, Ian Lambot | non-fiction | ✅ drafted — `knowledge/books/non-fiction/city-of-darkness-kowloon-walled-city/index.md` |
 | 香港六七暴動始末 — 程翔 | non-fiction | ✅ drafted — `knowledge/books/non-fiction/hong-kong-1967-riots-untold-story/index.md` |
+| 誰是大英雄：金庸正邪人物選評 — 吳靄儀 | non-fiction | ✅ drafted — `knowledge/books/non-fiction/who-is-the-great-hero/index.md` (⚠️ needs 2-reviewer sign-off, see EDITORIAL.md) |
+| 情為何物：金庸小說的情與人生 — 吳靄儀 | non-fiction | ✅ drafted — `knowledge/books/non-fiction/what-is-love-jin-yong/index.md` (⚠️ needs 2-reviewer sign-off, see EDITORIAL.md) |
 
 ### Memes drafted so far
 
@@ -20,8 +22,18 @@ The candidate list below was a starting proposal. Actual picks for the pilot don
 | `song-wong-toi` (宋王臺) | 射鵰英雄傳 only, so far | a real Kowloon City monument connecting a book's *fictional universe* to Hong Kong, without the book itself being set there |
 | `sam-bat-gun` (三不管) | 香江神探福邇，字摩斯 ↔ *City of Darkness* | fiction ↔ non-fiction, same district, different books, connected through one real legal fact |
 | `1967-pineapple-bombs` (土製菠蘿) | 13.67 ↔ 《香港六七暴動始末》 | **fiction ↔ non-fiction, second example** — and unlike `sam-bat-gun`, these two books are genuinely complementary on the *same* event: the novel dramatizes the street-level bomb disposal, the history book explains the underground decision-making that led to it |
+| `only-hong-kong-jin-yong` (只有香港) | 射鵰英雄傳 ↔ 《誰是大英雄》↔ 《情為何物》 | **a meme not about place at all** — connects a book to Hong Kong through the *historical conditions of its production* (banned in Taiwan, suppressed in mainland China, only publishable in colonial-era Hong Kong), giving 射鵰英雄傳 a second, independent, sourced reason to belong here |
 
 `sam-bat-gun` is the clean proof of the many-to-many design: two books that would never sit next to each other on any conventional shelf (a Sherlock Holmes pastiche and a photography monograph) are connected through one real historical fact about one real place, entirely through explicit frontmatter — nothing inferred.
+
+### People drafted so far
+
+| Person | Roles | Linked from |
+|---|---|---|
+| `jin-yong` (金庸) | author | 射鵰英雄傳 (`authors:`) ↔ 誰是大英雄, 情為何物 (`people:`) — **the same person as author in fiction and subject in non-fiction**, the case this entity type exists for |
+| `wu-oi-yee` (吳靄儀) | author, critic, barrister, legislator | 誰是大英雄, 情為何物 (`authors:`) — biography (including contested legal/political history) lives here once, not duplicated across both book files |
+
+Other books' `authors:`/`people:` fields still hold plain-name placeholders (陳浩基, 莫理斯, Greg Girard, Ian Lambot, 程翔, 吳荻舟) rather than blocking on a person page for everyone — see `.github/instructions/people.instructions.md` for why that's deliberate, not a shortcut to fix later.
 
 Remaining non-fiction picks: open for the next round.
 

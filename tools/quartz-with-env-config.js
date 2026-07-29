@@ -2,6 +2,7 @@ import { readFile, writeFile } from "node:fs/promises"
 import { spawn } from "node:child_process"
 import path from "node:path"
 
+const quartzBin = path.resolve("node_modules/.bin/quartz")
 const configPath = path.resolve("quartz.config.yaml")
 function normalizeBaseUrl(value) {
   const trimmed = value.trim().replace(/\/$/, "")
@@ -21,23 +22,26 @@ if (!siteUrl) {
 }
 
 const originalConfig = await readFile(configPath, "utf8")
-const updatedConfig = originalConfig.replace(
-  /(^\s*baseUrl:\s*)(.*)$/m,
-  (_, prefix) => `${prefix}${siteUrl}`,
-)
+let updatedConfig = originalConfig
+if (!new RegExp(`^\\s*baseUrl:\\s*${siteUrl.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}$`, "m").test(originalConfig)) {
+  updatedConfig = originalConfig.replace(
+    /(^\s*baseUrl:\s*)(.*)$/m,
+    (_, prefix) => `${prefix}${siteUrl}`,
+  )
 
-if (updatedConfig === originalConfig) {
-  console.error("[錯誤] quartz.config.yaml 內找不到 baseUrl 欄位")
-  process.exit(1)
+  if (updatedConfig === originalConfig) {
+    console.error("[錯誤] quartz.config.yaml 內找不到 baseUrl 欄位")
+    process.exit(1)
+  }
+
+  await writeFile(configPath, updatedConfig)
 }
-
-await writeFile(configPath, updatedConfig)
 
 const restoreConfig = async () => {
   await writeFile(configPath, originalConfig)
 }
 
-const child = spawn("quartz", process.argv.slice(2), {
+const child = spawn(quartzBin, process.argv.slice(2), {
   stdio: "inherit",
   env: process.env,
 })

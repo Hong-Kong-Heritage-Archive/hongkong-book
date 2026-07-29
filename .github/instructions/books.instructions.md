@@ -4,12 +4,21 @@ applyTo: "knowledge/books/**/*.md"
 
 # Book entries
 
+**No isolated entries.** Every new book must connect to at least one entity already in the knowledge base, through `memes: [...]`, `people: [...]`, or an `authors:` slug that matches an existing person page. A book with all three empty (or only plain-name placeholders nobody else references) is not ready to merge — it's a disconnected island in the graph, which defeats the point of the meme/people layers existing at all. This is checked by `tools/validate.js`, not just a style suggestion. If a genuinely new book doesn't obviously connect to anything yet, that's a sign to look harder for the connection (an era, a place, a person, a recurring motif) before submitting — see the prompt-assisted helper described in `docs/spec.md` and built via `.github/prompts/contribution-prompt-builder.prompt.md`, which exists specifically to make finding that connection easier for non-technical contributors.
+
 Copy `knowledge/books/_template.md` as the starting point. Required frontmatter:
 
 ```yaml
 title: ""              # zh-HK, canonical
 title_en: ""            # reference only — full translation is generated elsewhere
-author: ""
+authors: []              # list of knowledge/people/ slugs. If a person doesn't have a page
+                          # yet, a plain name string is an acceptable placeholder — but once
+                          # a page exists for them, switch every book referencing them to the
+                          # slug, don't leave it on the plain-name fallback.
+people: []                # OPTIONAL. Real people who are significant subjects discussed in
+                           # the book — not its author(s). E.g. a critical biography's subject.
+                           # Same slug-or-placeholder rule as authors:. See
+                           # .github/instructions/people.instructions.md for the distinction.
 year: 0
 publisher: ""
 isbn: ""                 # leave blank + <!-- verify --> comment if unsure, don't guess

@@ -7,7 +7,6 @@
   "required": [
     "title",
     "title_en",
-    "author",
     "year",
     "publisher",
     "isbn",
@@ -28,6 +27,18 @@
     },
     "author": {
       "type": "string"
+    },
+    "authors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "people": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     },
     "year": {
       "type": "integer",
@@ -103,5 +114,13 @@
       "type": "string",
       "enum": ["draft", "reviewed", "published", "ready"]
     }
-  }
+  },
+  "anyOf": [
+    {
+      "required": ["author"]
+    },
+    {
+      "required": ["authors"]
+    }
+  ]
 }

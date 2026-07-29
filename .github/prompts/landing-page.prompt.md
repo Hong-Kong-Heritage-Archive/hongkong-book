@@ -21,7 +21,7 @@ This is the page a stranger reaches first, before reading a single book entry. L
 
 6. **Why zh-HK** — adapt taiwan.md's "為什麼用繁體中文" section, but don't just copy its reasoning wholesale: taiwan.md's point is that Traditional Chinese is Taiwan's distinguishing script. That argument doesn't map directly here — Hong Kong's distinguishing feature is spoken/written Cantonese conventions within Traditional Chinese, not the script itself (mainland Taiwan also uses Traditional Chinese). Write this section's reasoning from `TERMINOLOGY.md`'s actual Jyutping/zh-HK conventions, not a reskinned version of taiwan.md's argument.
 
-7. **How to contribute** — state plainly that contributions use real GitHub identity, same wording as `CONTRIBUTING.md` — don't soften it here just because it's the marketing-facing page. Link to `CONTRIBUTING.md` and the templates.
+7. **How to contribute** — state plainly that contributions use real GitHub identity, same wording as `CONTRIBUTING.md` — don't soften it here just because it's the marketing-facing page. Link to `CONTRIBUTING.md`, the templates, and the contribution-prompt-builder tool (`.github/prompts/contribution-prompt-builder.prompt.md`) for anyone not comfortable writing frontmatter by hand. Include the people template alongside the book, meme, and context templates.
 
 8. **License footer** — CC0, linking to `NOTICE.md` for the scope caveat (books' own copyright is untouched — don't let the footer imply blanket public-domain status).
 

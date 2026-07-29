@@ -9,6 +9,7 @@ export const KNOWLEDGE_DIR = path.join(ROOT_DIR, "knowledge")
 
 const CONTENT_PATTERNS = [
   "knowledge/books/**/index.md",
+  "knowledge/people/*.md",
   "knowledge/memes/*.md",
   "knowledge/context/**/*.md"
 ]
@@ -33,6 +34,9 @@ export function detectEntityKind(relPath) {
   if (relPath.startsWith("knowledge/books/")) {
     return "book"
   }
+  if (relPath.startsWith("knowledge/people/")) {
+    return "person"
+  }
   if (relPath.startsWith("knowledge/memes/")) {
     return "meme"
   }
@@ -46,6 +50,10 @@ export function parseSlug(relPath, kind) {
   const parts = relPath.split("/")
   if (kind === "book") {
     return parts[3] ?? ""
+  }
+  if (kind === "person") {
+    const filename = parts[parts.length - 1] ?? ""
+    return filename.replace(/\.md$/i, "")
   }
   if (kind === "meme" || kind === "context") {
     const filename = parts[parts.length - 1] ?? ""

@@ -7,6 +7,7 @@
 ## Repo structure
 ```
 knowledge/books/{fiction|non-fiction}/{slug}/index.md   ← one file per book (primary content)
+knowledge/people/{slug}.md                                ← real people: authors, critics, subjects
 knowledge/memes/{slug}.md                                 ← recurring cross-book concepts/motifs
 knowledge/context/{eras|places|themes}/{slug}.md          ← optional topic essays
 ```
@@ -21,4 +22,4 @@ Path-specific rules live in `.github/instructions/*.md` and apply automatically 
 - **Content is CC0.** Don't add any per-file license/copyright notices — see `NOTICE.md` for how that interacts with quoted material.
 
 ## When drafting a new entry
-Start from the matching template (`knowledge/books/_template.md`, `knowledge/memes/_template.md`, or `knowledge/context/_template.md`) rather than writing frontmatter from scratch.
+Start from the matching template (`knowledge/books/_template.md`, `knowledge/people/_template.md`, `knowledge/memes/_template.md`, or `knowledge/context/_template.md`) rather than writing frontmatter from scratch.

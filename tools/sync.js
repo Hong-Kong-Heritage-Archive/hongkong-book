@@ -22,6 +22,8 @@ import { runValidation } from "./lib/validation.js"
 const GENERATED_ROOT = path.join(ROOT_DIR, "generated")
 const GENERATED_CONTENT_DIR = path.join(GENERATED_ROOT, "quartz-content")
 const GENERATED_GRAPH_PATH = path.join(GENERATED_ROOT, "graph.json")
+const GENERATED_ENTITY_INDEX_PATH = path.join(ROOT_DIR, "knowledge", ".generated", "entity-index.json")
+const GENERATED_ENTITY_INDEX_SITE_PATH = path.join(GENERATED_CONTENT_DIR, "knowledge", ".generated", "entity-index.json")
 const RAG_EXPORT_PATH = path.join(ROOT_DIR, "export", "rag.jsonl")
 const LLMS_PATH = path.join(ROOT_DIR, "llms.txt")
 
@@ -80,6 +82,18 @@ function toRecordsForMeme(entry) {
   ]
 }
 
+function toRecordsForPerson(entry) {
+  const overview = getSectionContent(entry.body, "Biography")
+  const summary = getSectionContent(entry.body, "Why They Matter to This Project")
+  const analysis = normalizeWhitespace(entry.body)
+
+  return [
+    { depth: "overview", text: normalizeWhitespace(overview) },
+    { depth: "summary", text: normalizeWhitespace(summary) },
+    { depth: "analysis", text: analysis }
+  ]
+}
+
 function toRecordsForContext(entry) {
   const sections = splitH2Sections(entry.body)
   const overview = sections[0]?.content ?? ""
@@ -100,6 +114,7 @@ function metadataForEntry(entry) {
     era: Array.isArray(entry.data.era) ? entry.data.era : [],
     places: Array.isArray(entry.data.places) ? entry.data.places : [],
     themes: Array.isArray(entry.data.themes) ? entry.data.themes : [],
+    roles: Array.isArray(entry.data.roles) ? entry.data.roles : [],
     status: entry.data.status ?? ""
   }
 }
@@ -110,6 +125,8 @@ function toRagRecords(entry) {
     chunks = toRecordsForBook(entry)
   } else if (entry.kind === "meme") {
     chunks = toRecordsForMeme(entry)
+  } else if (entry.kind === "person") {
+    chunks = toRecordsForPerson(entry)
   } else {
     chunks = toRecordsForContext(entry)
   }
@@ -117,7 +134,7 @@ function toRagRecords(entry) {
   return chunks.map((chunk) => ({
     id: `${entry.relPath}#${chunk.depth}`,
     type: entry.kind,
-    title: String(entry.data.title ?? ""),
+    title: String(entry.kind === "person" ? entry.data.name ?? "" : entry.data.title ?? ""),
     metadata: metadataForEntry(entry),
     depth: chunk.depth,
     text: chunk.text,
@@ -150,8 +167,10 @@ function generateLandingPageMarkdown({ counts, generatedAt, repoBaseUrl, branch 
   const specUrl = `${repoBaseUrl}/blob/${branch}/docs/spec.md`
   const terminologyUrl = `${repoBaseUrl}/blob/${branch}/TERMINOLOGY.md`
   const contributingUrl = `${repoBaseUrl}/blob/${branch}/CONTRIBUTING.md`
+  const promptBuilderUrl = `${repoBaseUrl}/blob/${branch}/.github/prompts/contribution-prompt-builder.prompt.md`
   const noticeUrl = `${repoBaseUrl}/blob/${branch}/NOTICE.md`
   const bookTemplateUrl = `${repoBaseUrl}/blob/${branch}/knowledge/books/_template.md`
+  const peopleTemplateUrl = `${repoBaseUrl}/blob/${branch}/knowledge/people/_template.md`
   const memeTemplateUrl = `${repoBaseUrl}/blob/${branch}/knowledge/memes/_template.md`
   const contextTemplateUrl = `${repoBaseUrl}/blob/${branch}/knowledge/context/_template.md`
   const generatedDate = new Date(generatedAt).toISOString().slice(0, 10)
@@ -208,7 +227,9 @@ description: 以合法、開放授權方式建立可供人類與 AI 閱讀的香
 貢獻須使用你真實的GitHub身分。本計劃現階段不支援匿名或化名提交。
 
 - [貢獻指南（CONTRIBUTING.md）](${contributingUrl})
+- [生成貢獻提示工具](${promptBuilderUrl})
 - [書籍模板](${bookTemplateUrl})
+- [人物模板](${peopleTemplateUrl})
 - [概念模板](${memeTemplateUrl})
 - [脈絡模板](${contextTemplateUrl})
 
@@ -262,11 +283,21 @@ async function main() {
   const entryByPath = new Map(entries.map((entry) => [entry.relPath, entry]))
 
   const memeBacklinks = new Map(entries.filter((e) => e.kind === "meme").map((e) => [e.slug, []]))
+  const personBacklinks = new Map(entries.filter((e) => e.kind === "person").map((e) => [e.slug, []]))
   for (const book of entries.filter((e) => e.kind === "book")) {
     const memeSlugs = Array.isArray(book.data.memes) ? book.data.memes : []
     for (const slug of memeSlugs) {
       if (memeBacklinks.has(slug)) {
         memeBacklinks.get(slug).push(book.relPath)
+      }
+    }
+
+    const authorRefs = Array.isArray(book.data.authors) ? book.data.authors : []
+    const legacyAuthor = String(book.data.author ?? "").trim()
+    const peopleRefs = Array.isArray(book.data.people) ? book.data.people : []
+    for (const reference of [...authorRefs, ...(legacyAuthor ? [legacyAuthor] : []), ...peopleRefs]) {
+      if (personBacklinks.has(reference)) {
+        personBacklinks.get(reference).push(book.relPath)
       }
     }
   }
@@ -275,7 +306,7 @@ async function main() {
     id: entry.relPath,
     slug: entry.slug,
     kind: entry.kind,
-    title: entry.data.title ?? "",
+    title: entry.kind === "person" ? entry.data.name ?? "" : entry.data.title ?? "",
     source_path: entry.relPath,
     url_path: toEntityUrlPath(entry.relPath)
   }))
@@ -290,6 +321,20 @@ async function main() {
           from: book.relPath,
           to: targetPath,
           kind: "book-meme"
+        })
+      }
+    }
+
+    const authorRefs = Array.isArray(book.data.authors) ? book.data.authors : []
+    const legacyAuthor = String(book.data.author ?? "").trim()
+    const peopleRefs = Array.isArray(book.data.people) ? book.data.people : []
+    for (const reference of [...authorRefs, ...(legacyAuthor ? [legacyAuthor] : []), ...peopleRefs]) {
+      const targetPath = `knowledge/people/${reference}.md`
+      if (entryByPath.has(targetPath)) {
+        edges.push({
+          from: book.relPath,
+          to: targetPath,
+          kind: Array.isArray(book.data.people) && book.data.people.includes(reference) ? "book-person" : "book-author"
         })
       }
     }
@@ -319,14 +364,34 @@ async function main() {
     const outputPath = path.join(GENERATED_CONTENT_DIR, entry.relPath)
     const data = JSON.parse(JSON.stringify(entry.data ?? {}))
 
+    if (entry.kind === "person" && !data.title) {
+      data.title = data.name ?? entry.slug
+    }
+
     if (entry.kind === "meme") {
       data.books = (memeBacklinks.get(entry.slug) ?? []).sort((a, b) => a.localeCompare(b, "en"))
+    } else if (entry.kind === "person") {
+      data.books = (personBacklinks.get(entry.slug) ?? []).sort((a, b) => a.localeCompare(b, "en"))
     }
 
     const bodyWithEdit = withEditLink(entry.body, entry.relPath)
     const output = matter.stringify(bodyWithEdit, data)
     await writeTextFile(outputPath, output)
   }
+
+  const entityIndex = entries
+    .filter((entry) => ["book", "meme", "person"].includes(entry.kind))
+    .map((entry) => ({
+      slug: entry.slug,
+      title: entry.kind === "person" ? entry.data.name ?? "" : entry.data.title ?? "",
+      type: entry.kind,
+      path: entry.relPath
+    }))
+    .sort((a, b) => a.slug.localeCompare(b.slug, "zh-HK"))
+
+  const entityIndexJson = `${JSON.stringify(entityIndex, null, 2)}\n`
+  await writeTextFile(GENERATED_ENTITY_INDEX_PATH, entityIndexJson)
+  await writeTextFile(GENERATED_ENTITY_INDEX_SITE_PATH, entityIndexJson)
 
   const graphPayload = {
     generated_at: generatedAt,
