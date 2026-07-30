@@ -13,6 +13,7 @@ The candidate list below was a starting proposal. Actual picks for the pilot don
 | 香港六七暴動始末 — 程翔 | non-fiction | ✅ drafted — `knowledge/books/non-fiction/hong-kong-1967-riots-untold-story/index.md` |
 | 誰是大英雄：金庸正邪人物選評 — 吳靄儀 | non-fiction | ✅ drafted — `knowledge/books/non-fiction/who-is-the-great-hero/index.md` (⚠️ needs 2-reviewer sign-off, see EDITORIAL.md) |
 | 情為何物：金庸小說的情與人生 — 吳靄儀 | non-fiction | ✅ drafted — `knowledge/books/non-fiction/what-is-love-jin-yong/index.md` (⚠️ needs 2-reviewer sign-off, see EDITORIAL.md) |
+| 偵探冰室 — 陳浩基, 譚劍, 文善, 黑貓C, 望日, 冒業 | fiction | ✅ drafted — `knowledge/books/fiction/detective-cha-chaan-teng/index.md` |
 
 ### Memes drafted so far
 
@@ -23,6 +24,7 @@ The candidate list below was a starting proposal. Actual picks for the pilot don
 | `sam-bat-gun` (三不管) | 香江神探福邇，字摩斯 ↔ *City of Darkness* | fiction ↔ non-fiction, same district, different books, connected through one real legal fact |
 | `1967-pineapple-bombs` (土製菠蘿) | 13.67 ↔ 《香港六七暴動始末》 | **fiction ↔ non-fiction, second example** — and unlike `sam-bat-gun`, these two books are genuinely complementary on the *same* event: the novel dramatizes the street-level bomb disposal, the history book explains the underground decision-making that led to it |
 | `only-hong-kong-jin-yong` (只有香港) | 射鵰英雄傳 ↔ 《誰是大英雄》↔ 《情為何物》 | **a meme not about place at all** — connects a book to Hong Kong through the *historical conditions of its production* (banned in Taiwan, suppressed in mainland China, only publishable in colonial-era Hong Kong), giving 射鵰英雄傳 a second, independent, sourced reason to belong here |
+| `jianghu-code-to-deductive-truth` (從江湖道義到推理真相) | 射鵰英雄傳 ↔ 13.67 ↔ 偵探冰室 | **the one meme explicitly flagged as an original proposed framing, not established consensus** — no citable source exists for this argument, so the meme itself states that plainly rather than presenting interpretation as fact |
 
 `sam-bat-gun` is the clean proof of the many-to-many design: two books that would never sit next to each other on any conventional shelf (a Sherlock Holmes pastiche and a photography monograph) are connected through one real historical fact about one real place, entirely through explicit frontmatter — nothing inferred.
 
@@ -32,6 +34,13 @@ The candidate list below was a starting proposal. Actual picks for the pilot don
 |---|---|---|
 | `jin-yong` (金庸) | author | 射鵰英雄傳 (`authors:`) ↔ 誰是大英雄, 情為何物 (`people:`) — **the same person as author in fiction and subject in non-fiction**, the case this entity type exists for |
 | `wu-oi-yee` (吳靄儀) | author, critic, barrister, legislator | 誰是大英雄, 情為何物 (`authors:`) — biography (including contested legal/political history) lives here once, not duplicated across both book files |
+| `chan-ho-kei` (陳浩基) | author, mystery-writer | 13.67 ↔ 偵探冰室 (`authors:` on both) — created the moment a second real book justified it, per the bar set when the people/ slice was designed |
+
+### Context essays drafted so far
+
+| Essay | Links | Notes |
+|---|---|---|
+| 香港推理小說的崛起（2010年代起） (`knowledge/context/themes/hk-mystery-fiction-wave.md`) | cites 13.67, 偵探冰室 | Documents the real, sourced industry phenomenon (Taiwan award reliance, 偵探冰室 as a named "scene"); explicitly separates this from the *unsourced* jianghu-code-to-deductive-truth framing rather than blending the two |
 
 Other books' `authors:`/`people:` fields still hold plain-name placeholders (陳浩基, 莫理斯, Greg Girard, Ian Lambot, 程翔, 吳荻舟) rather than blocking on a person page for everyone — see `.github/instructions/people.instructions.md` for why that's deliberate, not a shortcut to fix later.
 

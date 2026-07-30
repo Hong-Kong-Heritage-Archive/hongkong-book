@@ -2,7 +2,7 @@
 ---
 title: 13.67
 title_en: "13.67 (English translation titled The Borrowed)"
-authors: [陳浩基]   # verify: no person page yet — plain-name placeholder per people.instructions.md
+authors: [chan-ho-kei]
 people: []
 year: 2014
 publisher: 皇冠文化出版有限公司
@@ -13,7 +13,7 @@ era: [post-war-1960s, 1970s, 1980s, handover-1997, post-1997]
 # (1967, 1977, 1989, 1997, 2013) — the sixth is unconfirmed, verify before merge
 places: [kowloon-city]
 themes: [推理小說, 警察小說, 社會寫實, 香港身份認同, 六七暴動]
-memes: [borrowed-place-borrowed-time, 1967-pineapple-bombs]
+memes: [borrowed-place-borrowed-time, 1967-pineapple-bombs, jianghu-code-to-deductive-truth]
 editions:
   - lang: zh-HK
     title: 13.67（香港修訂版）
@@ -47,6 +47,8 @@ status: draft
 ## Why It Matters
 
 《13.67》被譽為「只有香港作家才寫得出來」的作品：故事結構緊扣香港由英治到回歸的警政制度演變（例如廉政公署的設立），案件細節亦滲透濃厚本地生活質感。此書同時是香港推理小說走向國際的重要里程碑——英譯本 *The Borrowed* 由多國出版社發行，是近年華文類型小說少數成功打入西方市場的案例，對於香港文學如何透過類型小說（而非純文學）向外傳播香港敘事，極具參考價值。
+
+本書作者陳浩基（[人物條目](/knowledge/people/chan-ho-kei)）本身即是「香港推理小說崛起」這一現象的核心人物（詳見 context：[香港推理小說的崛起](/knowledge/context/themes/hk-mystery-fiction-wave)）。本書也是本站嘗試提出的「從江湖道義到推理真相」框架中，「以智求真相」一端的代表——與武俠小說《射鵰英雄傳》遙相對照，惟需強調這是原創觀察，並非既有學術定論（詳見 meme：[從江湖道義到推理真相](/knowledge/memes/jianghu-code-to-deductive-truth)）。
 
 ## Edition Differences
 

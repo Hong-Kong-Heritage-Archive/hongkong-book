@@ -217,6 +217,15 @@ export async function runValidation(options = {}) {
         })
       }
     }
+
+    if (entry.kind === "meme") {
+      if (Object.prototype.hasOwnProperty.call(entry.data, "books")) {
+        failures.push({
+          relPath: entry.relPath,
+          reason: "meme frontmatter 不應包含 books 欄位；此欄位由 sync.js 生成"
+        })
+      }
+    }
   }
 
   const books = entries.filter((e) => e.kind === "book")

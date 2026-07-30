@@ -22,3 +22,11 @@ themes: []
 
 ## Before creating a new meme file
 Check it doesn't already exist under a different slug — search `knowledge/memes/` first. Two meme files describing the same concept fragments the graph instead of connecting it, which defeats the point of this layer.
+
+## Fact-based memes vs. original-argument memes
+
+Most memes so far document a verifiable historical fact (a treaty, a monument, a ban, an event) — `first_documented` is the year that fact is anchored to, and the "What it is" section states it with the same confidence as any other sourced claim in this knowledge base.
+
+Some memes instead propose a critical or interpretive argument that doesn't (yet) have a citable source — `jianghu-code-to-deductive-truth` is the current example. These are legitimate and welcome, but must say so plainly: open "What it is" with an explicit statement that this is an original framing proposed by this project, not established consensus, and invite readers to supply a source via Issue/PR if one exists. For these, `first_documented` marks the year the framing was first proposed on this site, not a historical event — say so in a comment next to the field, same as the existing example.
+
+Do not blend the two without flagging it. Presenting your own interpretation with the same unhedged confidence as a verified fact is the one thing this layer must not do, regardless of how well-argued the interpretation is.
