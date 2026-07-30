@@ -2,7 +2,7 @@
 ---
 title: 偵探冰室
 title_en: "Detective Cha Chaan Teng (Bing Sat) — Hong Kong Mystery Anthology"
-authors: [chan-ho-kei, 譚劍, 文善, 黑貓C, 望日, 冒業]   # verify: only 陳浩基 has a person page so far — the other five are plain-name placeholders per people.instructions.md
+authors: [chan-ho-kei, 譚劍, 文善, hak-miu-c, 望日, 冒業]   # verify: only 陳浩基 and 黑貓C have person pages so far — the other four are plain-name placeholders per people.instructions.md
 people: []
 year: 2019
 publisher: 星夜出版有限公司
@@ -32,5 +32,5 @@ status: draft
 
 ## Further Reading
 
-- 《13.67》— （[陳浩基](/knowledge/people/chan-ho-kei)）另一部作品，見本站條目，亦是這股風潮國際能見度最高的個案。
+- 《13.67》— 陳浩基（[人物條目](/knowledge/people/chan-ho-kei)）另一部作品，見本站條目，亦是這股風潮國際能見度最高的個案。
 - 系列後續：《偵探冰室．靈》《偵探冰室．疫》（2021）《偵探冰室．貓》（2022）及其後食物主題續作——這些是系列中的獨立作品，不是本書的「edition」，故不列於上方 `editions` 欄位。
