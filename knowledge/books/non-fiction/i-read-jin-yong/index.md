@@ -1,8 +1,7 @@
 ---
-id: i-read-jin-yong
 title: 我看金庸小說
-title_en: "What Is Love? Emotion and Life in Jin Yong's Fiction"
-type: nonfiction
+title_en: "I read Jin Yong's Fiction"
+type: non-fiction
 authors:
   - Ni Kuang
 publisher: 遠流出版
@@ -14,8 +13,6 @@ themes: [金學,武俠小說,武俠小說,香港文學,文化評論]
 editions: []
 contributors: []
 status: draft
-books:
-  - fiction/the-legend-of-the-condor-heroes
 memes:
   - only-hong-kong-jin-yong
 people:
