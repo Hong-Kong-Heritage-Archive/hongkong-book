@@ -9,6 +9,10 @@
       "type": "string",
       "description": "zh-HK canonical name. Deliberately 'name' rather than 'title' (unlike books/memes/context) — a person has a name, not a title."
     },
+    "original_name": {
+      "type": "string",
+      "description": "zh-HK or English name. reference only — not a full translation."
+    },    
     "name_en": {
       "type": "string",
       "description": "English name, reference only — not a full translation."
