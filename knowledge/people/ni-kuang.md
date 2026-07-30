@@ -1,15 +1,16 @@
 ---
-id: ni-kuang
+name_en: ni-kuang
 name: 倪匡
 original_name: 倪聰
-birth_year: 1935
-death_year: 2022
+birth: 1935
+death: 2022
 nationality: 香港
-occupations:
+roles:
   - 作家
   - 編劇
   - 評論家
-summary: 香港著名科幻及武俠小說家、編劇，與金庸、黃霑、蔡瀾合稱「香港四大才子」。著有《衛斯理系列》、《原振俠系列》等，並開創了「金學」研究先河。
+contributors: []
+status: draft
 ---
 
 # 倪匡
