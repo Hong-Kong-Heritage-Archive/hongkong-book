@@ -2,9 +2,8 @@
 name_en: ni-kuang
 name: 倪匡
 original_name: 倪聰
-birth: 1935
-death: 2022
-nationality: 香港
+born: 1935
+died: 2022
 roles:
   - 作家
   - 編劇
