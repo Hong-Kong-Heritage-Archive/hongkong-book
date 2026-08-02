@@ -14,7 +14,7 @@ era: []   # deliberately blank — the story is set in Song/Mongol-era China (c.
           # not Hong Kong. See "Why It Matters" for why this book is still in scope.
 places: []
 themes: [武俠小說, 報章連載小說, 香港出版史]
-memes: [song-wong-toi, only-hong-kong-jin-yong]
+memes: [song-wong-toi, only-hong-kong-jin-yong, jianghu-code-to-deductive-truth]
 editions:
   - lang: zh-HK
     title: 射鵰英雄傳（修訂版）
@@ -50,6 +50,8 @@ status: draft
 值得一提的是，本書故事雖止於1227年前後，但「射鵰三部曲」所敘述的宋元興亡大局，最終正正結束於九龍城一帶——南宋末代二帝逃避元軍追擊、南遷至此避難的史蹟，即今日九龍城「宋王臺」的由來（詳見 meme：[宋王臺](/knowledge/memes/song-wong-toi)）。這是本書與香港地理產生連結的方式：不是透過故事場景，而是透過香港作為這段歷史真正落幕之地的集體記憶。
 
 另一層與香港的連結，則與地理無關，而與歷史條件有關：文學評論家吳靄儀曾論斷，唯獨香港、且唯獨那個年代的香港，才可能孕育出金庸——本書在同一時期的台灣被查禁、在中國大陸長期被視為落後文類打壓，卻能在香港自由連載成書（詳見 meme：[只有香港](/knowledge/memes/only-hong-kong-jin-yong)）。
+
+第三層連結則指向文類本身的演變：本書作為武俠小說「以力維持江湖道義」的代表作，與2010年代崛起的香港推理小說（「以智求真相」）形成本站嘗試提出的一組對照框架——需強調這是原創觀察，並非既有學術定論（詳見 meme：[從江湖道義到推理真相](/knowledge/memes/jianghu-code-to-deductive-truth)）。
 
 ## Edition Differences
 
