@@ -5,7 +5,7 @@
 title: 情為何物：金庸小說的情與人生
 title_en: "What Is Love? Emotion and Life in Jin Yong's Fiction"
 authors: [wu-oi-yee]
-people: [jin-yong]
+people: [jin-yong, ni-kuang]
 year: 2025
 publisher: 壹壹陸工作室有限公司
 isbn: ""   # verify: ISBN not confirmed in available sources
