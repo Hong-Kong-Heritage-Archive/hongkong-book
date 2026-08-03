@@ -14,6 +14,19 @@ The candidate list below was a starting proposal. Actual picks for the pilot don
 | 誰是大英雄：金庸正邪人物選評 — 吳靄儀 | non-fiction | ✅ drafted — `knowledge/books/non-fiction/who-is-the-great-hero/index.md` (⚠️ needs 2-reviewer sign-off, see EDITORIAL.md) |
 | 情為何物：金庸小說的情與人生 — 吳靄儀 | non-fiction | ✅ drafted — `knowledge/books/non-fiction/what-is-love-jin-yong/index.md` (⚠️ needs 2-reviewer sign-off, see EDITORIAL.md) |
 | 偵探冰室 — 陳浩基, 譚劍, 文善, 黑貓C, 望日, 冒業 | fiction | ✅ drafted — `knowledge/books/fiction/detective-cha-chaan-teng/index.md` |
+| 崩堤之夏 — 黑貓C | fiction | ✅ drafted — `knowledge/books/fiction/summer-of-the-breached-dam/index.md` (⚠️ needs 2-reviewer sign-off, see EDITORIAL.md — directly engages the 2019 protest movement) |
+| Be Water, My Friend：似水無形，李小龍的人生哲學 — 李香凝 (Shannon Lee) | non-fiction | ✅ drafted — `knowledge/books/non-fiction/be-water-my-friend-bruce-lee/index.md` |
+| Hong Kong Action Cinema — Bey Logan | non-fiction | ✅ drafted — `knowledge/books/non-fiction/hong-kong-action-cinema/index.md` |
+| 追龍 — 倪匡 | fiction | ✅ drafted — `knowledge/books/fiction/chasing-the-dragon/index.md` (⚠️ needs 2-reviewer sign-off — author-confirmed political allegory about Hong Kong's fate) |
+| 闖禍 — 倪匡 | fiction | ✅ drafted — `knowledge/books/fiction/wreaking-havoc/index.md` (⚠️ needs 2-reviewer sign-off; also needs source-verification — political reading is sourced only to a news retrospective's framing, not a confirmed quote from the book itself) |
+| 命運 — 倪匡 | fiction | ✅ drafted — `knowledge/books/fiction/destiny-wisely/index.md` — **corrected mid-pilot**: originally tagged "no political reading found," then a real scholarly source (張智琦's thesis-based article) turned up grouping it with 追龍 under handover anxiety. Correction kept visible in the file via strikethrough rather than silently edited |
+| 新年 — 倪匡 | fiction | ✅ drafted — `knowledge/books/fiction/the-new-year-wisely/index.md` — **corrected mid-pilot**: same source revealed a colonial-police-corruption reading, deliberately kept separate from the `political-prophecy` meme since it's a different angle (present-tense institutional critique, not future-facing prophecy/anxiety) |
+| Tai-Pan — James Clavell | fiction | ✅ drafted — `knowledge/books/fiction/tai-pan/index.md` |
+| 四代香港人 — 呂大樂 | non-fiction | ✅ drafted — `knowledge/books/non-fiction/four-generations-of-hong-kong-people/index.md` |
+| 傾城之戀 — 張愛玲 | fiction | ✅ drafted — `knowledge/books/fiction/love-in-a-fallen-city/index.md` |
+| The Fall of Hong Kong — Philip Snow | non-fiction | ✅ drafted — `knowledge/books/non-fiction/the-fall-of-hong-kong/index.md` |
+| 鹿鼎記 — 金庸 | fiction | ✅ drafted — `knowledge/books/fiction/the-deer-and-the-cauldron/index.md` (⚠️ needs 2-reviewer sign-off — political triangle allegory, layered by evidentiary strength) |
+| 小寶神功 — 劉天賜 | non-fiction | ✅ drafted — `knowledge/books/non-fiction/siu-bo-magic-skill/index.md` — 1984 original used as primary per explicit instruction, four later reissues tracked as Edition Differences |
 
 ### Memes drafted so far
 
@@ -24,7 +37,23 @@ The candidate list below was a starting proposal. Actual picks for the pilot don
 | `sam-bat-gun` (三不管) | 香江神探福邇，字摩斯 ↔ *City of Darkness* | fiction ↔ non-fiction, same district, different books, connected through one real legal fact |
 | `1967-pineapple-bombs` (土製菠蘿) | 13.67 ↔ 《香港六七暴動始末》 | **fiction ↔ non-fiction, second example** — and unlike `sam-bat-gun`, these two books are genuinely complementary on the *same* event: the novel dramatizes the street-level bomb disposal, the history book explains the underground decision-making that led to it |
 | `only-hong-kong-jin-yong` (只有香港) | 射鵰英雄傳 ↔ 《誰是大英雄》↔ 《情為何物》 | **a meme not about place at all** — connects a book to Hong Kong through the *historical conditions of its production* (banned in Taiwan, suppressed in mainland China, only publishable in colonial-era Hong Kong), giving 射鵰英雄傳 a second, independent, sourced reason to belong here |
-| `jianghu-code-to-deductive-truth` (從江湖道義到推理真相) | 射鵰英雄傳 ↔ 13.67 ↔ 偵探冰室 | **the one meme explicitly flagged as an original proposed framing, not established consensus** — no citable source exists for this argument, so the meme itself states that plainly rather than presenting interpretation as fact |
+| `jianghu-code-to-deductive-truth` (從江湖道義到推理真相) | 射鵰英雄傳 ↔ 13.67 ↔ 偵探冰室 ↔ 崩堤之夏 | **the one meme explicitly flagged as an original proposed framing, not established consensus** — no citable source exists for this argument, so the meme itself states that plainly rather than presenting interpretation as fact |
+| `anti-extradition-movement` (反送中) | 崩堤之夏 only, so far | ⚠️ politically sensitive — the 2019 protest movement itself, factually scoped (dates, events), no characterization asserted in the site's own voice |
+| `june-fourth-vigil` (六四維園燭光晚會) | 崩堤之夏 only, so far | ⚠️ politically sensitive — documents the 30-year Victoria Park vigil tradition and its 2020 cessation as a factual timeline, not an argument |
+| `be-water` (如水) | 崩堤之夏 ↔ Be Water, My Friend | Traces a real, sourced lineage from a 1971 Bruce Lee interview through Daoist philosophy to the 2019 protest tactic — now anchored by two books at opposite ends of that lineage, one from the martial-arts source, one from its protest-era afterlife |
+| `jeet-kune-do` (截拳道) | Be Water, My Friend ↔ Hong Kong Action Cinema | Refined mid-pilot: the original hedge ("emblematic of Hong Kong itself") got replaced with a more specific, sourced claim — JKD's documented influence on HK action-film choreography (Jackie Chan's own "without Bruce Lee, no me" quote; Jet Li's 1994 homage film), anchored by a real film-history book. The broader identity metaphor is kept as an explicitly-labeled *more* speculative aside, not the meme's main claim |
+| `political-prophecy` (政治預言) | 追龍 ↔ 命運 ↔ 闖禍 (NOT 新年) | Composition changed mid-pilot after better sourcing turned up — see 命運/新年 rows above. The point being demonstrated: when new sources arrive, entries get corrected *visibly* (strikethrough + explanation in the file), not silently rewritten |
+| `generation-zero` (第零代香港人) | Tai-Pan ↔ 四代香港人 | Explicitly proposed by the user, built with the same honesty framing as `jianghu-code-to-deductive-truth` — extends 呂大樂's own numbered generation system backward to Tai-Pan's 1841 founding era, but flags plainly that neither author made this connection themselves |
+| `first-generation` (第一代香港人) | 傾城之戀 ↔ The Fall of Hong Kong | Extends the same generation-numbering system to 呂大樂's actual "First Generation" — one book supplies the literary witness (張愛玲 was a HKU student living through the 1941 fall), the other supplies the historical evidence for *why* that generation turned out frugal and self-reliant (Snow documents the desertion, brutality, and postwar British retreat) |
+| `three-forces` (三方夾縫) | 鹿鼎記 only | ⚠️ needs 2-reviewer sign-off — mixes one author-confirmed fact (Jin Yong: 神龍教=CCP) with several original-strength site interpretations (天地會≈14K, 清廷≈colonial govt, the 1969/1967-riots timing, the 獅子山下 contrast), each explicitly labeled by evidentiary strength rather than flattened into one confidence level. Also extends the generation framework — 韋小寶 positioned as "Generation 1.5" (Gen-1-poor origin, Gen-2-style prosperous outcome) rather than forced into either whole number |
+| `sai-gaai-jai` (世界仔) | 鹿鼎記 ↔ 小寶神功 | The character-archetype reading, deliberately kept separate from `three-forces`'s political reading — same book, two genuinely different claims |
+
+### Context essays drafted so far
+
+| Essay | Links | Notes |
+|---|---|---|
+| 香港推理小說的崛起（2010年代起） (`knowledge/context/themes/hk-mystery-fiction-wave.md`) | cites 13.67, 偵探冰室 | Documents the real, sourced industry phenomenon (Taiwan award reliance, 偵探冰室 as a named "scene"); explicitly separates this from the *unsourced* jianghu-code-to-deductive-truth framing rather than blending the two |
+| 倪學：衛斯理系列的殖民與冷戰讀法 (`knowledge/context/themes/ni-xue-wisely-colonial-cold-war.md`) | cites 追龍, 命運, 闖禍, 新年 | ⚠️ needs 2-reviewer sign-off — built around a real academic source (張智琦's thesis-based article); explicitly lists other Wisely titles the source discusses that this KB hasn't individually catalogued yet, rather than implying the essay's scope matches the pilot's actual book coverage |
 
 `sam-bat-gun` is the clean proof of the many-to-many design: two books that would never sit next to each other on any conventional shelf (a Sherlock Holmes pastiche and a photography monograph) are connected through one real historical fact about one real place, entirely through explicit frontmatter — nothing inferred.
 
@@ -35,6 +64,9 @@ The candidate list below was a starting proposal. Actual picks for the pilot don
 | `jin-yong` (金庸) | author | 射鵰英雄傳 (`authors:`) ↔ 誰是大英雄, 情為何物 (`people:`) — **the same person as author in fiction and subject in non-fiction**, the case this entity type exists for |
 | `wu-oi-yee` (吳靄儀) | author, critic, barrister, legislator | 誰是大英雄, 情為何物 (`authors:`) — biography (including contested legal/political history) lives here once, not duplicated across both book files |
 | `chan-ho-kei` (陳浩基) | author, mystery-writer | 13.67 ↔ 偵探冰室 (`authors:` on both) — created the moment a second real book justified it, per the bar set when the people/ slice was designed |
+| `hak-miu-c` (黑貓C) | author, mystery-writer | 偵探冰室 ↔ 崩堤之夏 (`authors:` on both) — same bar as 陳浩基; a pen name with no publicly known legal name, `born: 0` reflects that honestly rather than guessing |
+| `bruce-lee` (李小龍) | martial artist, actor, philosopher | Be Water, My Friend (`people:`, as subject) — connects to *two* memes (`be-water`, `jeet-kune-do`) rather than another book, showing the person layer isn't only for cross-book links |
+| `ni-kuang` (倪匡) | author, screenwriter, mystery/sci-fi writer | 追龍 ↔ 闖禍 ↔ 命運 ↔ 新年 (`authors:` on all four) — four books by one author, three now carrying the political-prophecy meme after correction; his own biography (fled mainland land-reform violence, close friend of 金庸, founder of the 金學 tradition before 吳靄儀) also cross-links to the existing 金庸/明報 cluster |
 
 ### Context essays drafted so far
 
@@ -42,7 +74,7 @@ The candidate list below was a starting proposal. Actual picks for the pilot don
 |---|---|---|
 | 香港推理小說的崛起（2010年代起） (`knowledge/context/themes/hk-mystery-fiction-wave.md`) | cites 13.67, 偵探冰室 | Documents the real, sourced industry phenomenon (Taiwan award reliance, 偵探冰室 as a named "scene"); explicitly separates this from the *unsourced* jianghu-code-to-deductive-truth framing rather than blending the two |
 
-Other books' `authors:`/`people:` fields still hold plain-name placeholders (陳浩基, 莫理斯, Greg Girard, Ian Lambot, 程翔, 吳荻舟) rather than blocking on a person page for everyone — see `.github/instructions/people.instructions.md` for why that's deliberate, not a shortcut to fix later.
+Other books' `authors:`/`people:` fields still hold plain-name placeholders (莫理斯, Greg Girard, Ian Lambot, 程翔, 吳荻舟, 譚劍, 文善, 望日, 冒業) rather than blocking on a person page for everyone — see `.github/instructions/people.instructions.md` for why that's deliberate, not a shortcut to fix later.
 
 Remaining non-fiction picks: open for the next round.
 
