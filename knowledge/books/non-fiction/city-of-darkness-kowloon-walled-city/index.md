@@ -50,3 +50,4 @@ status: draft
 
 - 九龍城寨主權地位的歷史源流，另見 meme：[三不管](/knowledge/memes/sam-bat-gun)。
 - 官方網站 cityofdarkness.co.uk 收錄部分影像及延伸資料。
+- 余兒《九龍城寨》— 見本站條目，作者在訪問中提到曾參考本書了解城寨實貌，是虛構創作直接建基於本書之上的具體例子。
