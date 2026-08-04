@@ -32,7 +32,7 @@ editions:
     title: 小寶神功再現：賜官精選文集
     year: 2023
     publisher: 天地圖書
-    notes: ISBN 9789888551118，合輯《小寶神功》《處世金鐘罩》《蓋世神功》《小寶神功語錄》四書精華重新編訂
+    notes: ISBN 9789888551118
 contributors: []
 status: draft
 ---
@@ -48,6 +48,11 @@ status: draft
 ## Why It Matters
 
 本書是「韋小寶＝世界仔」這一香港文化讀法最具體、最暢銷的實踐案例（詳見 meme：[世界仔](/knowledge/memes/sai-gaai-jai)）——與《鹿鼎記》本身可能承載的政治寓意不同（詳見本站條目：《鹿鼎記》，以及 meme：[三方夾縫](/knowledge/memes/three-forces)），本書關注的是韋小寶處世手段中，可供現實生活借鏡的實用智慧，而非政治隱喻，兩種讀法屬不同層次，不宜混為一談，惟兩者共享同一原著文本，值得合觀。本書原序出自倪匡（[人物條目](/knowledge/people/ni-kuang)）手筆，亦為本站已收錄的倪匡條目增添一則新的連結。
+
+
+## Edition Differences
+
+- **2023**合輯:《小寶神功》《處世金鐘罩》《蓋世神功》《小寶神功語錄》四書精華重新編訂
 
 ## Further Reading
 
