@@ -14,7 +14,7 @@ era: []   # deliberately blank — story is set in Ming-dynasty China (正德年
           # not Hong Kong, same reasoning as 射鵰英雄傳/鹿鼎記's era/places
 places: []
 themes: [武俠小說, 狼派武俠, 現代運動科學, 門派滅絕與重建]
-memes: [zaap-ga, three-forces]
+memes: [zaap-ga, three-forces, jianghu-code-to-deductive-truth]
 editions: []
 contributors: []
 status: draft
@@ -30,7 +30,7 @@ status: draft
 
 ## Why It Matters
 
-倪匡（[人物條目](/knowledge/people/ni-kuang)）公開讚譽本書是「金庸、古龍之後，最好看的武俠小說」，這一評價本身，正是本站已收錄的兩代武俠傳統——金庸式古典武俠，與喬靖夫代表的「狼派」新武俠——之間一條具體而明確的連結（詳見 context：[香港武俠小說的當代轉型：從金庸到狼派](/knowledge/context/themes/21st-century-wuxia)）。「破門六劍」門派盡毀後打破門派界限、融匯百家武學而非死守舊統的求生方式，是本站「雜家」meme的具體例子（詳見 meme：[雜家](/knowledge/memes/zaap-ga)）——這一面向側重的是知識／技藝傳承上「打破門戶之見、追求適應力與創新」，與「世界仔」meme中韋小寶式側重「個人利益周旋」的處世性格屬不同層次，兩者已分拆為獨立meme處理，避免混為一談。本書亦可與「三方夾縫」meme的核心母題——面對不可逆轉的強大勢力，個體如何憑靈活智慧、突破框架的勇氣，以及對自由與同伴的執著，在夾縫中求存——互相呼應，惟此一連結屬主題層面的呼應，並非如《鹿鼎記》般具體的三方政治勢力對應（詳見 meme：[三方夾縫](/knowledge/memes/three-forces)）。
+倪匡（[人物條目](/knowledge/people/ni-kuang)）公開讚譽本書是「金庸、古龍之後，最好看的武俠小說」，這一評價本身，正是本站已收錄的兩代武俠傳統——金庸式古典武俠，與喬靖夫代表的「狼派」新武俠——之間一條具體而明確的連結（詳見 context：[香港武俠小說的當代轉型：從金庸到狼派](/knowledge/context/themes/21st-century-wuxia)）。「破門六劍」門派盡毀後打破門派界限、融匯百家武學而非死守舊統的求生方式，是本站「雜家」meme的具體例子（詳見 meme：[雜家](/knowledge/memes/zaap-ga)）——這一面向側重的是知識／技藝傳承上「打破門戶之見、追求適應力與創新」，與「世界仔」meme中韋小寶式側重「個人利益周旋」的處世性格屬不同層次，兩者已分拆為獨立meme處理，避免混為一談。本書亦可與「三方夾縫」meme的核心母題——面對不可逆轉的強大勢力，個體如何憑靈活智慧、突破框架的勇氣，以及對自由與同伴的執著，在夾縫中求存——互相呼應，惟此一連結屬主題層面的呼應，並非如《鹿鼎記》般具體的三方政治勢力對應（詳見 meme：[三方夾縫](/knowledge/memes/three-forces)）。本書亦是本站「從江湖道義到推理真相」meme中「力／江湖道義」一端的在地化案例之一——「破門六劍」所效忠的並非待恢復的正統或大義，而是門派已毀後同伴之間純粹的生存與情誼，這種對宏大敘事保持距離的傾向，是一種可辨識的香港式在地精神，即使故事本身設定在明代中國、並未移植到香港地理（詳見 meme：[從江湖道義到推理真相](/knowledge/memes/jianghu-code-to-deductive-truth)，惟此一延伸觀察屬本站原創提出）。
 
 ## Further Reading
 

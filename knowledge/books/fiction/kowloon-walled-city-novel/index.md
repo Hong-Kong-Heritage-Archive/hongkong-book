@@ -15,7 +15,7 @@ era: [post-1997]   # verify: exact story-internal setting year unconfirmed — W
                     # publication in 2008; flagged for review rather than guessed
 places: [kowloon-city]
 themes: [黑幫小說, 武俠元素, 九龍城寨, 漫畫改編]
-memes: [sam-bat-gun, borrowed-place-borrowed-time, three-forces]
+memes: [sam-bat-gun, borrowed-place-borrowed-time, three-forces, jianghu-code-to-deductive-truth]
 editions: []
 contributors: []
 status: draft
@@ -31,7 +31,7 @@ status: draft
 
 ## Why It Matters
 
-作者余兒在訪問中提到，兒時曾隨長輩經過九龍城寨外圍卻未曾進入，成年後為寫作搜集資料，才透過《City of Darkness》等攝影集深入了解城寨實貌（詳見本站條目：《City of Darkness》）——這是虛構創作直接建基於本站已收錄紀實著作之上的具體例子。小說故事發生的地帶，正是「三不管」meme所指涉的主權真空地帶本身（詳見 meme：[三不管](/knowledge/memes/sam-bat-gun)），而系列前傳《龍頭》涉及的1956年雙十暴動，更與本站「三方夾縫」meme中14K／國民黨背景三合會的考證直接相關（詳見 meme：[三方夾縫](/knowledge/memes/three-forces)）——需說明，這一連結建基於具體歷史事件的重疊，確定性高於單純主題呼應。九龍城寨本身「名義上屬中國、實際治權真空」的特殊地位，某程度上亦是香港自身「借來的地方，借來的時間」處境的微縮版本，詳見 meme：[借來的地方，借來的時間](/knowledge/memes/borrowed-place-borrowed-time)（惟此一延伸類比屬本站觀點，非既有評論定論）。本書亦是「香港武俠小說當代轉型」現象的具體案例之一，見 context：[香港武俠小說的當代轉型：從金庸到狼派](/knowledge/context/themes/21st-century-wuxia)。
+作者余兒在訪問中提到，兒時曾隨長輩經過九龍城寨外圍卻未曾進入，成年後為寫作搜集資料，才透過《City of Darkness》等攝影集深入了解城寨實貌（詳見本站條目：《City of Darkness》）——這是虛構創作直接建基於本站已收錄紀實著作之上的具體例子。小說故事發生的地帶，正是「三不管」meme所指涉的主權真空地帶本身（詳見 meme：[三不管](/knowledge/memes/sam-bat-gun)），而系列前傳《龍頭》涉及的1956年雙十暴動，更與本站「三方夾縫」meme中14K／國民黨背景三合會的考證直接相關（詳見 meme：[三方夾縫](/knowledge/memes/three-forces)）——需說明，這一連結建基於具體歷史事件的重疊，確定性高於單純主題呼應。九龍城寨本身「名義上屬中國、實際治權真空」的特殊地位，某程度上亦是香港自身「借來的地方，借來的時間」處境的微縮版本，詳見 meme：[借來的地方，借來的時間](/knowledge/memes/borrowed-place-borrowed-time)（惟此一延伸類比屬本站觀點，非既有評論定論）。本書亦是「香港武俠小說當代轉型」現象的具體案例之一，見 context：[香港武俠小說的當代轉型：從金庸到狼派](/knowledge/context/themes/21st-century-wuxia)。本書更是本站「從江湖道義到推理真相」meme中，「力／江湖道義」一端在地化演變的具體案例——金庸筆下相對抽象的「江湖」，在本書中收縮成一個真實存在的香港地點，「道義」亦具體落實為真實三合會脈絡下的兄弟情義（詳見 meme：[從江湖道義到推理真相](/knowledge/memes/jianghu-code-to-deductive-truth)，惟此一延伸觀察屬本站原創提出）。
 
 ## Further Reading
 
