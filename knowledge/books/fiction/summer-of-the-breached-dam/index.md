@@ -15,7 +15,7 @@ type: fiction
 era: [2019-protests]
 places: [victoria-park, prince-edward-station]
 themes: [推理小說, 反送中文學, 警暴爭議, 集體記憶]
-memes: [anti-extradition-movement, june-fourth-vigil, be-water, jianghu-code-to-deductive-truth]
+memes: [anti-extradition-movement, june-fourth-vigil, be-water, jianghu-code-to-deductive-truth, ghostly-realism]
 editions: []
 contributors: []
 status: draft
@@ -37,7 +37,7 @@ status: draft
 
 本書出版於《港區國安法》生效後不久的時空脈絡中——據2021年一篇書評指出，截至該年，已有34本香港出版的著作從公共圖書館下架。本書至今仍可公開流通、討論，其本身的存在與可及性，直接呼應本計劃「以合法方式保存香港書籍知識，避免其結構性消失」的創立宗旨。
 
-書名「崩堤」的意象，源自「be water」抗爭哲學的延伸比喻（詳見 meme：[如水](/knowledge/memes/be-water)）；敘事以六四悼念晚會開篇（詳見 meme：[六四維園燭光晚會](/knowledge/memes/june-fourth-vigil)），整體則是反送中運動（詳見 meme：[反送中](/knowledge/memes/anti-extradition-movement)）的具體文學回應。本書同時是本站「從江湖道義到推理真相」框架中「以智求真相」一端一個格外直接的例證——當現實中理性追查真相的制度性渠道被阻斷，小說本身便以「超能力測謊」這種超現實手法，具象化對「智」能否仍然抵達真相的疑問（詳見 meme：[從江湖道義到推理真相](/knowledge/memes/jianghu-code-to-deductive-truth)，惟此框架本身仍是本站原創觀察，非既有學術定論）。
+書名「崩堤」的意象，源自「be water」抗爭哲學的延伸比喻（詳見 meme：[如水](/knowledge/memes/be-water)）；敘事以六四悼念晚會開篇（詳見 meme：[六四維園燭光晚會](/knowledge/memes/june-fourth-vigil)），整體則是反送中運動（詳見 meme：[反送中](/knowledge/memes/anti-extradition-movement)）的具體文學回應。本書同時是本站「從江湖道義到推理真相」框架中「以智求真相」一端一個格外直接的例證——當現實中理性追查真相的制度性渠道被阻斷，小說本身便以「超能力測謊」這種超現實手法，具象化對「智」能否仍然抵達真相的疑問（詳見 meme：[從江湖道義到推理真相](/knowledge/memes/jianghu-code-to-deductive-truth)，惟此框架本身仍是本站原創觀察，非既有學術定論）。這一「超能力」設定本身，亦可歸入本站「靈異寫實」meme——雖非鬼魂，卻是同一種以超現實裝置處理現實創傷的敘事手法（詳見 meme：[靈異寫實](/knowledge/memes/ghostly-realism)）。
 
 ## Further Reading
 
