@@ -2,7 +2,7 @@
 ---
 title: 偵探冰室
 title_en: "Detective Cha Chaan Teng (Bing Sat) — Hong Kong Mystery Anthology"
-authors: [chan-ho-kei, 譚劍, 文善, hak-miu-c, 望日, 冒業]   # verify: only 陳浩基 and 黑貓C have person pages so far — the other four are plain-name placeholders per people.instructions.md
+authors: [chan-ho-kei, tam-kim, man-sin, hak-miu-c, mong-yat, mo-yip]
 people: []
 year: 2019
 publisher: 星夜出版有限公司
@@ -20,7 +20,7 @@ status: draft
 
 ## 30-Second Overview
 
-《偵探冰室》是香港首本以本土元素為主題的推理小說合集，2019年由星夜出版推出，集合陳浩基、譚劍、文善、黑貓C、望日、冒業六位香港推理小說作家，各自以重慶大廈、二樓書店、動漫節、港鐵等香港在地場景創作獨立短篇。
+《偵探冰室》是香港首本以本土元素為主題的推理小說合集，2019年由星夜出版推出，集合陳浩基（[人物條目](/knowledge/people/chan-ho-kei)）、譚劍（[人物條目](/knowledge/people/tam-kim)）、文善（[人物條目](/knowledge/people/man-sin)）、黑貓C（[人物條目](/knowledge/people/hak-miu-c)）、望日（[人物條目](/knowledge/people/mong-yat)）、冒業（[人物條目](/knowledge/people/mo-yip)）六位香港推理小說作家，各自以重慶大廈、二樓書店、動漫節、港鐵等香港在地場景創作獨立短篇。
 
 ## 5-Minute Summary
 

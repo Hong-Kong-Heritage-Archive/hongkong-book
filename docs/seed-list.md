@@ -86,6 +86,11 @@ The candidate list below was a starting proposal. Actual picks for the pilot don
 | `bruce-lee` (李小龍) | martial artist, actor, philosopher | Be Water, My Friend (`people:`, as subject) — connects to *two* memes (`be-water`, `jeet-kune-do`) rather than another book, showing the person layer isn't only for cross-book links |
 | `ye-tau-ji` (夜透紫) | author, light-novel writer | Same justification pattern as Bruce Lee — only 1 fully-catalogued book (字之魂), but connects `traditional-simplified-anxiety` and the 倪匡科幻獎 award-name link to 倪匡. Her page explicitly corrects an overstated claim about co-authoring the *catalogued* 偵探冰室 volume — she joined a later, uncatalogued volume, and the entry says so rather than fudging the timeline |
 | `liu-yi-chang` (劉以鬯) | author, novelist, editor | 酒徒 (`authors:`) — added directly on GitHub, not via this chat |
+| `tam-kim` (譚劍) | author, sci-fi/mystery writer | 偵探冰室 ↔ 偵探冰室．靈 — refactored from plain-name placeholder once 偵探冰室．靈 (added independently on GitHub) made the second-book connection real |
+| `man-sin` (文善) | author, mystery writer | 偵探冰室 ↔ 偵探冰室．靈 — same refactor |
+| `mok-lei-si` (莫理斯) | author, mystery writer | 香江神探福邇，字摩斯 ↔ 偵探冰室．靈 — his 2nd-book connection came from a different pairing than the other four (his first book was already catalogued; 偵探冰室．靈 was the second) |
+| `mong-yat` (望日) | author, publisher | 偵探冰室 ↔ 偵探冰室．靈 — also the actual founder of 星夜出版, the press that published both books; not just a co-author |
+| `mo-yip` (冒業) | author, critic, genre-historian | 偵探冰室 ↔ 偵探冰室．靈 — also translated a Japanese scholar's history of HK mystery fiction into Chinese |
 | `ni-kuang` (倪匡) | author, screenwriter, mystery/sci-fi writer | 追龍 ↔ 闖禍 ↔ 命運 ↔ 新年 (`authors:` on all four) — four books by one author, three now carrying the political-prophecy meme after correction; his own biography (fled mainland land-reform violence, close friend of 金庸, founder of the 金學 tradition before 吳靄儀) also cross-links to the existing 金庸/明報 cluster |
 
 ### Context essays drafted so far

@@ -2,7 +2,7 @@
 ---
 title: 香江神探福邇，字摩斯
 title_en: "The Hong Kong Sleuth, Fu Ermi (styled Mosi) — no official English edition yet, working translation only"
-authors: [莫理斯]   # verify: no person page yet — plain-name placeholder per people.instructions.md
+authors: [mok-lei-si]
 people: []
 year: 2017
 publisher: 萬里機構．知出版社
@@ -29,7 +29,7 @@ status: draft
 
 ## 30-Second Overview
 
-《神探福邇，字摩斯》是香港作家莫理斯「魔改」柯南‧道爾《福爾摩斯探案》而成的推理小說，將故事場景移植至十九世紀末英治初期的香港，福爾摩斯化身滿洲鑲藍旗出身的神探「福邇」，華生則變為華人醫師「華笙」。
+《神探福邇，字摩斯》是香港作家莫理斯（[人物條目](/knowledge/people/mok-lei-si)）「魔改」柯南‧道爾《福爾摩斯探案》而成的推理小說，將故事場景移植至十九世紀末英治初期的香港，福爾摩斯化身滿洲鑲藍旗出身的神探「福邇」，華生則變為華人醫師「華笙」。
 
 ## 5-Minute Summary
 

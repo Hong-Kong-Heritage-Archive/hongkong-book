@@ -56,9 +56,16 @@ Assemble this in zh-HK (client-side string templating — plain JS is fine, no t
 {{/}}
 
 ## 格式規範（務必嚴格依照，不要自行更改欄位名稱或結構）
-- Schema：{{book_schema_raw_github_url}}
-- 撰寫規範及慣例：{{books_instructions_raw_github_url}}
-- 空白範本：{{book_template_raw_github_url}}
+- Schema：
+https://raw.githubusercontent.com/Hong-Kong-Heritage-Archive/hongkong-book/refs/heads/main/schemas/book.schema.json
+https://raw.githubusercontent.com/Hong-Kong-Heritage-Archive/hongkong-book/refs/heads/main/schemas/meme.schema.json
+https://raw.githubusercontent.com/Hong-Kong-Heritage-Archive/hongkong-book/refs/heads/main/schemas/people.schema.json
+
+
+- 撰寫規範及慣例：https://raw.githubusercontent.com/Hong-Kong-Heritage-Archive/hongkong-book/refs/heads/main/.github/instructions/books.instructions.md
+https://raw.githubusercontent.com/Hong-Kong-Heritage-Archive/hongkong-book/refs/heads/main/.github/instructions/memes.instructions.md
+https://raw.githubusercontent.com/Hong-Kong-Heritage-Archive/hongkong-book/refs/heads/main/.github/instructions/people.instructions.md
+- 空白範本：https://raw.githubusercontent.com/Hong-Kong-Heritage-Archive/hongkong-book/refs/heads/main/knowledge/books/_template.md
 
 ## 合法性規則（務必遵守，不可妥協）
 - 絕對不可以逐字重製書籍原文內容，包括不可以用引用區塊呈現長段原文。

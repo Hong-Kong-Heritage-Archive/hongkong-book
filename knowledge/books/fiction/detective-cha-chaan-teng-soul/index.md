@@ -3,7 +3,7 @@
 title: 偵探冰室．靈
 title_en: "Detective Cha Chaan Teng (Bing Sat) — Soul"
 type: fiction
-authors: [chan-ho-kei, 譚劍, 文善, hak-miu-c, 莫理斯, 望日, 冒業]   # verify: only 陳浩基 and 黑貓C have person pages so far — the other four are plain-name placeholders per people.instructions.md
+authors: [chan-ho-kei, tam-kim, man-sin, hak-miu-c, mok-lei-si, mong-yat, mo-yip]
 year: 2020
 publisher: 星夜出版有限公司
 isbn: "9789863195016"
@@ -20,7 +20,7 @@ status: draft
 # 偵探冰室．靈
 
 ## 30-Second Overview
-《偵探冰室．靈》由六位香港本土推理作家（陳浩基、譚劍、莫理斯、黑貓C、望日、冒業）再度聯手創作。本書延續了前作《偵探冰室》以香港在地文化為舞台的特色，並以「靈異與怪誕」為核心主題，收錄六篇將都市傳說、超自然現象、鬼魂執念與邏輯推理相結合的短篇小說。作品以表面上的「無理可推」或「超自然異象」開場，最終透視香港當代社會現實、群體創傷與人性困境，展現本土推理小說對社會集體記憶與空間變遷的深刻關懷。
+《偵探冰室．靈》由六位香港本土推理作家（陳浩基（[人物條目](/knowledge/people/chan-ho-kei)）、譚劍（[人物條目](/knowledge/people/tam-kim)）、莫理斯（[人物條目](/knowledge/people/mok-lei-si)）、黑貓C（[人物條目](/knowledge/people/hak-miu-c)）、望日（[人物條目](/knowledge/people/mong-yat)）、冒業（[人物條目](/knowledge/people/mo-yip)））再度聯手創作。本書延續了前作《偵探冰室》以香港在地文化為舞台的特色，並以「靈異與怪誕」為核心主題，收錄六篇將都市傳說、超自然現象、鬼魂執念與邏輯推理相結合的短篇小說。作品以表面上的「無理可推」或「超自然異象」開場，最終透視香港當代社會現實、群體創傷與人性困境，展現本土推理小說對社會集體記憶與空間變遷的深刻關懷。
 
 ## 5-Minute Summary
 
