@@ -9,7 +9,7 @@ isbn: 9786269758937
 
 themes: [推理小說, 香港本土元素, 香港推理小說崛起]
 era: [post-1997]
-memes: [jianghu-code-to-deductive-truth, shadow-of-globalization, individual-vs-system]
+memes: [jianghu-code-to-deductive-truth, shadow-of-globalization, individual-vs-system, fictive-kinship]
 contributors: []
 places: []
 status: draft
@@ -40,7 +40,7 @@ editions:
 小說以軟體工程師出身的作家視野，引入了烏爾里希·貝克（Ulrich Beck）的「風險社會」理論與卡辛斯基的技術批判：
 * **風險與機率化的恐怖主義**：作品打破了傳統犯罪小說「絕對安全 vs. 犯罪破壞」的二元對立，指出現代社會僅存在「機率性的安全性」，恐怖主義與天災本質上是系統運作下的必然風險。
 * **體制與警察性**：小說詳細梳理了香港、倫敦、東京等地警務體制的差異與歷史沿革，揭示了公共安全秩序與個人自由之間的永恆張力。
-* **非血緣的「擬家族」**：面對傳統家庭結構與社會倫理的解體，書中主要角色多為孑然一身的個體，他們在危機中建立了基於尊重與共同信念的非血緣替代性關係，以此作為抵抗虛無的精神寄託。
+* **非血緣的「[擬家族](/knowledge/memes/fictive-kinship)」**：面對傳統家庭結構與社會倫理的解體，書中主要角色多為孑然一身的個體，他們在危機中建立了基於尊重與共同信念的非血緣替代性關係，以此作為抵抗虛無的精神寄託。
 
 # Why It Matters
 
