@@ -19,7 +19,7 @@ status: draft
 
 ## 30-Second Overview
 
-《Tai-Pan》是James Clavell「亞洲傳奇」系列第二部，1966年出版，描寫1841年香港開埠之初，兩大洋行大班Dirk Struan與Tyler Brock之間的商業與私人恩怨，是一部以虛構人物重現香港建城神話的歷史小說。
+《Tai-Pan》是James Clavell「亞洲傳奇」系列第二部，1966年出版，描寫1841年香港開埠之初（詳見 context：[早期殖民時代](/knowledge/context/eras/early-colonial-era)），兩大洋行大班Dirk Struan與Tyler Brock之間的商業與私人恩怨，是一部以虛構人物重現香港建城神話的歷史小說。
 
 ## 5-Minute Summary
 
@@ -27,7 +27,7 @@ status: draft
 
 ## Why It Matters
 
-本書雖出自西方暢銷作家之手，卻是英語世界最廣為流傳的香港「建城神話」敘事之一：一群白手興家的外來冒險家，憑膽識與投機在一片「不毛之地」上建立商業王國。這一敘事本身值得放在後來的香港社會論述中重新檢視——本站嘗試將本書所描寫的開埠世代，視為呂大樂《四代香港人》所劃分的四個世代之前的「第零代」，兩者合觀，恰好呈現「機會之地」神話從建立到（在後代眼中）逐漸失效的完整弧線（詳見 meme：[第零代香港人](/knowledge/memes/generation-zero)，惟此一延伸框架屬本站原創提出，並非既有學術定論）。
+本書雖出自西方暢銷作家之手，卻是英語世界最廣為流傳的香港「建城神話」敘事之一：一群白手興家的外來冒險家，憑膽識與投機在一片「不毛之地」上建立商業王國[權力、資本與歷史的原點](/knowledge/context/places/central-sheung-wan-taiping-shan)）。這一敘事本身值得放在後來的香港社會論述中重新檢視——本站嘗試將本書所描寫的開埠世代，視為呂大樂《四代香港人》所劃分的四個世代之前的「第零代」，兩者合觀，恰好呈現「機會之地」神話從建立到（在後代眼中）逐漸失效的完整弧線（詳見 meme：[第零代香港人](/knowledge/memes/generation-zero)，惟此一延伸框架屬本站原創提出，並非既有學術定論）。
 
 ## Further Reading
 
