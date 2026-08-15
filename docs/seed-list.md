@@ -39,6 +39,12 @@ The candidate list below was a starting proposal. Actual picks for the pilot don
 | 烈女圖 — 黃碧雲 | fiction | ✅ drafted — `knowledge/books/fiction/portrait-of-fierce-women/index.md` — spans three generations of HK women (1919–present), providing the KB's first anchor for a gendered counter-narrative to 呂大樂's own Gen 2 framing |
 | A Modern History of Hong Kong — Steve Tsang | non-fiction | ✅ drafted — `knowledge/books/non-fiction/a-modern-history-of-hong-kong/index.md` — bonus find: the author holds Oxford's "Louis Cha Fellowship," literally endowed under 金庸's real name |
 | 字之魂 (1-4) — 夜透紫 | fiction | ✅ drafted — `knowledge/books/fiction/soul-of-characters/index.md` — a case study for the project's own premise: its central conflict is built on Chinese character structure itself, making it genuinely untranslatable |
+| 地圖集 *Atlas* — 董啟章 | fiction | ✅ drafted on GitHub directly (not via this chat) — `knowledge/books/fiction/ditu-ji/index.md` — from the original 30-title candidate list (below), finally catalogued |
+| 千禧黑夜 — 冒業 | fiction | ✅ drafted on GitHub directly (not via this chat, header comment marks it "drafted with AI research assistance, verify before merge") — `knowledge/books/fiction/millennium-blackout/index.md` — mystery author 冒業's own novel, anchoring three memes at once (`jianghu-code-to-deductive-truth`, `shadow-of-globalization`, `individual-vs-system`) plus `fictive-kinship` |
+| 如水革命：香港人如何在反送中運動集體臨機應變 — 何明修 | non-fiction | ✅ drafted on GitHub directly (not via this chat) — `knowledge/books/non-fiction/be-water-collective-improvisation-in-hong-kongs-anti-extradition-protests/index.md` — verified against publisher record (左岸文化, ISBN 9786267462942, 2026) |
+| 從救濟到融合：香港政府的「中國難民政策」（1945-1980） — 黃耀忠 | non-fiction | ✅ drafted on GitHub directly (not via this chat) — `knowledge/books/non-fiction/from-relief-to-integration/index.md` |
+| 香港，鬱躁的家邦：本土觀點的香港源流史 — 徐承恩 | non-fiction | ✅ drafted on GitHub directly (not via this chat) — `knowledge/books/non-fiction/hong-kong-an-anxious-homeland/index.md` |
+| 香港社會掌故叢談 — 魯金 | non-fiction | ✅ drafted on GitHub directly (not via this chat) — `knowledge/books/non-fiction/hong-kong-social-anecdotes/index.md` |
 
 ### Memes drafted so far
 
@@ -64,6 +70,9 @@ The candidate list below was a starting proposal. Actual picks for the pilot don
 | `three-forces` (三方夾縫) | 鹿鼎記 only | ⚠️ needs 2-reviewer sign-off — mixes one author-confirmed fact (Jin Yong: 神龍教=CCP) with several original-strength site interpretations (天地會≈14K, 清廷≈colonial govt, the 1969/1967-riots timing, the 獅子山下 contrast), each explicitly labeled by evidentiary strength rather than flattened into one confidence level. Also extends the generation framework — 韋小寶 positioned as "Generation 1.5" (Gen-1-poor origin, Gen-2-style prosperous outcome) rather than forced into either whole number |
 | `sai-gaai-jai` (世界仔) | 鹿鼎記 ↔ 小寶神功 | The character-archetype reading, deliberately kept separate from `three-forces`'s political reading — same book, two genuinely different claims |
 | `zaap-ga` (雜家) | 武道狂之詩 only | Split out from `sai-gaai-jai` after the user caught that "breaking sect orthodoxy to synthesize many traditions" (adaptability/innovation) isn't the same claim as "韋小寶-style self-interested social savvy," even though both had been living under one meme. Named after a real classical Chinese philosophical category (one of the Hundred Schools) rather than the user's own suggested "中西合璧," which would have collided with `jeet-kune-do`'s specific East-West framing |
+| `fictive-kinship` (擬親屬／擬血親) | 千禧黑夜 ↔ 香港社會掌故叢談 ↔ *如水革命* ↔ 《香港，鬱躁的家邦》↔ 《從救濟到融合》 | Added directly on GitHub with the disclosure and header format already correct — the compliant example, unlike the two below |
+| `individual-vs-system` (個體在巨大系統之中的無力與抗衡) | 千禧黑夜 only (real graph edge) | Added directly on GitHub **missing the original-argument disclosure entirely** and using book-style headers instead of the meme convention — both fixed this session (2026-08-15). Prose also discusses 13.67 and 譚劍's work at length, and originally cited an unverifiable 譚劍 title (《黑天鵝紫紫》, removed); those two books don't actually link back via their own `memes:` field, so they're described in the file as illustrative, not as real graph connections — flagged for a human call, not auto-linked |
+| `shadow-of-globalization` (全球化的陰影) | 千禧黑夜 only (real graph edge) | Same GitHub-direct origin and same session fixes as `individual-vs-system` — disclosure had been placed only in a YAML frontmatter comment (invisible to a reader or to prose-only ingestion), moved into the visible body; book-style headers corrected; an unverifiable 譚劍 title (《回收救援隊》) removed; same flagged-not-linked 13.67/譚劍 situation |
 
 ### Context essays drafted so far
 
@@ -72,6 +81,8 @@ The candidate list below was a starting proposal. Actual picks for the pilot don
 | 香港推理小說的崛起（2010年代起） (`knowledge/context/themes/hk-mystery-fiction-wave.md`) | cites 13.67, 偵探冰室 | Documents the real, sourced industry phenomenon (Taiwan award reliance, 偵探冰室 as a named "scene"); explicitly separates this from the *unsourced* jianghu-code-to-deductive-truth framing rather than blending the two |
 | 倪學：衛斯理系列的殖民與冷戰讀法 (`knowledge/context/themes/ni-xue-wisely-colonial-cold-war.md`) | cites 追龍, 命運, 闖禍, 新年 | ⚠️ needs 2-reviewer sign-off — built around a real academic source (張智琦's thesis-based article); explicitly lists other Wisely titles the source discusses that this KB hasn't individually catalogued yet, rather than implying the essay's scope matches the pilot's actual book coverage |
 | 香港武俠小說的當代轉型：從金庸到狼派 (`knowledge/context/themes/21st-century-wuxia.md`) | cites 武道狂之詩, 九龍城寨, City of Darkness | Explicitly states upfront that grouping these two authors as "21st-century HK wuxia" is this site's own organizing framework, not a category borrowed from existing criticism — unlike the mystery-fiction-wave essay, which documented a phenomenon that already had a name (award histories, a real anthology series) |
+| 早期殖民時代（1841—19世紀末） (`knowledge/context/eras/early-colonial-era.md`) | era essay, not yet cross-linked from specific book entries | Added directly on GitHub — an `era`-type context essay (first one in the KB with `type: era`), covering the founding decades from three stated perspectives (imperial/colonial-city, HK Chinese/local, literary-spatial) |
+| 中環、上環與太平山：權力、資本與歷史的原點 (`knowledge/context/places/central-sheung-wan-taiping-shan.md`) | 地圖集 (`places:`) | Added directly on GitHub — a `place`-type essay treating three adjoining districts as one historical space (colonial-administrative, Chinese-commercial, and marginalized-Chinese-residential respectively) rather than three separate entries |
 
 `sam-bat-gun` is the clean proof of the many-to-many design: two books that would never sit next to each other on any conventional shelf (a Sherlock Holmes pastiche and a photography monograph) are connected through one real historical fact about one real place, entirely through explicit frontmatter — nothing inferred.
 
@@ -93,13 +104,7 @@ The candidate list below was a starting proposal. Actual picks for the pilot don
 | `mo-yip` (冒業) | author, critic, genre-historian | 偵探冰室 ↔ 偵探冰室．靈 — also translated a Japanese scholar's history of HK mystery fiction into Chinese |
 | `ni-kuang` (倪匡) | author, screenwriter, mystery/sci-fi writer | 追龍 ↔ 闖禍 ↔ 命運 ↔ 新年 (`authors:` on all four) — four books by one author, three now carrying the political-prophecy meme after correction; his own biography (fled mainland land-reform violence, close friend of 金庸, founder of the 金學 tradition before 吳靄儀) also cross-links to the existing 金庸/明報 cluster |
 
-### Context essays drafted so far
-
-| Essay | Links | Notes |
-|---|---|---|
-| 香港推理小說的崛起（2010年代起） (`knowledge/context/themes/hk-mystery-fiction-wave.md`) | cites 13.67, 偵探冰室 | Documents the real, sourced industry phenomenon (Taiwan award reliance, 偵探冰室 as a named "scene"); explicitly separates this from the *unsourced* jianghu-code-to-deductive-truth framing rather than blending the two |
-
-Other books' `authors:`/`people:` fields still hold plain-name placeholders (莫理斯, Greg Girard, Ian Lambot, 程翔, 吳荻舟, 譚劍, 文善, 望日, 冒業) rather than blocking on a person page for everyone — see `.github/instructions/people.instructions.md` for why that's deliberate, not a shortcut to fix later.
+Other books' `authors:`/`people:` fields still hold plain-name placeholders (Greg Girard, Ian Lambot, 程翔, 吳荻舟, 何明修, 黃耀忠, 徐承恩, 魯金) rather than blocking on a person page for everyone — see `.github/instructions/people.instructions.md` for why that's deliberate, not a shortcut to fix later. (莫理斯, 譚劍, 文善, 望日, 冒業 have since crossed the 2-book bar and got real person pages — see the People table above.)
 
 Remaining non-fiction picks: open for the next round.
 
