@@ -49,7 +49,7 @@ This is the actual requirement behind "let readers open a PR from the site": eve
 https://github.com/{org}/{repo}/edit/main/knowledge/{path-to-that-entry's-source-file}
 ```
 
-Clicking it opens GitHub's own web editor — GitHub auto-forks for anyone without write access, and saving there opens a PR automatically. No custom form, no backend, no auth to build or maintain — this is deliberate, not a shortcut: less infrastructure for a small trusted team to operate, and it's the same mechanism most docs sites (Docusaurus, VitePress, Quartz's own ecosystem) use for exactly this purpose. Add this as a small template partial/component so it appears on every book/meme/context page, deriving the source path from the page's own frontmatter/location rather than hardcoding per-page.
+Clicking it opens GitHub's own web editor — GitHub auto-forks for anyone without write access, and saving there opens a PR automatically. No custom form, no backend, no auth to build or maintain — this is deliberate, not a shortcut: less infrastructure for a small trusted team to operate, and it's the same mechanism most docs sites (Docusaurus, VitePress, Quartz's own ecosystem) use for exactly this purpose. Add this as a small template partial/component so it appears on every page across all five entity types (book, meme, person, resource, context), deriving the source path from the page's own frontmatter/location rather than hardcoding per-page.
 
 ## 6. GitHub Actions
 
