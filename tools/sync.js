@@ -174,6 +174,7 @@ function generateLandingPageMarkdown({ counts, generatedAt, repoBaseUrl, branch 
   const bookTemplateUrl = `${repoBaseUrl}/blob/${branch}/knowledge/books/_template.md`
   const peopleTemplateUrl = `${repoBaseUrl}/blob/${branch}/knowledge/people/_template.md`
   const memeTemplateUrl = `${repoBaseUrl}/blob/${branch}/knowledge/memes/_template.md`
+  const resourceTemplateUrl = `${repoBaseUrl}/blob/${branch}/knowledge/resources/_template.md`
   const contextTemplateUrl = `${repoBaseUrl}/blob/${branch}/knowledge/context/_template.md`
   const generatedDate = new Date(generatedAt).toISOString().slice(0, 10)
 
@@ -196,9 +197,17 @@ description: 以合法、開放授權方式建立可供人類與 AI 閱讀的香
 
 每本書一個條目，包含書目資料、原創摘要與策展分析，不收錄原書全文。
 
+### 人物（people）
+
+把同一作者／主題人物從散落於多本書的純文字提述，集中成一個正式人物頁，便於維護查證與跨書連結。
+
 ### 概念母題（memes）
 
 把跨書重複出現的概念連成圖譜，讓虛構與非虛構作品可以互相對讀。
+
+### 資源（resources）
+
+記錄圖書館、借閱平台與書店等實體取得途徑，避免同一資訊在每本書中重複貼上、逐漸失去同步。
 
 ### 脈絡長文（context essays）
 
@@ -211,8 +220,10 @@ description: 以合法、開放授權方式建立可供人類與 AI 閱讀的香
 目前為 Phase 0 試點階段。
 
 - 書籍條目：${counts.books}
+- 人物頁：${counts.people}
 - 概念母題：${counts.memes}
-- 脈絡長文：${counts.context}${counts.resources > 0 ? `\n- 實體書取得途徑：${counts.resources}` : ""}
+- 資源頁：${counts.resources}
+- 脈絡長文：${counts.context}
 - 最後同步：${generatedDate}
 
 ## 探索圖譜與原始資料
@@ -233,6 +244,7 @@ description: 以合法、開放授權方式建立可供人類與 AI 閱讀的香
 - [書籍模板](${bookTemplateUrl})
 - [人物模板](${peopleTemplateUrl})
 - [概念模板](${memeTemplateUrl})
+- [資源模板](${resourceTemplateUrl})
 - [脈絡模板](${contextTemplateUrl})
 
 ## 授權
@@ -448,6 +460,7 @@ async function main() {
 
   const counts = {
     books: entries.filter((entry) => entry.kind === "book").length,
+    people: entries.filter((entry) => entry.kind === "person").length,
     memes: entries.filter((entry) => entry.kind === "meme").length,
     context: entries.filter((entry) => entry.kind === "context").length,
     resources: entries.filter((entry) => entry.kind === "resource").length

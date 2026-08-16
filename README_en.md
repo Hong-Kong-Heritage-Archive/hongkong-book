@@ -10,10 +10,12 @@ Directly inspired by [taiwan.md](https://taiwan.md), which demonstrated this mod
 
 ## How it's structured
 
-All content lives under `knowledge/`, as three entity types:
+All content lives under `knowledge/`, as five entity types:
 
 - **`knowledge/books/`** — the primary catalog. One file per book: bibliographic metadata, an original summary, and curated "why it matters" analysis. Never the book's own text.
+- **`knowledge/people/`** — real-person pages for authors, critics, and significant subjects; a person is promoted to a full page only after showing up in 2+ books or meaningful link points.
 - **`knowledge/memes/`** — recurring cross-book concepts and cultural motifs (e.g. Lion Rock Spirit), linked to every book that touches them.
+- **`knowledge/resources/`** — physical-access points such as libraries, lending apps, or bookstores; a plain-text reference is fine until the same resource is cited by 2+ books.
 - **`knowledge/context/`** — optional long-form essays on eras, places, and themes, citing relevant books as further reading.
 
 Everything else — the website, the knowledge graph, the RAG export, `llms.txt` — is generated from `knowledge/` and shouldn't be edited by hand.

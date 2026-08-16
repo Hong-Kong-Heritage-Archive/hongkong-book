@@ -334,8 +334,13 @@ export async function runValidation(options = {}) {
         continue
       }
 
+      const minTitleLength = Math.min(titleA.length, titleB.length)
+      if (minTitleLength <= 3) {
+        continue
+      }
+
       const distance = levenshtein(titleA, titleB)
-      const threshold = Math.max(2, Math.floor(Math.min(titleA.length, titleB.length) * 0.15))
+      const threshold = Math.max(2, Math.floor(minTitleLength * 0.15))
       if (distance <= threshold) {
         warnings.push({
           relPath: a.relPath,
