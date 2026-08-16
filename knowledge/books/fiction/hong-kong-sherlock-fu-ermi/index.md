@@ -11,7 +11,9 @@ type: fiction
 era: [colonial-era]
 places: [sheung-wan, kowloon-city]   # kowloon-city confirmed: 福邇 meets his brother 福邁 there — see Why It Matters
 themes: [推理小說, 福爾摩斯改編, 晚清香港, 中西文化交流, 清廷特務]
-memes: [sam-bat-gun]
+memes:
+  - slug: sam-bat-gun
+    relation: exemplifies
 editions:
   - lang: zh-TW
     title: 香江神探福邇，字摩斯

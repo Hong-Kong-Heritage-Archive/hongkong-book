@@ -15,7 +15,15 @@ era: [post-1997]   # verify: exact story-internal setting year unconfirmed — W
                     # publication in 2008; flagged for review rather than guessed
 places: [kowloon-city]
 themes: [黑幫小說, 武俠元素, 九龍城寨, 漫畫改編]
-memes: [sam-bat-gun, borrowed-place-borrowed-time, three-forces, jianghu-code-to-deductive-truth]
+memes:
+  - slug: sam-bat-gun
+    relation: exemplifies
+  - slug: borrowed-place-borrowed-time
+    relation: exemplifies
+  - slug: three-forces
+    relation: exemplifies
+  - slug: jianghu-code-to-deductive-truth
+    relation: exemplifies
 editions: []
 contributors: []
 status: draft

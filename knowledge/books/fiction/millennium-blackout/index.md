@@ -11,7 +11,15 @@ publisher: 博識圖書
 isbn: "9786269758937"
 type: fiction
 era: [post-1997]
-memes: [jianghu-code-to-deductive-truth, shadow-of-globalization, individual-vs-system, fictive-kinship]
+memes:
+  - slug: jianghu-code-to-deductive-truth
+    relation: exemplifies
+  - slug: shadow-of-globalization
+    relation: exemplifies
+  - slug: individual-vs-system
+    relation: exemplifies
+  - slug: fictive-kinship
+    relation: exemplifies
 places: []
 themes: [推理小說, 香港本土元素, 香港推理小說崛起]
 editions:

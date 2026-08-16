@@ -11,7 +11,9 @@ type: fiction
 era: [colonial-era, 1980s]
 places: []
 themes: [鬼魅小說, 愛情小說, 懷舊, 電影改編]
-memes: [ghostly-realism]
+memes:
+  - slug: ghostly-realism
+    relation: exemplifies
 editions: []
 contributors: []
 status: draft

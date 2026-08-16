@@ -12,7 +12,9 @@ era: []   # deliberately blank — story is set in an original fantasy world (fi
           # gods, princes), not Hong Kong; the connection is thematic, not geographic
 places: []
 themes: [輕小說, 奇幻小說, 繁簡之爭, 文字與身份認同]
-memes: [traditional-simplified-anxiety]
+memes:
+  - slug: traditional-simplified-anxiety
+    relation: exemplifies
 editions: []
 contributors: []
 status: draft

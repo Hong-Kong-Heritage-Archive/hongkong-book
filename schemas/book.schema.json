@@ -74,8 +74,42 @@
     },
     "memes": {
       "type": "array",
+      "description": "本書與概念母題（memes）的關聯，包含關聯類型；取代舊有純字串陣列格式。 / This book's relations to concept memes, including the relation type; supersedes the old bare-string-array format.",
       "items": {
-        "type": "string"
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["slug", "relation"],
+        "properties": {
+          "slug": {
+            "type": "string",
+            "description": "對應 knowledge/memes/{slug}.md 的檔案代稱。 / Slug matching knowledge/memes/{slug}.md."
+          },
+          "relation": {
+            "type": "string",
+            "description": "本書與此母題的關聯類型：exemplifies＝體現／此書是母題的典型例子；originates＝首見／此書為此母題最早紀錄的出處；subverts＝顛覆／此書刻意反轉或推翻母題的預期；critiques＝批判／此書質疑或複雜化母題，而非單純呼應。 / The type of relation this book has to the meme: exemplifies = a clean instance of the meme; originates = the first documented instance of the meme; subverts = deliberately inverts the meme's expected shape; critiques = complicates or challenges the meme rather than endorsing it.",
+            "enum": ["exemplifies", "originates", "subverts", "critiques"]
+          }
+        }
+      }
+    },
+    "related_books": {
+      "type": "array",
+      "description": "本書與知識庫內其他書目的直接關聯，與 memes（書目對母題）不同，這是書目對書目的關聯。單向宣告即可，反向視圖由 tools/sync.js 於 graph.json 自動產生，不需要在另一本書也手動加上對應項目。 / This book's direct relations to other books already in this knowledge base — distinct from memes, which link a book to a motif rather than to another book. Declare on one side only; the reverse view is derived automatically by tools/sync.js into graph.json, no matching entry is needed on the other book.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["slug", "relation"],
+        "properties": {
+          "slug": {
+            "type": "string",
+            "description": "對應另一本書的資料夾代稱（例如 knowledge/books/non-fiction/{slug}/）。 / Slug matching another book's folder (e.g. knowledge/books/non-fiction/{slug}/)."
+          },
+          "relation": {
+            "type": "string",
+            "description": "fictionalizes＝虛構化／本書以虛構形式改編或呈現另一本書記錄的真實事件；responds_to＝回應／本書是對另一本書的直接評論、詮釋或反駁；inherits＝承襲／本書延續或建基於另一本書（例如同系列續作）；criticizes＝批評／本書明確質疑或反駁另一本書的論點。 / fictionalizes = this book dramatizes or fictionally adapts real events documented in another book; responds_to = this book is a direct commentary, interpretation, or rebuttal of another; inherits = this book continues or builds on another (e.g. a sequel in the same series); criticizes = this book explicitly disputes another book's argument.",
+            "enum": ["fictionalizes", "responds_to", "inherits", "criticizes"]
+          }
+        }
       }
     },
     "editions": {
@@ -100,6 +134,54 @@
           },
           "notes": {
             "type": "string"
+          }
+        }
+      }
+    },
+    "availability": {
+      "type": "object",
+      "description": "本書的電子版可得性；若無電子版，須提供至少一個可取得實體書的途徑（由 tools/validate.js 強制檢查，邏輯與 editions 需要 Edition Differences 一節相同）。 / This book's ecopy availability; if there's no ecopy, at least one physical-access resource is required (enforced by tools/validate.js, the same pattern as editions requiring an Edition Differences section).",
+      "additionalProperties": false,
+      "required": ["ecopy"],
+      "properties": {
+        "ecopy": {
+          "type": "string",
+          "enum": ["available", "unavailable", "unknown"],
+          "description": "available＝已知有電子版；unavailable＝已知沒有電子版；unknown＝尚未查證。 / available = a known ecopy exists; unavailable = confirmed no ecopy exists; unknown = not yet checked."
+        },
+        "ecopy_sources": {
+          "type": "array",
+          "description": "若 ecopy 為 available，列出可購買/借閱電子版的平台名稱（純文字，非必要附連結）。 / If ecopy is available, the names of platforms where it can be bought or borrowed (plain text, link optional).",
+          "items": {
+            "type": "string"
+          }
+        },
+        "physical_access": {
+          "type": "array",
+          "description": "若 ecopy 為 unavailable，此欄位必須至少有一項，說明讀者可從何處取得實體書。name 請使用一致的名稱（例如一律寫「香港公共圖書館」），一旦同一資源被 2 本或以上書目引用，應依 people/ 的既有模式，將其提升為 knowledge/resources/{slug}.md 共用條目，並在此改用該 slug。 / If ecopy is unavailable, this must have at least one entry describing where a physical copy can be found. Keep name consistent (e.g. always '香港公共圖書館') — once the same resource is cited by 2+ books, promote it into a shared knowledge/resources/{slug}.md entry, following the same pattern already used for people/, and reference that slug here instead.",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["type", "name"],
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": ["library", "lending-app", "bookstore", "other"]
+              },
+              "name": {
+                "type": "string"
+              },
+              "slug": {
+                "type": "string",
+                "description": "選填。一旦此資源已被提升為 knowledge/resources/{slug}.md，填入其 slug；name 仍須保留作為顯示用途。 / Optional. Once this resource has been promoted to knowledge/resources/{slug}.md, fill in its slug; name should still be kept for display."
+              },
+              "url": {
+                "type": "string"
+              },
+              "notes": {
+                "type": "string"
+              }
+            }
           }
         }
       }

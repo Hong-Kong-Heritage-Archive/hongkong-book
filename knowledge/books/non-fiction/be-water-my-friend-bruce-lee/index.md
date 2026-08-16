@@ -11,7 +11,11 @@ type: non-fiction
 era: [colonial-era]   # reflects the Hong Kong Wing Chun training years the book traces the philosophy back to
 places: []
 themes: [李小龍, 截拳道, 人生哲學, 東西文化融合, 正念]
-memes: [be-water, jeet-kune-do]
+memes:
+  - slug: be-water
+    relation: exemplifies
+  - slug: jeet-kune-do
+    relation: exemplifies
 editions: []
 contributors: []
 status: draft

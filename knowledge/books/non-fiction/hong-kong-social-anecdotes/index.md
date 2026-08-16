@@ -28,8 +28,10 @@ themes:
   - "社會制度"
   - "地方社會"
 memes:
-  - "fictive-kinship"
-  - "jianghu-code-to-deductive-truth"
+  - slug: fictive-kinship
+    relation: exemplifies
+  - slug: jianghu-code-to-deductive-truth
+    relation: exemplifies
 editions: []
 contributors: []
 status: ready

@@ -11,7 +11,9 @@ type: fiction
 era: [colonial-era]
 places: [sheung-wan]
 themes: [歷史小說, 香港開埠, 鴉片貿易, 洋行]
-memes: [generation-zero]
+memes:
+  - slug: generation-zero
+    relation: exemplifies
 editions: []
 contributors: []
 status: draft

@@ -17,7 +17,9 @@ editions:
     publisher: Yale University Press
     notes: 平裝新版（New Ed），ISBN 9780300103731，內容與2003年精裝版相同
 themes: [太平洋戰爭, 香港淪陷, 日治時期, 殖民地史]
-memes: [first-generation]
+memes:
+  - slug: first-generation
+    relation: exemplifies
 contributors: []
 status: draft
 ---

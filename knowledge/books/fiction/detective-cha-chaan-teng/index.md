@@ -12,7 +12,9 @@ era: [post-1997]   # publication era (2019); no more specific canonical tag fits
                     # contemporary-set short fiction — see TERMINOLOGY.md's post-1997 definition
 places: []
 themes: [推理小說, 短篇合集, 香港本土元素, 香港推理小說崛起]
-memes: [jianghu-code-to-deductive-truth]
+memes:
+  - slug: jianghu-code-to-deductive-truth
+    relation: exemplifies
 editions: []
 contributors: []
 status: draft

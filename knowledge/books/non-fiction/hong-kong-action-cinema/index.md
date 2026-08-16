@@ -11,7 +11,9 @@ type: non-fiction
 era: [colonial-era, post-war-1960s, 1970s, 1980s]
 places: []
 themes: [香港動作片, 武術指導, 電影史, 截拳道]
-memes: [jeet-kune-do]
+memes:
+  - slug: jeet-kune-do
+    relation: exemplifies
 editions:
   - lang: en
     title: Hong Kong Action Cinema

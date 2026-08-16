@@ -29,8 +29,10 @@ themes:
   - "殖民史"
   - "文化認同"
 memes:
-  - "fictive-kinship"
-  - "jianghu-code-to-deductive-truth"
+  - slug: fictive-kinship
+    relation: exemplifies
+  - slug: jianghu-code-to-deductive-truth
+    relation: exemplifies
 editions: []
 contributors: []
 status: ready

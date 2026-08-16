@@ -14,7 +14,8 @@ editions: []
 contributors: []
 status: draft
 memes:
-  - only-hong-kong-jin-yong
+  - slug: only-hong-kong-jin-yong
+    relation: exemplifies
 people:
   - jin-yong
   - ni-kuang

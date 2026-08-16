@@ -11,7 +11,9 @@ type: non-fiction
 era: [colonial-era, wwii-japanese-occupation, post-war-1960s, 1970s, 1980s]
 places: [kowloon-city]
 themes: [九龍城寨, 攝影紀實, 口述歷史, 城市規劃]
-memes: [sam-bat-gun]
+memes:
+  - slug: sam-bat-gun
+    relation: exemplifies
 editions:
   - lang: en
     title: City of Darkness Revisited

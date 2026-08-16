@@ -10,7 +10,9 @@ type: fiction
 era: [1980s]   # verify: see year note above
 places: []
 themes: [科幻小說, 衛斯理系列, 命運與宿命論]
-memes: [political-prophecy]
+memes:
+  - slug: political-prophecy
+    relation: exemplifies
 editions: []
 contributors: []
 status: draft

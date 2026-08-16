@@ -22,8 +22,10 @@ themes:
   - "社會融合"
   - "香港身份"
 memes:
-  - "fictive-kinship"
-  - "jianghu-code-to-deductive-truth"
+  - slug: fictive-kinship
+    relation: exemplifies
+  - slug: jianghu-code-to-deductive-truth
+    relation: exemplifies
 editions: []
 contributors: []
 status: ready

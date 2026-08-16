@@ -15,7 +15,17 @@ type: fiction
 era: [2019-protests]
 places: [victoria-park, prince-edward-station]
 themes: [推理小說, 反送中文學, 警暴爭議, 集體記憶]
-memes: [anti-extradition-movement, june-fourth-vigil, be-water, jianghu-code-to-deductive-truth, ghostly-realism]
+memes:
+  - slug: anti-extradition-movement
+    relation: exemplifies
+  - slug: june-fourth-vigil
+    relation: exemplifies
+  - slug: be-water
+    relation: exemplifies
+  - slug: jianghu-code-to-deductive-truth
+    relation: exemplifies
+  - slug: ghostly-realism
+    relation: exemplifies
 editions: []
 contributors: []
 status: draft

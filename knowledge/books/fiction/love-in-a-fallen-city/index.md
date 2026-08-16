@@ -11,7 +11,9 @@ type: fiction
 era: [wwii-japanese-occupation]
 places: [repulse-bay]
 themes: [愛情小說, 香港淪陷, 太平洋戰爭, 上海與香港]
-memes: [first-generation]
+memes:
+  - slug: first-generation
+    relation: exemplifies
 editions: []
 contributors: []
 status: draft

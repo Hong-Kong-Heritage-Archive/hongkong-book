@@ -14,7 +14,11 @@ era: []   # deliberately blank — story set in Kangxi-era Qing China (1668–16
           # see Why It Matters for how this book connects to Hong Kong instead
 places: []
 themes: [武俠小說, 反英雄, 政治寓言, 報章連載小說]
-memes: [three-forces, sai-gaai-jai]
+memes:
+  - slug: three-forces
+    relation: exemplifies
+  - slug: sai-gaai-jai
+    relation: exemplifies
 editions:
   - lang: zh-HK
     title: 鹿鼎記（修訂版）

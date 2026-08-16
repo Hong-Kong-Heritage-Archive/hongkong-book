@@ -14,7 +14,13 @@ era: []   # deliberately blank — story is set in Ming-dynasty China (正德年
           # not Hong Kong, same reasoning as 射鵰英雄傳/鹿鼎記's era/places
 places: []
 themes: [武俠小說, 狼派武俠, 現代運動科學, 門派滅絕與重建]
-memes: [zaap-ga, three-forces, jianghu-code-to-deductive-truth]
+memes:
+  - slug: zaap-ga
+    relation: exemplifies
+  - slug: three-forces
+    relation: exemplifies
+  - slug: jianghu-code-to-deductive-truth
+    relation: exemplifies
 editions: []
 contributors: []
 status: draft

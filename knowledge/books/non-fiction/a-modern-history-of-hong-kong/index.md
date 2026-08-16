@@ -11,7 +11,11 @@ type: non-fiction
 era: [colonial-era, wwii-japanese-occupation, post-war-1960s, 1970s, 1980s, handover-1997]
 places: []
 themes: [殖民地史, 行政局立法局, 華洋關係, 身份認同]
-memes: [sam-bat-gun, colonial-governance-triangle]
+memes:
+  - slug: sam-bat-gun
+    relation: exemplifies
+  - slug: colonial-governance-triangle
+    relation: exemplifies
 editions: []
 contributors: []
 status: draft

@@ -10,6 +10,7 @@ export const KNOWLEDGE_DIR = path.join(ROOT_DIR, "knowledge")
 const CONTENT_PATTERNS = [
   "knowledge/books/**/index.md",
   "knowledge/people/*.md",
+  "knowledge/resources/*.md",
   "knowledge/memes/*.md",
   "knowledge/context/**/*.md"
 ]
@@ -37,6 +38,9 @@ export function detectEntityKind(relPath) {
   if (relPath.startsWith("knowledge/people/")) {
     return "person"
   }
+  if (relPath.startsWith("knowledge/resources/")) {
+    return "resource"
+  }
   if (relPath.startsWith("knowledge/memes/")) {
     return "meme"
   }
@@ -51,7 +55,7 @@ export function parseSlug(relPath, kind) {
   if (kind === "book") {
     return parts[3] ?? ""
   }
-  if (kind === "person") {
+  if (kind === "person" || kind === "resource") {
     const filename = parts[parts.length - 1] ?? ""
     return filename.replace(/\.md$/i, "")
   }
@@ -114,6 +118,39 @@ export async function loadEntries() {
   }
 
   return entries
+}
+
+// 將 book 的 memes: 欄位正規化為 {slug, relation}[]；同時相容遷移前的純字串陣列格式
+// （此時隱含關聯類型視為 exemplifies）。sync.js 與 validation.js 皆應透過此函式讀取
+// memes，不應直接讀取 entry.data.memes。
+// Normalizes a book's memes: field into {slug, relation}[]; also tolerates the
+// pre-migration bare-string-array format (implicit relation is treated as
+// exemplifies in that case). sync.js and validation.js should both read memes
+// through this function rather than reading entry.data.memes directly.
+export function getBookMemeRefs(entry) {
+  const memes = Array.isArray(entry.data.memes) ? entry.data.memes : []
+  return memes
+    .map((item) => {
+      if (typeof item === "string") {
+        return { slug: item, relation: "exemplifies" }
+      }
+      if (item && typeof item === "object") {
+        return { slug: String(item.slug ?? ""), relation: String(item.relation ?? "exemplifies") }
+      }
+      return { slug: "", relation: "exemplifies" }
+    })
+    .filter((ref) => ref.slug.length > 0)
+}
+
+// 讀取 book 的 related_books: 欄位（書目對書目的關聯，與 memes 的書目對母題關聯不同）。
+// Reads a book's related_books: field (book-to-book relations, distinct from memes'
+// book-to-motif relations).
+export function getBookRelatedBooks(entry) {
+  const relatedBooks = Array.isArray(entry.data.related_books) ? entry.data.related_books : []
+  return relatedBooks
+    .filter((item) => item && typeof item === "object")
+    .map((item) => ({ slug: String(item.slug ?? ""), relation: String(item.relation ?? "") }))
+    .filter((ref) => ref.slug.length > 0)
 }
 
 export function normalizeWhitespace(text) {

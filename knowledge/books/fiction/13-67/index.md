@@ -13,7 +13,13 @@ era: [post-war-1960s, 1970s, 1980s, handover-1997, post-1997]
 # (1967, 1977, 1989, 1997, 2013) — the sixth is unconfirmed, verify before merge
 places: [kowloon-city]
 themes: [推理小說, 警察小說, 社會寫實, 香港身份認同, 六七暴動]
-memes: [borrowed-place-borrowed-time, 1967-pineapple-bombs, jianghu-code-to-deductive-truth]
+memes:
+  - slug: borrowed-place-borrowed-time
+    relation: exemplifies
+  - slug: 1967-pineapple-bombs
+    relation: exemplifies
+  - slug: jianghu-code-to-deductive-truth
+    relation: exemplifies
 editions:
   - lang: zh-HK
     title: 13.67（香港修訂版）

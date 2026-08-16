@@ -10,7 +10,9 @@ type: fiction
 era: [handover-1997]   # verify: tentative, based on thematic grouping with 追龍 in retrospective coverage, not a confirmed publication year
 places: []
 themes: [科幻小說, 衛斯理系列, 政治預言]
-memes: [political-prophecy]
+memes:
+  - slug: political-prophecy
+    relation: exemplifies
 editions: []
 contributors: []
 status: draft

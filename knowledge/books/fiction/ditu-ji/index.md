@@ -10,7 +10,9 @@ type: fiction
 era: [precolonial, colonial-era, handover-1997]
 places: [central, sheung-wan, tai-ping-shan]
 themes: [城市書寫, 地圖與權力, 香港城市史, 文學虛構, 歷史記憶, 空間政治]
-memes: [jianghu-code-to-deductive-truth]
+memes:
+  - slug: jianghu-code-to-deductive-truth
+    relation: exemplifies
 editions:
   - lang: zh-HK
     title: "地圖集"

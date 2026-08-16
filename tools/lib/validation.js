@@ -6,6 +6,8 @@ import Ajv2020 from "ajv/dist/2020.js"
 import {
   ROOT_DIR,
   findLongBlockquotes,
+  getBookMemeRefs,
+  getBookRelatedBooks,
   getSectionContent,
   loadEntries,
   normalizeComparable,
@@ -130,16 +132,20 @@ export async function runValidation(options = {}) {
   const memeSchema = await loadSchema("schemas/meme.schema.json")
   const contextSchema = await loadSchema("schemas/context.schema.json")
   const peopleSchema = await loadSchema("schemas/people.schema.json")
+  const resourceSchema = await loadSchema("schemas/resource.schema.json")
 
   const ajv = new Ajv2020({ allErrors: true, strict: false, coerceTypes: true })
   const validators = {
     book: ajv.compile(bookSchema),
     meme: ajv.compile(memeSchema),
     context: ajv.compile(contextSchema),
-    person: ajv.compile(peopleSchema)
+    person: ajv.compile(peopleSchema),
+    resource: ajv.compile(resourceSchema)
   }
 
   const memeSlugs = new Set(entries.filter((e) => e.kind === "meme").map((e) => e.slug))
+  const bookSlugs = new Set(entries.filter((e) => e.kind === "book").map((e) => e.slug))
+  const resourceSlugs = new Set(entries.filter((e) => e.kind === "resource").map((e) => e.slug))
   const personLookup = buildPersonLookup(entries)
 
   for (const entry of entries) {
@@ -176,12 +182,47 @@ export async function runValidation(options = {}) {
         }
       }
 
-      const memes = asArray(entry.data.memes)
-      for (const slug of memes) {
-        if (!memeSlugs.has(slug)) {
+      const memeRefs = getBookMemeRefs(entry)
+      for (const ref of memeRefs) {
+        if (!memeSlugs.has(ref.slug)) {
           failures.push({
             relPath: entry.relPath,
-            reason: `memes 引用不存在: ${slug}（請先建立 knowledge/memes/${slug}.md）`
+            reason: `memes 引用不存在: ${ref.slug}（請先建立 knowledge/memes/${ref.slug}.md）`
+          })
+        }
+      }
+
+      const relatedBooks = getBookRelatedBooks(entry)
+      for (const ref of relatedBooks) {
+        if (ref.slug === entry.slug) {
+          failures.push({
+            relPath: entry.relPath,
+            reason: `related_books 不可自我引用: ${ref.slug}`
+          })
+        } else if (!bookSlugs.has(ref.slug)) {
+          failures.push({
+            relPath: entry.relPath,
+            reason: `related_books 引用不存在: ${ref.slug}（找不到對應書目資料夾）`
+          })
+        }
+      }
+
+      const availability = entry.data.availability
+      if (availability && availability.ecopy === "unavailable") {
+        const physicalAccess = asArray(availability.physical_access)
+        if (physicalAccess.length === 0) {
+          failures.push({
+            relPath: entry.relPath,
+            reason: "availability.ecopy 為 unavailable 時，physical_access 必須至少有一項"
+          })
+        }
+      }
+
+      for (const resource of asArray(availability?.physical_access)) {
+        if (resource.slug && !resourceSlugs.has(resource.slug)) {
+          failures.push({
+            relPath: entry.relPath,
+            reason: `availability.physical_access.slug 引用不存在: ${resource.slug}（請先建立 knowledge/resources/${resource.slug}.md）`
           })
         }
       }
@@ -210,7 +251,7 @@ export async function runValidation(options = {}) {
         }
       }
 
-      if (memes.length === 0 && !hasResolvedPersonLink) {
+      if (memeRefs.length === 0 && !hasResolvedPersonLink) {
         failures.push({
           relPath: entry.relPath,
           reason: "book 必須透過 memes: 或 authors:/people: slug 連結至至少一個現有條目"
@@ -223,6 +264,15 @@ export async function runValidation(options = {}) {
         failures.push({
           relPath: entry.relPath,
           reason: "meme frontmatter 不應包含 books 欄位；此欄位由 sync.js 生成"
+        })
+      }
+    }
+
+    if (entry.kind === "resource") {
+      if (Object.prototype.hasOwnProperty.call(entry.data, "books")) {
+        failures.push({
+          relPath: entry.relPath,
+          reason: "resource frontmatter 不應包含 books 欄位；此欄位由 sync.js 生成"
         })
       }
     }
@@ -289,7 +339,7 @@ export async function runValidation(options = {}) {
       if (distance <= threshold) {
         warnings.push({
           relPath: a.relPath,
-          reason: `疑似重複（模糊比對）: ${a.data.title} ↔ ${b.data.title}（作者同為 ${a.data.author}）`
+          reason: `疑似重複（模糊比對）: ${a.data.title} ↔ ${b.data.title}（作者同為 ${getBookAuthors(a).join(" / ")}）`
         })
       }
     }

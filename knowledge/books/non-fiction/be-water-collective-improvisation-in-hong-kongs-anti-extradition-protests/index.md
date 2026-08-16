@@ -22,9 +22,12 @@ themes:
   - "網絡協作"
   - "社會關係"
 memes:
-  - "fictive-kinship"
-  - "jianghu-code-to-deductive-truth"
-  - "be-water"
+  - slug: fictive-kinship
+    relation: exemplifies
+  - slug: jianghu-code-to-deductive-truth
+    relation: exemplifies
+  - slug: be-water
+    relation: exemplifies
 editions: []
 contributors: []
 status: ready

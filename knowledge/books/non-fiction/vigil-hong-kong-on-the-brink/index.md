@@ -11,7 +11,11 @@ type: non-fiction
 era: [2019-protests]
 places: []
 themes: [反送中運動, 六四悼念, 中國近代史, 政治評論]
-memes: [june-fourth-vigil, anti-extradition-movement]
+memes:
+  - slug: june-fourth-vigil
+    relation: exemplifies
+  - slug: anti-extradition-movement
+    relation: exemplifies
 editions: []
 contributors: []
 status: draft

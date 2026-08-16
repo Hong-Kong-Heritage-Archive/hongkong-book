@@ -14,7 +14,13 @@ era: []   # deliberately blank — the story is set in Song/Mongol-era China (c.
           # not Hong Kong. See "Why It Matters" for why this book is still in scope.
 places: []
 themes: [武俠小說, 報章連載小說, 香港出版史]
-memes: [song-wong-toi, only-hong-kong-jin-yong, jianghu-code-to-deductive-truth]
+memes:
+  - slug: song-wong-toi
+    relation: exemplifies
+  - slug: only-hong-kong-jin-yong
+    relation: exemplifies
+  - slug: jianghu-code-to-deductive-truth
+    relation: exemplifies
 editions:
   - lang: zh-HK
     title: 射鵰英雄傳（修訂版）

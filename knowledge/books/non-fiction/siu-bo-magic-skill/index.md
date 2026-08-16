@@ -11,7 +11,11 @@ type: non-fiction
 era: [1980s]
 places: []
 themes: [處世哲學, 韋小寶, 電視文化, 香港性格]
-memes: [sai-gaai-jai, three-forces]
+memes:
+  - slug: sai-gaai-jai
+    relation: exemplifies
+  - slug: three-forces
+    relation: exemplifies
 editions:
   - lang: zh-HK
     title: 韋小寶神功

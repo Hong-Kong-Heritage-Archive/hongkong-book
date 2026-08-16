@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hongkong-book.local/schemas/resource.schema.json",
+  "title": "Resource entry frontmatter",
+  "description": "取得實體書的途徑（圖書館、借閱平台、書店等），由書目的 availability.physical_access 引用。當同一資源被 2 本或以上書目引用時，應由重複的純文字項目提升為此處的共用條目——邏輯與 people/ 完全相同。 / A way to obtain a physical copy of a book (library, lending app, bookstore, etc.), referenced from books' availability.physical_access. Once the same resource is cited by 2+ books, it should be promoted here from repeated plain-text entries — the exact same pattern as people/.",
+  "type": "object",
+  "required": ["name", "type", "status"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "zh-HK canonical name — should match the name string used in books' availability.physical_access[].name before promotion, so the connection is traceable. / zh-HK canonical name — should match the name string already used in books' availability.physical_access[].name before promotion, so the link back is traceable."
+    },
+    "name_en": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["library", "lending-app", "bookstore", "other"]
+    },
+    "url": {
+      "type": "string"
+    },
+    "books": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "GENERATED FIELD. Populated by tools/sync.js from every book's `availability.physical_access[].slug` via reverse lookup. Must not be present in committed source files — if a contributor adds it by hand, validate.js should flag this as an error, not silently accept it."
+    },
+    "contributors": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "reviewed", "published"]
+    }
+  },
+  "additionalProperties": false
+}

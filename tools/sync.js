@@ -10,6 +10,8 @@ import {
   buildEditUrl,
   ensureDir,
   extractMarkdownLinks,
+  getBookMemeRefs,
+  getBookRelatedBooks,
   getSectionContent,
   normalizeWhitespace,
   resolveEditBaseUrl,
@@ -134,7 +136,7 @@ function toRagRecords(entry) {
   return chunks.map((chunk) => ({
     id: `${entry.relPath}#${chunk.depth}`,
     type: entry.kind,
-    title: String(entry.kind === "person" ? entry.data.name ?? "" : entry.data.title ?? ""),
+    title: String(entry.kind === "person" || entry.kind === "resource" ? entry.data.name ?? "" : entry.data.title ?? ""),
     metadata: metadataForEntry(entry),
     depth: chunk.depth,
     text: chunk.text,
@@ -210,7 +212,7 @@ description: 以合法、開放授權方式建立可供人類與 AI 閱讀的香
 
 - 書籍條目：${counts.books}
 - 概念母題：${counts.memes}
-- 脈絡長文：${counts.context}
+- 脈絡長文：${counts.context}${counts.resources > 0 ? `\n- 實體書取得途徑：${counts.resources}` : ""}
 - 最後同步：${generatedDate}
 
 ## 探索圖譜與原始資料
@@ -284,11 +286,12 @@ async function main() {
 
   const memeBacklinks = new Map(entries.filter((e) => e.kind === "meme").map((e) => [e.slug, []]))
   const personBacklinks = new Map(entries.filter((e) => e.kind === "person").map((e) => [e.slug, []]))
+  const resourceBacklinks = new Map(entries.filter((e) => e.kind === "resource").map((e) => [e.slug, []]))
   for (const book of entries.filter((e) => e.kind === "book")) {
-    const memeSlugs = Array.isArray(book.data.memes) ? book.data.memes : []
-    for (const slug of memeSlugs) {
-      if (memeBacklinks.has(slug)) {
-        memeBacklinks.get(slug).push(book.relPath)
+    const memeRefs = getBookMemeRefs(book)
+    for (const ref of memeRefs) {
+      if (memeBacklinks.has(ref.slug)) {
+        memeBacklinks.get(ref.slug).push(book.relPath)
       }
     }
 
@@ -300,27 +303,64 @@ async function main() {
         personBacklinks.get(reference).push(book.relPath)
       }
     }
+
+    const physicalAccess = Array.isArray(book.data.availability?.physical_access)
+      ? book.data.availability.physical_access
+      : []
+    for (const resource of physicalAccess) {
+      if (resource.slug && resourceBacklinks.has(resource.slug)) {
+        resourceBacklinks.get(resource.slug).push(book.relPath)
+      }
+    }
   }
 
   const nodes = entries.map((entry) => ({
     id: entry.relPath,
     slug: entry.slug,
     kind: entry.kind,
-    title: entry.kind === "person" ? entry.data.name ?? "" : entry.data.title ?? "",
+    title: entry.kind === "person" || entry.kind === "resource" ? entry.data.name ?? "" : entry.data.title ?? "",
     source_path: entry.relPath,
     url_path: toEntityUrlPath(entry.relPath)
   }))
 
   const edges = []
   for (const book of entries.filter((e) => e.kind === "book")) {
-    const memeSlugs = Array.isArray(book.data.memes) ? book.data.memes : []
-    for (const slug of memeSlugs) {
-      const targetPath = `knowledge/memes/${slug}.md`
+    const memeRefs = getBookMemeRefs(book)
+    for (const ref of memeRefs) {
+      const targetPath = `knowledge/memes/${ref.slug}.md`
       if (entryByPath.has(targetPath)) {
         edges.push({
           from: book.relPath,
           to: targetPath,
-          kind: "book-meme"
+          kind: "book-meme",
+          relation: ref.relation
+        })
+      }
+    }
+
+    const relatedBookRefs = getBookRelatedBooks(book)
+    for (const ref of relatedBookRefs) {
+      const targetEntry = entries.find((e) => e.kind === "book" && e.slug === ref.slug)
+      if (targetEntry) {
+        edges.push({
+          from: book.relPath,
+          to: targetEntry.relPath,
+          kind: "book-book",
+          relation: ref.relation
+        })
+      }
+    }
+
+    const physicalAccessRefs = Array.isArray(book.data.availability?.physical_access)
+      ? book.data.availability.physical_access
+      : []
+    for (const resource of physicalAccessRefs) {
+      const targetPath = `knowledge/resources/${resource.slug}.md`
+      if (resource.slug && entryByPath.has(targetPath)) {
+        edges.push({
+          from: book.relPath,
+          to: targetPath,
+          kind: "book-resource"
         })
       }
     }
@@ -367,11 +407,16 @@ async function main() {
     if (entry.kind === "person" && !data.title) {
       data.title = data.name ?? entry.slug
     }
+    if (entry.kind === "resource" && !data.title) {
+      data.title = data.name ?? entry.slug
+    }
 
     if (entry.kind === "meme") {
       data.books = (memeBacklinks.get(entry.slug) ?? []).sort((a, b) => a.localeCompare(b, "en"))
     } else if (entry.kind === "person") {
       data.books = (personBacklinks.get(entry.slug) ?? []).sort((a, b) => a.localeCompare(b, "en"))
+    } else if (entry.kind === "resource") {
+      data.books = (resourceBacklinks.get(entry.slug) ?? []).sort((a, b) => a.localeCompare(b, "en"))
     }
 
     const bodyWithEdit = withEditLink(entry.body, entry.relPath)
@@ -380,10 +425,10 @@ async function main() {
   }
 
   const entityIndex = entries
-    .filter((entry) => ["book", "meme", "person"].includes(entry.kind))
+    .filter((entry) => ["book", "meme", "person", "resource"].includes(entry.kind))
     .map((entry) => ({
       slug: entry.slug,
-      title: entry.kind === "person" ? entry.data.name ?? "" : entry.data.title ?? "",
+      title: entry.kind === "person" || entry.kind === "resource" ? entry.data.name ?? "" : entry.data.title ?? "",
       type: entry.kind,
       path: entry.relPath
     }))
@@ -404,7 +449,8 @@ async function main() {
   const counts = {
     books: entries.filter((entry) => entry.kind === "book").length,
     memes: entries.filter((entry) => entry.kind === "meme").length,
-    context: entries.filter((entry) => entry.kind === "context").length
+    context: entries.filter((entry) => entry.kind === "context").length,
+    resources: entries.filter((entry) => entry.kind === "resource").length
   }
 
   const landingMarkdown = generateLandingPageMarkdown({

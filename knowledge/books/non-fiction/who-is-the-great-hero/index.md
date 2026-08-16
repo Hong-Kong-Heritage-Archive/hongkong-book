@@ -13,7 +13,9 @@ type: non-fiction
 era: [post-2020]
 places: []
 themes: [金庸小說研究, 文學評論, 武俠文化, 出版自由]
-memes: [only-hong-kong-jin-yong]
+memes:
+  - slug: only-hong-kong-jin-yong
+    relation: exemplifies
 editions: []
 contributors: []
 status: draft

@@ -8,7 +8,9 @@ year: 2020
 publisher: 星夜出版有限公司
 isbn: "9789863195016"
 themes: [推理小說, 短篇合集, 香港本土元素, 香港推理小說崛起]
-memes: [jianghu-code-to-deductive-truth]
+memes:
+  - slug: jianghu-code-to-deductive-truth
+    relation: exemplifies
 people: []
 era: [post-1997]
 editions: []

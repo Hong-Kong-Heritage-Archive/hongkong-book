@@ -29,14 +29,15 @@ A single source of truth for books about Hong Kong (fiction and non-fiction), ma
 
 ---
 
-## 2. Content model — four entity types
+## 2. Content model — five entity types
 
 1. **Books** (primary, first-class) — the catalog: bibliographic fact + original curated analysis. Never the book's own text.
 2. **People** (real people — authors, critics, historical subjects) — one canonical biography per person, linked from every book that involves them, whether as author or as subject. Added in response to a real pain point: without it, a person's biography gets copy-pasted into every book file that mentions them and drifts out of sync. See §4 for the `authors:` vs `people:` distinction on book entries.
 3. **Memes** (cross-cutting concepts) — recurring motifs, idioms, or cultural phenomena that appear across multiple books (e.g. 獅子山精神 Lion Rock Spirit). Many-to-many by nature — a graph problem, not a narrative one.
 4. **Context essays** (secondary, optional) — long-form pieces on eras, places, or themes, taiwan.md-style, which cite and link out to relevant books as further reading.
+5. **Resources** (secondary, optional) — a place a reader can get a physical copy of a book when no ecopy exists (library, community lending app, bookstore). Same promotion logic as people: a book's `availability.physical_access[].name` is a fine placeholder on its own, and only gets promoted to a standalone `knowledge/resources/{slug}.md` page once the same resource is cited by 2+ books — otherwise it's the same drift problem people solves, just for library/lending-app names and URLs instead of author bios.
 
-Books stay the entry point. People, memes, and context essays exist to connect books to each other and to their real-world authors/subjects, not to compete with books as the primary object.
+Books stay the entry point. People, memes, context essays, and resources exist to connect books to each other, to their real-world authors/subjects, and to where a reader can actually obtain them — not to compete with books as the primary object.
 
 **Fictional characters are a deliberately deferred entity type**, not part of `knowledge/people/`. The cases seen so far (a novel's recurring detective, a wuxia protagonist) only recur *within* a single book or series, which is a weaker case for a standalone cross-book entity than a real person already demonstrably shows up as both an author and a subject across genuinely separate books. Revisit once a fictional character shows up across two unrelated books, the same bar `memes` cleared before it was built.
 
@@ -55,8 +56,13 @@ hongkong-book-md/
 │   │   └── non-fiction/
 │   │       └── {slug}/
 │   │           └── index.md
+│   ├── people/
+│   │   └── {slug}.md
 │   ├── memes/
 │   │   └── {slug}.md
+│   ├── resources/
+│   │   └── {slug}.md                  ← promoted from a book's availability.physical_access
+│   │                                     once cited by 2+ books, same bar as people/
 │   └── context/
 │       ├── eras/{slug}.md
 │       ├── places/{slug}.md
@@ -65,11 +71,15 @@ hongkong-book-md/
 ├── schemas/                           ← JSON Schema — the actual enforcement mechanism
 │   ├── book.schema.json
 │   ├── meme.schema.json
+│   ├── people.schema.json
+│   ├── resource.schema.json
 │   └── context.schema.json
 │
 ├── tools/
 │   ├── new-book.js                    ← scaffolds a compliant skeleton file (form-like CLI)
 │   ├── validate.js                    ← pre-commit + CI check, shared logic
+│   ├── migrate-typed-edges.js         ← one-time migration, not part of the regular pipeline —
+│   │                                     see §4's memes: format for what it migrated
 │   └── sync.js                        ← knowledge/ → site + graph + RAG export + llms.txt
 │
 ├── export/
@@ -96,6 +106,8 @@ hongkong-book-md/
 
 ### Book — `knowledge/books/{fiction|non-fiction}/{slug}/index.md`
 
+> **Note (2026-08):** `author: ""` below is this draft's original v0 shape. The actual implementation uses `authors: []` (array of `knowledge/people/` slugs or plain-name placeholders) plus an optional `people: []` for non-author subjects — see `.github/instructions/books.instructions.md` for the authoritative current field list, including `related_books:` and `availability:` added since this draft was written. This box is left as directional documentation of intent, not a literal current schema — `schemas/book.schema.json` is the actual enforcement mechanism and source of truth if this drifts further.
+
 ```yaml
 ---
 title: ""              # zh-HK, canonical
@@ -108,7 +120,16 @@ type: fiction | non-fiction
 era: []                # tags: e.g. [japanese-occupation, handover-1997]
 places: []              # e.g. [kowloon-walled-city]
 themes: []               # e.g. [identity, migration]
-memes: []                # e.g. [lion-rock-spirit] — many-to-many, see §5
+memes:                   # {slug, relation}[] — many-to-many, see §5. relation is one of
+                          # exemplifies/originates/subverts/critiques; see
+                          # schemas/book.schema.json for the authoritative definitions
+  - slug: lion-rock-spirit
+    relation: exemplifies
+related_books: []         # optional — book-to-book relations (fictionalizes/responds_to/
+                           # inherits/criticizes), distinct from memes' book-to-motif relations
+availability:              # optional — helps a reader actually find the book; see
+                            # schemas/book.schema.json for the full shape
+  ecopy: available | unavailable | unknown
 editions:                # optional — translations / other editions of the same work
   - lang: en
     title: ""

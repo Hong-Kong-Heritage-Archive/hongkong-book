@@ -11,7 +11,11 @@ type: fiction
 era: [colonial-era, wwii-japanese-occupation, post-war-1960s, 1970s, 1980s, post-1997]
 places: []
 themes: [女性小說, 口述歷史, 世代研究, 製衣業, 香港百年史]
-memes: [first-generation, second-generation-her-version]
+memes:
+  - slug: first-generation
+    relation: exemplifies
+  - slug: second-generation-her-version
+    relation: exemplifies
 editions: []
 contributors: []
 status: draft

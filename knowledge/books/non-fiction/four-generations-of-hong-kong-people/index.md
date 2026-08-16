@@ -11,7 +11,9 @@ type: non-fiction
 era: [colonial-era, post-war-1960s, 1970s, 1980s, post-1997]
 places: []
 themes: [社會學, 世代研究, 香港身份認同, 社會流動]
-memes: [generation-zero]
+memes:
+  - slug: generation-zero
+    relation: exemplifies
 editions: []
 contributors: []
 status: draft

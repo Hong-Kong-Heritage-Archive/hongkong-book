@@ -10,7 +10,11 @@ type: fiction
 era: [handover-1997]
 places: []
 themes: [科幻小說, 衛斯理系列, 政治預言, 言論自由]
-memes: [political-prophecy, anti-extradition-movement]
+memes:
+  - slug: political-prophecy
+    relation: exemplifies
+  - slug: anti-extradition-movement
+    relation: exemplifies
 editions: []
 contributors: []
 status: draft

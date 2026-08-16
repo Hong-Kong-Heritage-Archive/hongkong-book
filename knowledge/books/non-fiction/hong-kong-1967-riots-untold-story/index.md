@@ -11,7 +11,9 @@ type: non-fiction
 era: [post-war-1960s]
 places: []
 themes: [六七暴動, 中共地下黨, 檔案史料, 一手史料考證]
-memes: [1967-pineapple-bombs]
+memes:
+  - slug: 1967-pineapple-bombs
+    relation: exemplifies
 editions:
   - lang: zh
     title: 香港六七暴動始末（電子書版）
