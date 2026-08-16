@@ -12,10 +12,58 @@
     "path": "knowledge/memes/1967-pineapple-bombs.md"
   },
   {
+    "slug": "a-modern-history-of-hong-kong",
+    "title": "A Modern History of Hong Kong：香港近代史",
+    "type": "book",
+    "path": "knowledge/books/non-fiction/a-modern-history-of-hong-kong/index.md"
+  },
+  {
+    "slug": "anti-extradition-movement",
+    "title": "反送中",
+    "type": "meme",
+    "path": "knowledge/memes/anti-extradition-movement.md"
+  },
+  {
+    "slug": "be-water",
+    "title": "如水",
+    "type": "meme",
+    "path": "knowledge/memes/be-water.md"
+  },
+  {
+    "slug": "be-water-collective-improvisation-in-hong-kongs-anti-extradition-protests",
+    "title": "如水革命：香港人如何在反送中運動集體臨機應變",
+    "type": "book",
+    "path": "knowledge/books/non-fiction/be-water-collective-improvisation-in-hong-kongs-anti-extradition-protests/index.md"
+  },
+  {
+    "slug": "be-water-my-friend-bruce-lee",
+    "title": "Be Water, My Friend：似水無形，李小龍的人生哲學",
+    "type": "book",
+    "path": "knowledge/books/non-fiction/be-water-my-friend-bruce-lee/index.md"
+  },
+  {
     "slug": "borrowed-place-borrowed-time",
     "title": "借來的地方，借來的時間",
     "type": "meme",
     "path": "knowledge/memes/borrowed-place-borrowed-time.md"
+  },
+  {
+    "slug": "bruce-lee",
+    "title": "李小龍",
+    "type": "person",
+    "path": "knowledge/people/bruce-lee.md"
+  },
+  {
+    "slug": "chan-ho-kei",
+    "title": "陳浩基",
+    "type": "person",
+    "path": "knowledge/people/chan-ho-kei.md"
+  },
+  {
+    "slug": "chasing-the-dragon",
+    "title": "追龍",
+    "type": "book",
+    "path": "knowledge/books/fiction/chasing-the-dragon/index.md"
   },
   {
     "slug": "city-of-darkness-kowloon-walled-city",
@@ -24,10 +72,94 @@
     "path": "knowledge/books/non-fiction/city-of-darkness-kowloon-walled-city/index.md"
   },
   {
+    "slug": "colonial-governance-triangle",
+    "title": "殖民地管治三角",
+    "type": "meme",
+    "path": "knowledge/memes/colonial-governance-triangle.md"
+  },
+  {
+    "slug": "destiny-wisely",
+    "title": "命運",
+    "type": "book",
+    "path": "knowledge/books/fiction/destiny-wisely/index.md"
+  },
+  {
+    "slug": "detective-cha-chaan-teng",
+    "title": "偵探冰室",
+    "type": "book",
+    "path": "knowledge/books/fiction/detective-cha-chaan-teng/index.md"
+  },
+  {
+    "slug": "detective-cha-chaan-teng-soul",
+    "title": "偵探冰室．靈",
+    "type": "book",
+    "path": "knowledge/books/fiction/detective-cha-chaan-teng-soul/index.md"
+  },
+  {
+    "slug": "ditu-ji",
+    "title": "地圖集",
+    "type": "book",
+    "path": "knowledge/books/fiction/ditu-ji/index.md"
+  },
+  {
+    "slug": "fictive-kinship",
+    "title": "擬親屬／擬血親",
+    "type": "meme",
+    "path": "knowledge/memes/fictive-kinship.md"
+  },
+  {
+    "slug": "first-generation",
+    "title": "第一代香港人",
+    "type": "meme",
+    "path": "knowledge/memes/first-generation.md"
+  },
+  {
+    "slug": "four-generations-of-hong-kong-people",
+    "title": "四代香港人",
+    "type": "book",
+    "path": "knowledge/books/non-fiction/four-generations-of-hong-kong-people/index.md"
+  },
+  {
+    "slug": "from-relief-to-integration",
+    "title": "從救濟到融合：香港政府的「中國難民政策」（1945-1980）",
+    "type": "book",
+    "path": "knowledge/books/non-fiction/from-relief-to-integration/index.md"
+  },
+  {
+    "slug": "generation-zero",
+    "title": "第零代香港人",
+    "type": "meme",
+    "path": "knowledge/memes/generation-zero.md"
+  },
+  {
+    "slug": "ghostly-realism",
+    "title": "靈異寫實",
+    "type": "meme",
+    "path": "knowledge/memes/ghostly-realism.md"
+  },
+  {
+    "slug": "hak-miu-c",
+    "title": "黑貓C",
+    "type": "person",
+    "path": "knowledge/people/hak-miu-c.md"
+  },
+  {
     "slug": "hong-kong-1967-riots-untold-story",
     "title": "香港六七暴動始末",
     "type": "book",
     "path": "knowledge/books/non-fiction/hong-kong-1967-riots-untold-story/index.md"
+  },
+  {
+    "slug": "hong-kong-action-cinema",
+    "title": "香港動作電影",
+    "type": "book",
+    "path": "knowledge/books/non-fiction/hong-kong-action-cinema/index.md"
+  },
+  {
+    "slug": "hong-kong-an-anxious-homeland",
+    "title": "香港，鬱躁的家邦：本土觀點的香港源流史",
+    "type": "book",
+    "path": "knowledge/books/non-fiction/hong-kong-an-anxious-homeland/index.md"
   },
   {
     "slug": "hong-kong-sherlock-fu-ermi",
@@ -36,10 +168,52 @@
     "path": "knowledge/books/fiction/hong-kong-sherlock-fu-ermi/index.md"
   },
   {
+    "slug": "hong-kong-social-anecdotes",
+    "title": "香港社會掌故叢談",
+    "type": "book",
+    "path": "knowledge/books/non-fiction/hong-kong-social-anecdotes/index.md"
+  },
+  {
+    "slug": "i-read-jin-yong",
+    "title": "我看金庸小說",
+    "type": "book",
+    "path": "knowledge/books/non-fiction/i-read-jin-yong/index.md"
+  },
+  {
+    "slug": "individual-vs-system",
+    "title": "個體在巨大系統之中的無力與抗衡",
+    "type": "meme",
+    "path": "knowledge/memes/individual-vs-system.md"
+  },
+  {
+    "slug": "jeet-kune-do",
+    "title": "截拳道",
+    "type": "meme",
+    "path": "knowledge/memes/jeet-kune-do.md"
+  },
+  {
+    "slug": "jianghu-code-to-deductive-truth",
+    "title": "從江湖道義到推理真相",
+    "type": "meme",
+    "path": "knowledge/memes/jianghu-code-to-deductive-truth.md"
+  },
+  {
     "slug": "jin-yong",
     "title": "金庸（查良鏞）",
     "type": "person",
     "path": "knowledge/people/jin-yong.md"
+  },
+  {
+    "slug": "june-fourth-vigil",
+    "title": "六四維園燭光晚會",
+    "type": "meme",
+    "path": "knowledge/memes/june-fourth-vigil.md"
+  },
+  {
+    "slug": "kowloon-walled-city-novel",
+    "title": "九龍城寨",
+    "type": "book",
+    "path": "knowledge/books/fiction/kowloon-walled-city-novel/index.md"
   },
   {
     "slug": "liu-yi-chang",
@@ -48,10 +222,82 @@
     "path": "knowledge/people/liu-yi-chang.md"
   },
   {
+    "slug": "love-in-a-fallen-city",
+    "title": "傾城之戀",
+    "type": "book",
+    "path": "knowledge/books/fiction/love-in-a-fallen-city/index.md"
+  },
+  {
+    "slug": "man-sin",
+    "title": "文善",
+    "type": "person",
+    "path": "knowledge/people/man-sin.md"
+  },
+  {
+    "slug": "martial-arts-mania-poetry",
+    "title": "武道狂之詩",
+    "type": "book",
+    "path": "knowledge/books/fiction/martial-arts-mania-poetry/index.md"
+  },
+  {
+    "slug": "millennium-blackout",
+    "title": "千禧黑夜",
+    "type": "book",
+    "path": "knowledge/books/fiction/millennium-blackout/index.md"
+  },
+  {
+    "slug": "mo-yip",
+    "title": "冒業",
+    "type": "person",
+    "path": "knowledge/people/mo-yip.md"
+  },
+  {
+    "slug": "mok-lei-si",
+    "title": "莫理斯",
+    "type": "person",
+    "path": "knowledge/people/mok-lei-si.md"
+  },
+  {
+    "slug": "mong-yat",
+    "title": "望日",
+    "type": "person",
+    "path": "knowledge/people/mong-yat.md"
+  },
+  {
+    "slug": "ni-kuang",
+    "title": "倪匡",
+    "type": "person",
+    "path": "knowledge/people/ni-kuang.md"
+  },
+  {
     "slug": "only-hong-kong-jin-yong",
     "title": "只有香港",
     "type": "meme",
     "path": "knowledge/memes/only-hong-kong-jin-yong.md"
+  },
+  {
+    "slug": "political-prophecy",
+    "title": "政治預言",
+    "type": "meme",
+    "path": "knowledge/memes/political-prophecy.md"
+  },
+  {
+    "slug": "portrait-of-fierce-women",
+    "title": "烈女圖",
+    "type": "book",
+    "path": "knowledge/books/fiction/portrait-of-fierce-women/index.md"
+  },
+  {
+    "slug": "rouge",
+    "title": "胭脂扣",
+    "type": "book",
+    "path": "knowledge/books/fiction/rouge/index.md"
+  },
+  {
+    "slug": "sai-gaai-jai",
+    "title": "世界仔",
+    "type": "meme",
+    "path": "knowledge/memes/sai-gaai-jai.md"
   },
   {
     "slug": "sam-bat-gun",
@@ -60,10 +306,58 @@
     "path": "knowledge/memes/sam-bat-gun.md"
   },
   {
+    "slug": "second-generation-her-version",
+    "title": "第二代香港人（她們的版本）",
+    "type": "meme",
+    "path": "knowledge/memes/second-generation-her-version.md"
+  },
+  {
+    "slug": "shadow-of-globalization",
+    "title": "全球化的陰影",
+    "type": "meme",
+    "path": "knowledge/memes/shadow-of-globalization.md"
+  },
+  {
+    "slug": "siu-bo-magic-skill",
+    "title": "小寶神功",
+    "type": "book",
+    "path": "knowledge/books/non-fiction/siu-bo-magic-skill/index.md"
+  },
+  {
     "slug": "song-wong-toi",
     "title": "宋王臺",
     "type": "meme",
     "path": "knowledge/memes/song-wong-toi.md"
+  },
+  {
+    "slug": "soul-of-characters",
+    "title": "字之魂",
+    "type": "book",
+    "path": "knowledge/books/fiction/soul-of-characters/index.md"
+  },
+  {
+    "slug": "summer-of-the-breached-dam",
+    "title": "崩堤之夏",
+    "type": "book",
+    "path": "knowledge/books/fiction/summer-of-the-breached-dam/index.md"
+  },
+  {
+    "slug": "tai-pan",
+    "title": "Tai-Pan",
+    "type": "book",
+    "path": "knowledge/books/fiction/tai-pan/index.md"
+  },
+  {
+    "slug": "tam-kim",
+    "title": "譚劍",
+    "type": "person",
+    "path": "knowledge/people/tam-kim.md"
+  },
+  {
+    "slug": "the-deer-and-the-cauldron",
+    "title": "鹿鼎記",
+    "type": "book",
+    "path": "knowledge/books/fiction/the-deer-and-the-cauldron/index.md"
   },
   {
     "slug": "the-drunkard",
@@ -72,10 +366,40 @@
     "path": "knowledge/books/fiction/the-drunkard/index.md"
   },
   {
+    "slug": "the-fall-of-hong-kong",
+    "title": "The Fall of Hong Kong：淪陷——英國、中國與日治時期",
+    "type": "book",
+    "path": "knowledge/books/non-fiction/the-fall-of-hong-kong/index.md"
+  },
+  {
     "slug": "the-legend-of-the-condor-heroes",
     "title": "射鵰英雄傳",
     "type": "book",
     "path": "knowledge/books/fiction/the-legend-of-the-condor-heroes/index.md"
+  },
+  {
+    "slug": "the-new-year-wisely",
+    "title": "新年",
+    "type": "book",
+    "path": "knowledge/books/fiction/the-new-year-wisely/index.md"
+  },
+  {
+    "slug": "three-forces",
+    "title": "三方夾縫",
+    "type": "meme",
+    "path": "knowledge/memes/three-forces.md"
+  },
+  {
+    "slug": "traditional-simplified-anxiety",
+    "title": "繁簡之爭",
+    "type": "meme",
+    "path": "knowledge/memes/traditional-simplified-anxiety.md"
+  },
+  {
+    "slug": "vigil-hong-kong-on-the-brink",
+    "title": "Vigil：燭光守夜的香港",
+    "type": "book",
+    "path": "knowledge/books/non-fiction/vigil-hong-kong-on-the-brink/index.md"
   },
   {
     "slug": "what-is-love-jin-yong",
@@ -90,9 +414,27 @@
     "path": "knowledge/books/non-fiction/who-is-the-great-hero/index.md"
   },
   {
+    "slug": "wreaking-havoc",
+    "title": "闖禍",
+    "type": "book",
+    "path": "knowledge/books/fiction/wreaking-havoc/index.md"
+  },
+  {
     "slug": "wu-oi-yee",
     "title": "吳靄儀",
     "type": "person",
     "path": "knowledge/people/wu-oi-yee.md"
+  },
+  {
+    "slug": "ye-tau-ji",
+    "title": "夜透紫",
+    "type": "person",
+    "path": "knowledge/people/ye-tau-ji.md"
+  },
+  {
+    "slug": "zaap-ga",
+    "title": "雜家",
+    "type": "meme",
+    "path": "knowledge/memes/zaap-ga.md"
   }
 ]
