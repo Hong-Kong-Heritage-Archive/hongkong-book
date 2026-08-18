@@ -24,6 +24,10 @@ memes:
     relation: exemplifies
   - slug: jianghu-code-to-deductive-truth
     relation: exemplifies
+  - slug: drugs-and-underground-order
+    relation: exemplifies
+  - slug: loyalty-code-to-criminal-capitalism
+    relation: exemplifies
 editions: []
 contributors: []
 status: draft
@@ -40,6 +44,10 @@ status: draft
 ## Why It Matters
 
 作者余兒在訪問中提到，兒時曾隨長輩經過九龍城寨外圍卻未曾進入，成年後為寫作搜集資料，才透過《City of Darkness》等攝影集深入了解城寨實貌（詳見本站條目：《City of Darkness》）——這是虛構創作直接建基於本站已收錄紀實著作之上的具體例子。小說故事發生的地帶，正是「三不管」meme所指涉的主權真空地帶本身（詳見 meme：[三不管](/knowledge/memes/sam-bat-gun)），而系列前傳《龍頭》涉及的1956年雙十暴動，更與本站「三方夾縫」meme中14K／國民黨背景三合會的考證直接相關（詳見 meme：[三方夾縫](/knowledge/memes/three-forces)）——需說明，這一連結建基於具體歷史事件的重疊，確定性高於單純主題呼應。九龍城寨本身「名義上屬中國、實際治權真空」的特殊地位，某程度上亦是香港自身「借來的地方，借來的時間」處境的微縮版本，詳見 meme：[借來的地方，借來的時間](/knowledge/memes/borrowed-place-borrowed-time)（惟此一延伸類比屬本站觀點，非既有評論定論）。本書亦是「香港武俠小說當代轉型」現象的具體案例之一，見 context：[香港武俠小說的當代轉型：從金庸到狼派](/knowledge/context/themes/21st-century-wuxia)。本書更是本站「從江湖道義到推理真相」meme中，「力／江湖道義」一端在地化演變的具體案例——金庸筆下相對抽象的「江湖」，在本書中收縮成一個真實存在的香港地點，「道義」亦具體落實為真實三合會脈絡下的兄弟情義（詳見 meme：[從江湖道義到推理真相](/knowledge/memes/jianghu-code-to-deductive-truth)，惟此一延伸觀察屬本站原創提出）。
+
+本書亦是「毒品與地下秩序」meme中「地下秩序拒絕販毒」道德劃分呈現得最具體的案例（詳見 meme：[毒品與地下秩序](/knowledge/memes/drugs-and-underground-order)，惟此一延伸框架屬本站原創提出）。原著已將「毒販」列為城寨「三不管」龍蛇混雜生態的一員，但城寨話事人龍捲風所領導的「龍城幫」本身，並非以販毒為權力基礎；其2024年電影改編《九龍城寨之圍城》更把這一劃分具體情節化——城寨以外經營毒品生意的「大老闆」及其後奪權的手下王九，才是故事中真正擴大毒品生意的一方，龍捲風、信一等人則主動阻止主角販賣偷來的毒品、將毒品原數交還。**需特別說明**：這一具體情節目前確認見於2024年電影改編，是否亦見於2008年原著小說文本本身，本站尚未能確認，特此註明，留待熟悉原著的讀者查證補充，不宜逕自視為原著已明文交代之情節。
+
+本書亦是 [義氣地下秩序 → 犯罪資本主義](/knowledge/memes/loyalty-code-to-criminal-capitalism) 的具體案例，標記為 `exemplifies`。龍捲風所領導的「龍城幫」——收留、保護、講兄弟情義，不以販毒為權力基礎——體現的正是該 meme 所稱「舊式」義氣地下秩序；城寨以外經營毒品生意的「大老闆」及其後奪權的王九，則體現「新式」純粹逐利的一端。這與上述 [毒品與地下秩序](/knowledge/memes/drugs-and-underground-order) 是同一組人物關係的兩種分析角度：一個聚焦「誰販毒」，一個聚焦「講唔講義氣、守唔守規矩」，論證重心不同，不宜混為一談（兩者皆屬本站原創提出的延伸框架）。
 
 ## Further Reading
 

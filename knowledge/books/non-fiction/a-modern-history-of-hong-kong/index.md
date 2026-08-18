@@ -16,6 +16,8 @@ memes:
     relation: exemplifies
   - slug: colonial-governance-triangle
     relation: exemplifies
+  - slug: drugs-and-underground-order
+    relation: exemplifies
 editions: []
 contributors: []
 status: draft
@@ -32,6 +34,8 @@ status: draft
 ## Why It Matters
 
 作者曾銳生本身是牛津大學聖安東尼學院「查良鏞獎學金」（Louis Cha Fellowship）教授——這一教席正是以金庸本名設立，是本站另一條意想不到卻真實的連結（詳見本站條目：《射鵰英雄傳》，以及人物條目：[金庸](/knowledge/people/jin-yong)）。本書所呈現的殖民管治圖像——倫敦政策、本地精英政治、國際關係三者持續互動——本站嘗試將其提煉為一套分析框架，並進一步與呂大樂《四代香港人》的世代劃分合觀，探討不同世代香港人所身處的管治三角配置有何差異（詳見 meme：[殖民地管治三角](/knowledge/memes/colonial-governance-triangle)）。書中對殖民地行政架構的梳理，亦為本站「三不管」meme提供了更廣闊的制度背景——理解殖民政府一貫透過委任精英、契約式劃界等方式管治，有助說明九龍城寨這類治理真空地帶何以能夠存在（詳見 meme：[三不管](/knowledge/memes/sam-bat-gun)，惟本書是否具體詳論九龍城寨本身，尚待查證）。
+
+本書與 [毒品與地下秩序](/knowledge/memes/drugs-and-underground-order) 的關係亦標記為 `exemplifies`，惟連結程度相對較弱：全書開篇追溯香港開埠源於鴉片戰爭及《南京條約》，確認了殖民地香港與鴉片經濟在起源層面的歷史關聯，可為該 meme 提供史實背景；惟本書並未深入梳理鴉片貿易其後在殖民地管治或商業結構中的持續角色，此處僅取其「香港誕生於鴉片戰爭」這一起源層面的史實背景之用，不宜過度延伸解讀（惟此一延伸框架屬本站原創提出）。
 
 ## Further Reading
 

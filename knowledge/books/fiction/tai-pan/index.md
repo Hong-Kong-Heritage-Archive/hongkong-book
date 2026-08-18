@@ -14,6 +14,8 @@ themes: [歷史小說, 香港開埠, 鴉片貿易, 洋行]
 memes:
   - slug: generation-zero
     relation: exemplifies
+  - slug: drugs-and-underground-order
+    relation: exemplifies
 editions: []
 contributors: []
 status: draft
@@ -30,6 +32,8 @@ status: draft
 ## Why It Matters
 
 本書雖出自西方暢銷作家之手，卻是英語世界最廣為流傳的香港「建城神話」敘事之一：一群白手興家的外來冒險家，憑膽識與投機在一片「不毛之地」上建立商業王國[權力、資本與歷史的原點](/knowledge/context/places/central-sheung-wan-taiping-shan)）。這一敘事本身值得放在後來的香港社會論述中重新檢視——本站嘗試將本書所描寫的開埠世代，視為呂大樂《四代香港人》所劃分的四個世代之前的「第零代」，兩者合觀，恰好呈現「機會之地」神話從建立到（在後代眼中）逐漸失效的完整弧線（詳見 meme：[第零代香港人](/knowledge/memes/generation-zero)，惟此一延伸框架屬本站原創提出，並非既有學術定論）。
+
+本書與 [毒品與地下秩序](/knowledge/memes/drugs-and-underground-order) 的關係標記為 `exemplifies`。Struan「結賈行」的商業王國，其原型脫胎自真實歷史上靠鴉片貿易起家的渣甸洋行，小說背景更直接標明「鴉片貿易」為全書核心經濟脈絡之一——這使本書成為本站目前收錄最早的「殖民商業資本靠鴉片起家」案例：毒品貿易在此不是後來城寨故事中「地下秩序」需要劃清界線的對象，而是催生香港這座殖民商埠本身的原始資本，兩者形成鮮明的時代對照（惟此一延伸觀察屬本站原創提出）。
 
 ## Further Reading
 

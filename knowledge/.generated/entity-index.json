@@ -102,6 +102,12 @@
     "path": "knowledge/books/fiction/ditu-ji/index.md"
   },
   {
+    "slug": "drugs-and-underground-order",
+    "title": "毒品與地下秩序",
+    "type": "meme",
+    "path": "knowledge/memes/drugs-and-underground-order.md"
+  },
+  {
     "slug": "fictive-kinship",
     "title": "擬親屬／擬血親",
     "type": "meme",
@@ -180,6 +186,18 @@
     "path": "knowledge/books/non-fiction/hong-kong-social-anecdotes/index.md"
   },
   {
+    "slug": "hong-kong-triad-activities-truth",
+    "title": "香港黑社會活動真相",
+    "type": "book",
+    "path": "knowledge/books/non-fiction/hong-kong-triad-activities-truth/index.md"
+  },
+  {
+    "slug": "hongmen-societies-to-modern-triads",
+    "title": "洪門、會黨到現代的黑社會",
+    "type": "book",
+    "path": "knowledge/books/non-fiction/hongmen-societies-to-modern-triads/index.md"
+  },
+  {
     "slug": "i-read-jin-yong",
     "title": "我看金庸小說",
     "type": "book",
@@ -232,6 +250,12 @@
     "title": "傾城之戀",
     "type": "book",
     "path": "knowledge/books/fiction/love-in-a-fallen-city/index.md"
+  },
+  {
+    "slug": "loyalty-code-to-criminal-capitalism",
+    "title": "義氣地下秩序 → 犯罪資本主義",
+    "type": "meme",
+    "path": "knowledge/memes/loyalty-code-to-criminal-capitalism.md"
   },
   {
     "slug": "man-sin",
@@ -400,6 +424,12 @@
     "title": "繁簡之爭",
     "type": "meme",
     "path": "knowledge/memes/traditional-simplified-anxiety.md"
+  },
+  {
+    "slug": "triad-societies-in-hong-kong",
+    "title": "Triad Societies in Hong Kong",
+    "type": "book",
+    "path": "knowledge/books/non-fiction/triad-societies-in-hong-kong/index.md"
   },
   {
     "slug": "vigil-hong-kong-on-the-brink",

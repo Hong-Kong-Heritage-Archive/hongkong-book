@@ -16,6 +16,8 @@ memes:
     relation: exemplifies
   - slug: generation-zero
     relation: subverts
+  - slug: drugs-and-underground-order
+    relation: exemplifies
 related_books:
   - slug: hong-kong-sherlock-fu-ermi
     relation: inherits
@@ -61,6 +63,8 @@ status: draft
 
 從香港推理小說發展的角度看，《生死決戰》也提供了另一條不同於當代都市推理的路線。2010年代以來的香港推理小說形成一個重要的創作群體，而莫理斯的福邇系列把這種推理創作能力延伸到歷史時期：香港本身的殖民歷史、華洋關係及國際局勢成為推理小說的素材。這意味着香港推理小說不只是記錄當代城市犯罪，也可以透過虛構案件重新組織香港的歷史記憶。本書因此是 [「香港推理小說的崛起（2010年代起）」](/knowledge/context/themes/hk-mystery-fiction-wave) 中「以歷史推理重新閱讀香港」這條支線的一個具體例子。
 
+
+本書與 [毒品與地下秩序](/knowledge/memes/drugs-and-underground-order) 的關係標記為 `exemplifies`。書中「福邇本人與鴉片、華洋商業社會及香港城市生活的關係」這條線索，把十九世紀末殖民地香港與鴉片經濟的糾纏，從《Tai-Pan》所呈現的開埠原始資本階段，推進到已經根植於日常華洋商業運作中的既定現實階段——兩書合觀，呈現的正是這一 meme 所要捕捉的殖民地鴉片經濟時間縱深，而非單一時間點的孤立描寫（惟此一延伸觀察屬本站原創提出）。
 
 ## Further Reading
 

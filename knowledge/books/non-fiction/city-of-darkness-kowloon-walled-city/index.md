@@ -14,6 +14,8 @@ themes: [九龍城寨, 攝影紀實, 口述歷史, 城市規劃]
 memes:
   - slug: sam-bat-gun
     relation: exemplifies
+  - slug: drugs-and-underground-order
+    relation: exemplifies
 editions:
   - lang: en
     title: City of Darkness Revisited
@@ -40,6 +42,8 @@ status: draft
 ## Why It Matters
 
 九龍城寨之所以能夠形成如此獨特的聚落形態，根源在於其特殊的主權地位：1898年《展拓香港界址專條》租借新界時，條約明文將九龍寨城排除在外，令這片彈丸之地在名義上仍屬中國領土，卻同時處於香港殖民地的管治範圍之內——這種懸而未決的主權狀態，正是本書所記錄的極端建築與社會現象得以孕育的土壤（詳見 meme：[三不管](/knowledge/memes/sam-bat-gun)）。本書不僅是攝影集，更是理解香港殖民管治邊界、主權模糊地帶如何塑造獨特社區生態的重要一手文獻。
+
+本書與 [毒品與地下秩序](/knowledge/memes/drugs-and-underground-order) 的關係亦標記為 `exemplifies`，惟連結程度相對較弱：本書並未如余兒小說般具體記述城寨居民對毒品的態度，但書中反覆強調城寨「居民自發形成的秩序與互助網絡」，以及作者刻意呈現外界長期加諸城寨之上的「罪惡溫床」污名背後，真實而複雜的社區面貌——這種「紀實文獻挑戰外界污名、呈現地下秩序自身正當性」的取向，與虛構作品中「地下秩序拒絕販毒」的道德劃分，屬同一敘事衝動的兩種不同呈現方式，惟本站無法確認書中是否具體處理毒品議題本身，此處連結僅取其「秩序與污名對照」的取向之用（惟此一延伸框架屬本站原創提出）。
 
 ## Edition Differences
 
