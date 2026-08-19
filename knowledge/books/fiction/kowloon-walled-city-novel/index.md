@@ -28,6 +28,8 @@ memes:
     relation: exemplifies
   - slug: loyalty-code-to-criminal-capitalism
     relation: exemplifies
+  - slug: fictive-kinship
+    relation: exemplifies
 editions: []
 contributors: []
 status: draft
@@ -48,6 +50,8 @@ status: draft
 本書亦是「毒品與地下秩序」meme中「地下秩序拒絕販毒」道德劃分呈現得最具體的案例（詳見 meme：[毒品與地下秩序](/knowledge/memes/drugs-and-underground-order)，惟此一延伸框架屬本站原創提出）。原著已將「毒販」列為城寨「三不管」龍蛇混雜生態的一員，但城寨話事人龍捲風所領導的「龍城幫」本身，並非以販毒為權力基礎；其2024年電影改編《九龍城寨之圍城》更把這一劃分具體情節化——城寨以外經營毒品生意的「大老闆」及其後奪權的手下王九，才是故事中真正擴大毒品生意的一方，龍捲風、信一等人則主動阻止主角販賣偷來的毒品、將毒品原數交還。**需特別說明**：這一具體情節目前確認見於2024年電影改編，是否亦見於2008年原著小說文本本身，本站尚未能確認，特此註明，留待熟悉原著的讀者查證補充，不宜逕自視為原著已明文交代之情節。
 
 本書亦是 [義氣地下秩序 → 犯罪資本主義](/knowledge/memes/loyalty-code-to-criminal-capitalism) 的具體案例，標記為 `exemplifies`。龍捲風所領導的「龍城幫」——收留、保護、講兄弟情義，不以販毒為權力基礎——體現的正是該 meme 所稱「舊式」義氣地下秩序；城寨以外經營毒品生意的「大老闆」及其後奪權的王九，則體現「新式」純粹逐利的一端。這與上述 [毒品與地下秩序](/knowledge/memes/drugs-and-underground-order) 是同一組人物關係的兩種分析角度：一個聚焦「誰販毒」，一個聚焦「講唔講義氣、守唔守規矩」，論證重心不同，不宜混為一談（兩者皆屬本站原創提出的延伸框架）。
+
+本書亦與 [擬親屬／擬血親](/knowledge/memes/fictive-kinship) 相關，標記為 `exemplifies`。火兒因遭誓死效忠的大老闆背叛、血親家人盡遭殺害，隻身逃入九龍城寨後，與龍捲風、信一等兄弟結成的江湖情義關係，正是失去血緣家庭後、以非血緣紐帶重新獲得歸屬與守望的具體案例——這與該 meme 目前收錄的紀實案例（難民融入、2019年集體行動中的陌生人互助）性質不同：後者是社會史層面的觀察，本書則是虛構敘事中「失去血親、重獲擬親屬」的具體情節示範。此一連結與 [義氣地下秩序 → 犯罪資本主義](/knowledge/memes/loyalty-code-to-criminal-capitalism) 有部分重疊但論證重心不同——後者處理龍城幫「守規矩、不販毒」的道德定位，本連結處理的則是龍城幫作為火兒非血緣家庭替代物的關係結構本身，兩者可合觀。
 
 ## Further Reading
 
