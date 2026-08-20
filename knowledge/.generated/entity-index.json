@@ -168,6 +168,12 @@
     "path": "knowledge/books/non-fiction/hong-kong-an-anxious-homeland/index.md"
   },
   {
+    "slug": "hong-kong-borrowed-place-borrowed-time",
+    "title": "借來的地方，借來的時間",
+    "type": "book",
+    "path": "knowledge/books/non-fiction/hong-kong-borrowed-place-borrowed-time/index.md"
+  },
+  {
     "slug": "hong-kong-sherlock-fu-ermi",
     "title": "香江神探福邇，字摩斯",
     "type": "book",
@@ -448,6 +454,12 @@
     "title": "誰是大英雄：金庸正邪人物選評",
     "type": "book",
     "path": "knowledge/books/non-fiction/who-is-the-great-hero/index.md"
+  },
+  {
+    "slug": "wo-kan-ni-kuang-ke-huan",
+    "title": "我看倪匡科幻",
+    "type": "book",
+    "path": "knowledge/books/non-fiction/wo-kan-ni-kuang-ke-huan/index.md"
   },
   {
     "slug": "wreaking-havoc",
