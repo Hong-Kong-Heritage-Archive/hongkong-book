@@ -9,7 +9,7 @@ year: 2024
 isbn: "9786263618541"
 era: [post-2020]
 places: []
-themes: [金學,武俠小說,武俠小說,香港文學,文化評論]
+themes: [金學,武俠小說,香港文學,文化評論]
 editions: []
 contributors: []
 status: draft

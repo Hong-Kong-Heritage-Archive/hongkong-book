@@ -2,6 +2,8 @@
 
 **Note on process (added 2026-08):** https://github.com/Hong-Kong-Heritage-Archive/hongkong-book is now treated as the source of truth for repo content. Before generating anything new in chat, the actual GitHub state gets pulled and diffed against the local working copy — items are only regenerated if they're genuinely new or different from what's already there. Two entries (酒徒, 我看金庸小說) plus the person page 劉以鬯 were added directly on GitHub, outside this chat, and are noted as such below rather than presented as this session's own work.
 
+**⚠️ Tracking gap found (later, same month):** a routine audit while adding 亦舒's entries found the repo had grown well past what this table tracks — 46 books / 26 memes / 14 people actually exist, versus what's logged below. At minimum, three memes (`loyalty-code-to-criminal-capitalism`, `drugs-and-underground-order`, and this session's own `urban-women-clear-eyed-love`) and roughly nine books (including several triad-history non-fiction titles and a second 香江神探福邇 volume) are on GitHub without corresponding rows here. This table is not currently a reliable full inventory — treat `knowledge/` itself as ground truth until a dedicated reconciliation pass closes this gap.
+
 ## Phase 0 status — actual picks so far
 
 The candidate list below was a starting proposal. Actual picks for the pilot don't have to come from it — here's what's been drafted, none of which were on the original 30:
@@ -36,6 +38,9 @@ The candidate list below was a starting proposal. Actual picks for the pilot don
 | 偵探冰室．靈 — 陳浩基, 譚劍, 莫理斯, 黑貓C, 望日, 冒業 | fiction | ✅ drafted on GitHub directly (not via this chat) — `knowledge/books/fiction/detective-cha-chaan-teng-soul/index.md` — its own Why It Matters section is the direct source of the `ghostly-realism` meme's core thesis |
 | 胭脂扣 — 李碧華 | fiction | ✅ drafted — `knowledge/books/fiction/rouge/index.md` — a classic HK ghost story from the original 30-title candidate list, finally drafted as the anchor for `ghostly-realism` |
 | Vigil: Hong Kong on the Brink — Jeffrey Wasserstrom | non-fiction | ✅ drafted — `knowledge/books/non-fiction/vigil-hong-kong-on-the-brink/index.md` — author-confirmed dual-meaning title (June 4th vigil + deathbed vigil for Hong Kong itself) makes this the strongest anchor yet for `june-fourth-vigil` |
+| 喜寶 — 亦舒 | fiction | ✅ drafted — `knowledge/books/fiction/hibiscus/index.md` |
+| 玫瑰的故事 — 亦舒 | fiction | ✅ drafted — `knowledge/books/fiction/story-of-a-rose/index.md` — verify flag on the 1981 vs 1982 first-edition year discrepancy between sources |
+| 我的前半生 — 亦舒 | fiction | ✅ drafted — `knowledge/books/fiction/the-first-half-of-my-life/index.md` — reimagines 魯迅's 〈傷逝〉, not Ibsen's *A Doll's House* as might be assumed; corrected before writing, not after |
 | 烈女圖 — 黃碧雲 | fiction | ✅ drafted — `knowledge/books/fiction/portrait-of-fierce-women/index.md` — spans three generations of HK women (1919–present), providing the KB's first anchor for a gendered counter-narrative to 呂大樂's own Gen 2 framing |
 | A Modern History of Hong Kong — Steve Tsang | non-fiction | ✅ drafted — `knowledge/books/non-fiction/a-modern-history-of-hong-kong/index.md` — bonus find: the author holds Oxford's "Louis Cha Fellowship," literally endowed under 金庸's real name |
 | 字之魂 (1-4) — 夜透紫 | fiction | ✅ drafted — `knowledge/books/fiction/soul-of-characters/index.md` — a case study for the project's own premise: its central conflict is built on Chinese character structure itself, making it genuinely untranslatable |
@@ -73,6 +78,7 @@ The candidate list below was a starting proposal. Actual picks for the pilot don
 | `fictive-kinship` (擬親屬／擬血親) | 千禧黑夜 ↔ 香港社會掌故叢談 ↔ *如水革命* ↔ 《香港，鬱躁的家邦》↔ 《從救濟到融合》 | Added directly on GitHub with the disclosure and header format already correct — the compliant example, unlike the two below |
 | `individual-vs-system` (個體在巨大系統之中的無力與抗衡) | 千禧黑夜 only (real graph edge) | Added directly on GitHub **missing the original-argument disclosure entirely** and using book-style headers instead of the meme convention — both fixed this session (2026-08-15). Prose also discusses 13.67 and 譚劍's work at length, and originally cited an unverifiable 譚劍 title (《黑天鵝紫紫》, removed); those two books don't actually link back via their own `memes:` field, so they're described in the file as illustrative, not as real graph connections — flagged for a human call, not auto-linked |
 | `shadow-of-globalization` (全球化的陰影) | 千禧黑夜 only (real graph edge) | Same GitHub-direct origin and same session fixes as `individual-vs-system` — disclosure had been placed only in a YAML frontmatter comment (invisible to a reader or to prose-only ingestion), moved into the visible body; book-style headers corrected; an unverifiable 譚劍 title (《回收救援隊》) removed; same flagged-not-linked 13.67/譚劍 situation |
+| `urban-women-clear-eyed-love` (都市女性獨立／清醒愛情) | 喜寶 ↔ 玫瑰的故事 ↔ 我的前半生 | User-proposed as an explicit corrective to this KB's existing memes skewing male/political (三方夾縫, 政治預言, 個體在巨大系統之中的無力與抗衡). Reframes the pattern as "精明生存" (shrewd survival) rather than "無力" (powerlessness) — grounded in a real, citable critical contrast (亦舒 vs 瓊瑤, reason vs sentiment), not just asserted |
 
 ### Context essays drafted so far
 
@@ -97,6 +103,7 @@ The candidate list below was a starting proposal. Actual picks for the pilot don
 | `bruce-lee` (李小龍) | martial artist, actor, philosopher | Be Water, My Friend (`people:`, as subject) — connects to *two* memes (`be-water`, `jeet-kune-do`) rather than another book, showing the person layer isn't only for cross-book links |
 | `ye-tau-ji` (夜透紫) | author, light-novel writer | Same justification pattern as Bruce Lee — only 1 fully-catalogued book (字之魂), but connects `traditional-simplified-anxiety` and the 倪匡科幻獎 award-name link to 倪匡. Her page explicitly corrects an overstated claim about co-authoring the *catalogued* 偵探冰室 volume — she joined a later, uncatalogued volume, and the entry says so rather than fudging the timeline |
 | `liu-yi-chang` (劉以鬯) | author, novelist, editor | 酒徒 (`authors:`) — added directly on GitHub, not via this chat |
+| `yi-shu` (亦舒) | author, columnist, urban fiction writer | 喜寶 ↔ 玫瑰的故事 ↔ 我的前半生 — the only person page so far connecting 3 catalogued books, not just 2. Real sibling of 倪匡 (both surnamed 倪), both worked at 《明報》 — a genuine family connection, not a coincidence |
 | `tam-kim` (譚劍) | author, sci-fi/mystery writer | 偵探冰室 ↔ 偵探冰室．靈 — refactored from plain-name placeholder once 偵探冰室．靈 (added independently on GitHub) made the second-book connection real |
 | `man-sin` (文善) | author, mystery writer | 偵探冰室 ↔ 偵探冰室．靈 — same refactor |
 | `mok-lei-si` (莫理斯) | author, mystery writer | 香江神探福邇，字摩斯 ↔ 偵探冰室．靈 — his 2nd-book connection came from a different pairing than the other four (his first book was already catalogued; 偵探冰室．靈 was the second) |
