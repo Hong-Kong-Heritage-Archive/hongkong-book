@@ -11,7 +11,11 @@ type: fiction
 era: [1980s]
 places: []
 themes: [都市言情小說, 女性獨立, 離婚與自立, 都市女性獨立／清醒愛情]
-memes: [urban-women-clear-eyed-love, fictive-kinship]
+memes:
+  - slug: urban-women-clear-eyed-love
+    relation: exemplifies
+  - slug: fictive-kinship
+    relation: exemplifies    
 editions:
   - lang: zh-HK
     title: 我的前半生

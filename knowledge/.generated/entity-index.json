@@ -150,6 +150,12 @@
     "path": "knowledge/people/hak-miu-c.md"
   },
   {
+    "slug": "hibiscus",
+    "title": "喜寶",
+    "type": "book",
+    "path": "knowledge/books/fiction/hibiscus/index.md"
+  },
+  {
     "slug": "hong-kong-1967-riots-untold-story",
     "title": "香港六七暴動始末",
     "type": "book",
@@ -372,6 +378,12 @@
     "path": "knowledge/books/fiction/soul-of-characters/index.md"
   },
   {
+    "slug": "story-of-a-rose",
+    "title": "玫瑰的故事",
+    "type": "book",
+    "path": "knowledge/books/fiction/story-of-a-rose/index.md"
+  },
+  {
     "slug": "summer-of-the-breached-dam",
     "title": "崩堤之夏",
     "type": "book",
@@ -408,6 +420,12 @@
     "path": "knowledge/books/non-fiction/the-fall-of-hong-kong/index.md"
   },
   {
+    "slug": "the-first-half-of-my-life",
+    "title": "我的前半生",
+    "type": "book",
+    "path": "knowledge/books/fiction/the-first-half-of-my-life/index.md"
+  },
+  {
     "slug": "the-legend-of-the-condor-heroes",
     "title": "射鵰英雄傳",
     "type": "book",
@@ -436,6 +454,12 @@
     "title": "Triad Societies in Hong Kong",
     "type": "book",
     "path": "knowledge/books/non-fiction/triad-societies-in-hong-kong/index.md"
+  },
+  {
+    "slug": "urban-women-clear-eyed-love",
+    "title": "都市女性獨立／清醒愛情",
+    "type": "meme",
+    "path": "knowledge/memes/urban-women-clear-eyed-love.md"
   },
   {
     "slug": "vigil-hong-kong-on-the-brink",
@@ -478,6 +502,12 @@
     "title": "夜透紫",
     "type": "person",
     "path": "knowledge/people/ye-tau-ji.md"
+  },
+  {
+    "slug": "yi-shu",
+    "title": "亦舒",
+    "type": "person",
+    "path": "knowledge/people/yi-shu.md"
   },
   {
     "slug": "zaap-ga",

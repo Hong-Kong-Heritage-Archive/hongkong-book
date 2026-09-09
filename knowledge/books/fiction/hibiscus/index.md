@@ -11,7 +11,9 @@ type: fiction
 era: [1970s]
 places: []
 themes: [都市言情小說, 女性獨立, 婚姻與金錢, 都市女性獨立／清醒愛情]
-memes: [urban-women-clear-eyed-love]
+memes: 
+  - slug: urban-women-clear-eyed-love
+    relation: exemplifies
 editions:
   - lang: zh-HK
     title: 喜寶

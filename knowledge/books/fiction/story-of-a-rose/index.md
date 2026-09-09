@@ -12,7 +12,9 @@ type: fiction
 era: [1980s]
 places: []
 themes: [都市言情小說, 女性獨立, 婚姻與金錢, 都市女性獨立／清醒愛情]
-memes: [urban-women-clear-eyed-love]
+memes:
+  - slug: urban-women-clear-eyed-love
+    relation: exemplifies
 editions:
   - lang: zh-HK
     title: 玫瑰的故事
@@ -43,3 +45,12 @@ status: draft
 ## Further Reading
 
 - 《喜寶》《我的前半生》— 亦舒，見本站條目，同屬「都市女性獨立／清醒愛情」meme的錨定作品。
+
+## Edition Differences
+
+### 香港天地版：### 
+
+保留咗亦舒最原汁原味嘅港式現代文風，當中有唔少極具時代特色嘅香港地道修辭、英文字眼或者港式粵語文法。
+### 內地簡體版： ###
+經過重新編校，部分語氣字、港式用語或者西方影射會被「內地化」調整，改為符合內地讀者閱讀習慣嘅普通話規範用語。
+
