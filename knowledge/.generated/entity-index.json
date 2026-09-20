@@ -252,6 +252,12 @@
     "path": "knowledge/books/fiction/kowloon-walled-city-novel/index.md"
   },
   {
+    "slug": "lancashire-road",
+    "title": "蘭開夏道",
+    "type": "book",
+    "path": "knowledge/books/non-fiction/lancashire-road/index.md"
+  },
+  {
     "slug": "liu-yi-chang",
     "title": "劉以鬯",
     "type": "person",
@@ -268,6 +274,12 @@
     "title": "義氣地下秩序 → 犯罪資本主義",
     "type": "meme",
     "path": "knowledge/memes/loyalty-code-to-criminal-capitalism.md"
+  },
+  {
+    "slug": "lui-tai-lok",
+    "title": "呂大樂",
+    "type": "person",
+    "path": "knowledge/people/lui-tai-lok.md"
   },
   {
     "slug": "man-sin",
@@ -438,6 +450,12 @@
     "path": "knowledge/books/fiction/the-new-year-wisely/index.md"
   },
   {
+    "slug": "the-other-hong-kong-women",
+    "title": "她者：香港女性的現況與挑戰",
+    "type": "book",
+    "path": "knowledge/books/non-fiction/the-other-hong-kong-women/index.md"
+  },
+  {
     "slug": "three-forces",
     "title": "三方夾縫",
     "type": "meme",
@@ -454,6 +472,12 @@
     "title": "Triad Societies in Hong Kong",
     "type": "book",
     "path": "knowledge/books/non-fiction/triad-societies-in-hong-kong/index.md"
+  },
+  {
+    "slug": "unmarried-women-hong-kong",
+    "title": "未嫁女：傳統與當代之間的香港單身女性",
+    "type": "book",
+    "path": "knowledge/books/non-fiction/unmarried-women-hong-kong/index.md"
   },
   {
     "slug": "urban-women-clear-eyed-love",

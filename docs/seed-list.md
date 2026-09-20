@@ -41,6 +41,9 @@ The candidate list below was a starting proposal. Actual picks for the pilot don
 | 喜寶 — 亦舒 | fiction | ✅ drafted — `knowledge/books/fiction/hibiscus/index.md` |
 | 玫瑰的故事 — 亦舒 | fiction | ✅ drafted — `knowledge/books/fiction/story-of-a-rose/index.md` — verify flag on the 1981 vs 1982 first-edition year discrepancy between sources |
 | 我的前半生 — 亦舒 | fiction | ✅ drafted — `knowledge/books/fiction/the-first-half-of-my-life/index.md` — reimagines 魯迅's 〈傷逝〉, not Ibsen's *A Doll's House* as might be assumed; corrected before writing, not after |
+| 她者：香港女性的現況與挑戰 — 蔡玉萍、張妙清 編 | non-fiction | ✅ drafted — `knowledge/books/non-fiction/the-other-hong-kong-women/index.md` — 呂大樂 wrote its preface, giving him a second connection and clearing the bar for his own person page |
+| 未嫁女：傳統與當代之間的香港單身女性 — 甄鳳玲 | non-fiction | ✅ drafted — `knowledge/books/non-fiction/unmarried-women-hong-kong/index.md` — academic grounding for "economic independence, not powerlessness, drives the choice" |
+| 蘭開夏道 — 王迪詩 | non-fiction | ✅ drafted — `knowledge/books/non-fiction/lancashire-road/index.md` — a genuine, unexpected second connection: author ended her 11-year 信報 column in 2019 specifically over the extradition-bill press-freedom conflict, now also linked into `anti-extradition-movement` |
 | 烈女圖 — 黃碧雲 | fiction | ✅ drafted — `knowledge/books/fiction/portrait-of-fierce-women/index.md` — spans three generations of HK women (1919–present), providing the KB's first anchor for a gendered counter-narrative to 呂大樂's own Gen 2 framing |
 | A Modern History of Hong Kong — Steve Tsang | non-fiction | ✅ drafted — `knowledge/books/non-fiction/a-modern-history-of-hong-kong/index.md` — bonus find: the author holds Oxford's "Louis Cha Fellowship," literally endowed under 金庸's real name |
 | 字之魂 (1-4) — 夜透紫 | fiction | ✅ drafted — `knowledge/books/fiction/soul-of-characters/index.md` — a case study for the project's own premise: its central conflict is built on Chinese character structure itself, making it genuinely untranslatable |
@@ -104,6 +107,7 @@ The candidate list below was a starting proposal. Actual picks for the pilot don
 | `ye-tau-ji` (夜透紫) | author, light-novel writer | Same justification pattern as Bruce Lee — only 1 fully-catalogued book (字之魂), but connects `traditional-simplified-anxiety` and the 倪匡科幻獎 award-name link to 倪匡. Her page explicitly corrects an overstated claim about co-authoring the *catalogued* 偵探冰室 volume — she joined a later, uncatalogued volume, and the entry says so rather than fudging the timeline |
 | `liu-yi-chang` (劉以鬯) | author, novelist, editor | 酒徒 (`authors:`) — added directly on GitHub, not via this chat |
 | `yi-shu` (亦舒) | author, columnist, urban fiction writer | 喜寶 ↔ 玫瑰的故事 ↔ 我的前半生 — the only person page so far connecting 3 catalogued books, not just 2. Real sibling of 倪匡 (both surnamed 倪), both worked at 《明報》 — a genuine family connection, not a coincidence |
+| `lui-tai-lok` (呂大樂) | sociologist, author | 四代香港人 (author) ↔ 她者 (preface) — upgraded from plain-name placeholder once the preface credit gave him a second real connection |
 | `tam-kim` (譚劍) | author, sci-fi/mystery writer | 偵探冰室 ↔ 偵探冰室．靈 — refactored from plain-name placeholder once 偵探冰室．靈 (added independently on GitHub) made the second-book connection real |
 | `man-sin` (文善) | author, mystery writer | 偵探冰室 ↔ 偵探冰室．靈 — same refactor |
 | `mok-lei-si` (莫理斯) | author, mystery writer | 香江神探福邇，字摩斯 ↔ 偵探冰室．靈 — his 2nd-book connection came from a different pairing than the other four (his first book was already catalogued; 偵探冰室．靈 was the second) |

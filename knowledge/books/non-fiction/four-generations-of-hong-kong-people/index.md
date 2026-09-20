@@ -2,7 +2,7 @@
 ---
 title: 四代香港人
 title_en: "Four Generations of Hong Kong People"
-authors: ["呂大樂"]   # verify: no person page yet — plain-name placeholder per people.instructions.md, only one book so far
+authors: [lui-tai-lok]
 people: []
 year: 2007
 publisher: 進一步多媒體有限公司
