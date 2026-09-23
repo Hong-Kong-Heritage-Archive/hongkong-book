@@ -300,6 +300,12 @@
     "path": "knowledge/books/fiction/millennium-blackout/index.md"
   },
   {
+    "slug": "mo-lei-tau",
+    "title": "無厘頭",
+    "type": "meme",
+    "path": "knowledge/memes/mo-lei-tau.md"
+  },
+  {
     "slug": "mo-yip",
     "title": "冒業",
     "type": "person",
@@ -400,6 +406,12 @@
     "title": "崩堤之夏",
     "type": "book",
     "path": "knowledge/books/fiction/summer-of-the-breached-dam/index.md"
+  },
+  {
+    "slug": "tai-gong-bao",
+    "title": "太公報",
+    "type": "book",
+    "path": "knowledge/books/fiction/tai-gong-bao/index.md"
   },
   {
     "slug": "tai-pan",
