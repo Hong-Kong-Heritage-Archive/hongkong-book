@@ -2,7 +2,7 @@
 ---
 title: 胭脂扣
 title_en: "Rouge"
-authors: ["李碧華"]   # verify: no person page yet — plain-name placeholder per people.instructions.md, only one book so far
+authors: [li-bi-hua]
 people: []
 year: 1985
 publisher: 天地圖書
