@@ -258,6 +258,12 @@
     "path": "knowledge/books/non-fiction/lancashire-road/index.md"
   },
   {
+    "slug": "li-bi-hua",
+    "title": "李碧華",
+    "type": "person",
+    "path": "knowledge/people/li-bi-hua.md"
+  },
+  {
     "slug": "liu-yi-chang",
     "title": "劉以鬯",
     "type": "person",
@@ -534,6 +540,12 @@
     "path": "knowledge/people/wu-oi-yee.md"
   },
   {
+    "slug": "xun-zhao-shi-er-shao",
+    "title": "尋找十二少",
+    "type": "book",
+    "path": "knowledge/books/fiction/xun-zhao-shi-er-shao/index.md"
+  },
+  {
     "slug": "ye-tau-ji",
     "title": "夜透紫",
     "type": "person",
@@ -544,6 +556,12 @@
     "title": "亦舒",
     "type": "person",
     "path": "knowledge/people/yi-shu.md"
+  },
+  {
+    "slug": "yin-bing-jie-dao",
+    "title": "陰兵借道",
+    "type": "book",
+    "path": "knowledge/books/fiction/yin-bing-jie-dao/index.md"
   },
   {
     "slug": "zaap-ga",
